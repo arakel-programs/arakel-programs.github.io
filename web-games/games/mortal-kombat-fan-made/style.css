@@ -1211,6 +1211,12 @@ flex-offset-95{
 .btn-back-menu:hover{
     box-shadow: 0px 5px 15px rgba(255,255,255,0.8);
 }
+
+.mobile-controller{
+    display: none;
+}
+
+
 .btn-back-menu-game{
     color: #fff;
     background: #000;
@@ -1231,12 +1237,121 @@ flex-offset-95{
     box-shadow: 0px 5px 15px rgba(255,255,255,0.8);
 }
 
+.btn-con{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5%;
+    font-size: 24px;
+    z-index: 999;
+    text-align: center;
+}
+.up-btn{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+.left-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.right-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+}
+.down-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+.run-btn{
+    position: absolute;
+    bottom: 50px;
+    left: 90px;
+}
+.block-btn{
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+}
+.kick-btn{
+    position: absolute;
+    bottom: 50px;
+    left: 130px;
+}
+.foot-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+}
+
+
+.up-btn-2{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.left-btn-2{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.right-btn-2{
+    position: absolute;
+    bottom: 10px;
+    right: 90px;
+}
+.down-btn-2{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+.run-btn-2{
+    position: absolute;
+    bottom: 50px;
+    right: 90px;
+}
+.block-btn-2{
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+}
+.kick-btn-2{
+    position: absolute;
+    bottom: 50px;
+    right: 130px;
+}
+.foot-btn-2{
+    position: absolute;
+    bottom: 10px;
+    right: 130px;
+}
+
 .start-screen .mk-logo img{
     animation:logo-animate 1.5s ease-in-out 1;
     opacity:.8;
     display:block;
     width:12%;
     margin-bottom: 400px;
+}
+
+@media (max-width: 700px){
+    .start-screen .mk-logo img{
+        animation:logo-animate 1.5s ease-in-out 1;
+        opacity:.8;
+        display:block;
+        width:13%;
+        margin-bottom: 215px;
+    }
+    .btn-back-menu-game{
+        font-size: 10px;
+        padding: 10px;
+    }
+    .mobile-controller{
+        display: block;
+    }
 }
 .start-screen-add-bg{
     position: fixed;
@@ -1461,7 +1576,7 @@ start-screen-menu__item:active{
 .player-preview-wrapper .player-preview img{
     max-width:100%;
     height:auto;
-    width: 60%;
+    width: 40%;
     animation:player-preview-animation .2s ease-in-out;
 }
 @keyframes player-preview-animation{

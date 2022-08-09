@@ -23,7 +23,7 @@ var gameData = {
   fightEnded: false
 }
 
-var levelsData = ["temple", "church", "plant", "desert"];
+var levelsData = ["temple", "church", "plant", "desert", "arena", "spaceship", "vulkano", "bunker", "mars", "portal"];
 
 //var levelsData = ["temple","church","arena","plant","spaceship","vulkano","bunker","mars","desert","portal"];
 
@@ -46,7 +46,7 @@ var playerData = {
   handKickEnd: true,
   attack: false,
   jumpEnd: true,
-  jumpHeight: 180,
+  jumpHeight: 120,
   life: 100,
   isDamaged: false,
   defeated: false,
@@ -73,7 +73,7 @@ var playerOneData = {
     jump: 87,
     forward: 68,
     back: 65,
-    bottom: 83,
+    bottom: 33,
     handkick: 82,
     footkick: 84,
     run: 81,
@@ -254,32 +254,94 @@ var nightwolf = {
   previewImgIcon: "img/players-list/nightwolf.gif",
   previewImg: "img/players-list/versus/nightwolf.png",
 }
-var scorpion2 = {
-  name: "scorpion2",
-  soundName: new Audio('audio/names/scorpion.mp3'),
+var ermac = {
+  name: "ermac",
+  soundName: new Audio('audio/names/ermac.mp3'),
   soundRun: new Audio('audio/syborg_run.mp3'),
-  previewImgIcon: "img/players-list/scorpion.gif",
-  previewImg: "img/players-list/versus/scorpion.png",
+  previewImgIcon: "img/players-list/ermac.gif",
+  previewImg: "img/players-list/versus/ermac.png",
 }
 
-var liukang2 = {
-  name: "liukang2",
-  soundName: new Audio('audio/names/liukang.mp3'),
+var kano = {
+  name: "kano",
+  soundName: new Audio('audio/names/kano.mp3'),
   soundRun: new Audio('audio/syborg_run.mp3'),
-  previewImgIcon: "img/players-list/liukang.gif",
-  previewImg: "img/players-list/versus/liukang.png",
+  previewImgIcon: "img/players-list/kano.gif",
+  previewImg: "img/players-list/versus/kano.png",
 }
 
-var nightwolf2 = {
-  name: "nightwolf2",
-  soundName: new Audio('audio/names/nightwolf.mp3'),
+var shaokahn = {
+  name: "shaokahn",/*
+  soundName: new Audio('audio/names/shaokahn.mp3'),*/
   soundRun: new Audio('audio/syborg_run.mp3'),
-  previewImgIcon: "img/players-list/nightwolf.gif",
-  previewImg: "img/players-list/versus/nightwolf.png",
+  previewImgIcon: "img/players-list/shaokahn.gif",
+  previewImg: "img/players-list/versus/shaokahn.png",
+}
+var jax = {
+  name: "jax",
+  soundName: new Audio('audio/names/jax.mp3'),
+  soundRun: new Audio('audio/syborg_run.mp3'),
+  previewImgIcon: "img/players-list/jax.gif",
+  previewImg: "img/players-list/versus/jax.png",
+}
+
+var kunglao = {
+  name: "kunglao",
+  soundName: new Audio('audio/names/kunglao.mp3'),
+  soundRun: new Audio('audio/syborg_run.mp3'),
+  previewImgIcon: "img/players-list/kunglao.gif",
+  previewImg: "img/players-list/versus/kunglao.png",
+}
+
+var shangtsung = {
+  name: "shangtsung",
+  soundName: new Audio('audio/names/shangtsung.mp3'),
+  soundRun: new Audio('audio/syborg_run.mp3'),
+  previewImgIcon: "img/players-list/shangtsung.gif",
+  previewImg: "img/players-list/versus/shangtsung.png",
+}
+var sheeva = {
+  name: "sheeva",
+  soundName: new Audio('audio/names/sheeva.mp3'),
+  soundRun: new Audio('audio/syborg_run.mp3'),
+  previewImgIcon: "img/players-list/sheeva.gif",
+  previewImg: "img/players-list/versus/sheeva.png",
+}
+
+var motaro = {
+  name: "motaro",
+  soundName: new Audio('audio/names/motaro.mp3'),
+  soundRun: new Audio('audio/syborg_run.mp3'),
+  previewImgIcon: "img/players-list/motaro.gif",
+  previewImg: "img/players-list/versus/motaro.png",
+}
+
+var noobsaibot = {
+  name: "noobsaibot",
+  soundName: new Audio('audio/names/noobsaibot.mp3'),
+  soundRun: new Audio('audio/syborg_run.mp3'),
+  previewImgIcon: "img/players-list/noobsaibot.gif",
+  previewImg: "img/players-list/versus/noobsaibot.png",
+}
+
+var stryker = {
+  name: "stryker",
+  soundName: new Audio('audio/names/stryker.mp3'),
+  soundRun: new Audio('audio/syborg_run.mp3'),
+  previewImgIcon: "img/players-list/stryker.gif",
+  previewImg: "img/players-list/versus/stryker.png",
+}
+
+var sindel = {
+  name: "sindel",
+  soundName: new Audio('audio/names/sindel.mp3'),
+  soundRun: new Audio('audio/syborg_run.mp3'),
+  previewImgIcon: "img/players-list/sindel.gif",
+  previewImg: "img/players-list/versus/sindel.png",
 }
 
 
-var AllPlayersObj = {cyrax, kabal, smoke, sektor, subzero, sonya, scorpion, liukang, nightwolf, scorpion2, liukang2, nightwolf2};
+var AllPlayersObj = {cyrax, kabal, smoke, sektor, subzero, sonya, scorpion, liukang, nightwolf, ermac, kano, shaokahn, jax, kunglao, shangtsung, sheeva, motaro, noobsaibot, stryker, sindel};
 
 
 
@@ -608,6 +670,62 @@ function jump(player){
     else{
       player.moveTop = false;
     }
+  }
+}
+
+
+function moveForward(player){
+    //Forward
+    if(event.keyCode === player.playerKeys.moveForward){
+        player.moveForward = true;
+        player.playerSelector.classList.add("move-forward");
+    }
+}
+function moveBackward(player){
+    //Backward
+    if(event.keyCode === player.playerKeys.backward){
+        player.moveBackward = true;
+        player.playerSelector.classList.add("move-back");
+    }
+}
+
+function handKickFunc(player){
+    // Hand kick
+  if(event.keyCode === player.playerKeys.handkick){
+    if(player == playerOneData){
+      kickFunc(playerOneData, playerTwoData,'handkick', 300, 'handKickEnd', hand_damageSound, playerOneData.handKickDamage, 'hand-damaged', 100, 250, handkickSound);
+    }
+    if(player == playerTwoData){
+      kickFunc(playerTwoData, playerOneData, 'handkick', 300, 'handKickEnd', hand_damageSound, playerTwoData.handKickDamage, 'hand-damaged', 100, 250, handkickSound);
+    }
+  }
+}
+function footKickFunc(player){
+   // Foot kick
+  if(event.keyCode === player.playerKeys.footkick){
+    if(player == playerOneData){
+      kickFunc(playerOneData, playerTwoData, 'footkick', 400, 'footKickEnd', foot_damageSound, playerOneData.footKickDamage, 'foot-damaged', 200, 400, footkickSound);
+    }
+    if(player == playerTwoData){
+      kickFunc(playerTwoData, playerOneData, 'footkick', 400, 'footKickEnd', foot_damageSound, playerTwoData.footKickDamage, 'foot-damaged', 200, 400, footkickSound);
+    }
+  }
+}
+function blockFunc(player){
+    //Block
+  if(event.keyCode === player.playerKeys.block){
+    if(!player.moveTop){
+      player.block = true;
+      player.playerSelector.classList.add("block");
+    }
+  }
+}
+function runFunc(player){
+  // Run
+  if(event.keyCode === player.playerKeys.run){
+    player.moverun = true;
+    player.playerSelector.classList.add("move-run");
+    playSound(syborg_runSound);
   }
 }
 
@@ -956,6 +1074,7 @@ function startFight(){
 
   // show life bars and timer
   document.querySelector('#header-bar').classList.remove("hidden");
+  document.querySelector('#screen-btns').classList.remove("hidden");
 
 
   // show the players

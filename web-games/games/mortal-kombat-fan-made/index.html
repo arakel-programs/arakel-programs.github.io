@@ -5,16 +5,38 @@
   <title>Mortal Kombat (Fan Made) | Web-Games Arakel</title>
   <meta name="keywords" content="Mortal Kombat Fan Made Web game online Arakel" />
   <meta name="description" content="Mortal Kombat (Fan Made) play only on Web-games Arakel" />
-  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="materialdesignicons.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link href="animate.css" rel="stylesheet">
   <link rel="icon" href="../../assets/images/jaqport/country/01.jpg" type="image/png">
+  <script src="https://use.fontawesome.com/fcc76b42c1.js"></script>
 </head>
 <body>
 <article class="page-wrapper flex-column flex-align_space-between_stretch">
-  <section id="game-container" class="game-container flex-column flex-align_space-between_stretch flex-align-self_auto fade-in">
-      <a class="btn-back-menu-game" href="../../game-list.html">Back to Game-List</a>
+  <section id="game-container" class="game-container flex-column flex-align_space-between_stretch flex-align-self_auto fade-in"><!--
+      <a class="btn-back-menu-game" href="../../game-list.html">Back to Game-List</a>-->
+      <div class="mobile-controller hidden" id="screen-btns">
+          <!--Player 1-->
+          <button class="btn-con up-btn" id="player-1-click-up" onclick="jump(playerOneData)"><i class="fa fa-arrow-up"></i></button>
+          <button class="btn-con left-btn" id="player-1-click-left" onclick="moveBackward(playerOneData)"><i class="fa fa-arrow-left"></i></button>
+          <button class="btn-con right-btn" id="player-1-click-right" onclick="moveForward(playerOneData)"><i class="fa fa-arrow-right"></i></button>
+          <button class="btn-con down-btn" id="player-1-click-down" onclick="moveDown(playerOneData)"><i class="fa fa-arrow-down"></i></button>
+          <button class="btn-con run-btn" id="player-1-click-run" onclick="runFunc(playerOneData)"><i class="fa fa-arrow-circle-o-right"></i></button>
+          <button class="btn-con block-btn" id="player-1-click-block" onclick="blockFunc(playerOneData)"><i class="fa fa-hand-paper-o"></i></button>
+          <button class="btn-con kick-btn" id="player-1-click-kick" onclick="handKickFunc(playerOneData)"><i class="fa fa-hand-rock-o"></i></button>
+          <button class="btn-con foot-btn" id="player-1-click-foot" onclick="footKickFunc(playerOneData)"><i class="fa fa-hand-scissors-o"></i></button>
+          <!--Player 2-->
+          <button class="btn-con up-btn-2" id="player-2-click-up" onclick="jump(playerTwoData)"><i class="fa fa-arrow-up"></i></button>
+          <button class="btn-con left-btn-2" id="player-2-click-left" onclick="moveForward(playerTwoData)"><i class="fa fa-arrow-right"></i></button>
+          <button class="btn-con right-btn-2" id="player-2-click-right" onclick="moveBackward(playerTwoData)"><i class="fa fa-arrow-left"></i></button>
+          <button class="btn-con down-btn-2" id="player-2-click-down" onclick="moveDown(playerTwoData)"><i class="fa fa-arrow-down"></i></button>
+          <button class="btn-con run-btn-2" id="player-2-click-run" onclick="runFunc(playerTwoData)"><i class="fa fa-arrow-circle-o-left"></i></button>
+          <button class="btn-con block-btn-2" id="player-2-click-block" onclick="blockFunc(playerTwoData)"><i class="fa fa-hand-paper-o"></i></button>
+          <button class="btn-con kick-btn-2" id="player-2-click-kick" onclick="handKickFunc(playerTwoData)"><i class="fa fa-hand-rock-o"></i></button>
+          <button class="btn-con foot-btn-2" id="player-2-click-foot" onclick="footKickFunc(playerTwoData)"><i class="fa fa-hand-scissors-o"></i></button>
+      </div>
+      
     <header id="header-bar" class="header-bar flex-row flex-wrap hidden slide-top">
       <div class="blood-level flex-40">
         <div id="player1-level" class="blood-level__bar"></div>
@@ -68,26 +90,26 @@
             <div class="screen-arrows-wrapper">
               <div class="button-wrap">
                 <button onclick="jump(playerOneData)" class="button button-circle button-raised button-primary">
-                  <i class="mdi mdi-arrow-up"></i>
+                  <i class="fa fa-arrow-up"></i>
                 </button>
               </div>
             </div>
             <div class="screen-arrows-wrapper">
               <div class="button-wrap" style="margin-right: 25px;">
                 <button onclick="moveBackFunc()" class="button button-circle button-raised button-primary">
-                  <i class="mdi mdi-arrow-left"></i>
+                  <i class="fa fa-arrow-left"></i>
                 </button>
               </div>
               <div class="button-wrap">
                 <button onclick="moveForwardFunc()" class="button button-circle button-raised button-primary">
-                  <i class="mdi mdi-arrow-right"></i>
+                  <i class="fa fa-arrow-right"></i>
                 </button>
               </div>
             </div>
             <div class="screen-arrows-wrapper">
               <div class="button-wrap">
                 <button onclick="moveBottomFunc()" class="button button-circle button-raised button-primary">
-                  <i class="mdi mdi-arrow-down"></i>
+                  <i class="fa fa-arrow-down"></i>
                 </button>
               </div>
             </div>
