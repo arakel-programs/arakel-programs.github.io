@@ -1,0 +1,141 @@
+//============================================
+// * Banner sectin start here
+//============================================
+.banner__slider {
+    margin-top: 106px;
+}
+.banner {
+    // height: 950px;
+    background-size: cover;
+    background-position: center left;
+    padding-top: 250px;
+    padding-bottom: 150px;
+    @include breakpoint(md) {
+        padding: 350px 0 330px;
+    }
+    @include breakpoint(lg) {
+        background-position: center;
+    }
+    &__content {
+        @include breakpoint(xl) {
+            margin-bottom: -150px;
+        }
+        h1 {
+            text-shadow: 2px 2px 2px rgba($theme-color, $alpha: .9);
+            @extend %mt-0;
+            @extend %mb-15;
+            @include font-size(60px);
+            @include breakpoint(md) {
+                @include font-size(90px);
+            }
+        }
+        h2 {
+            @extend %mb-20;
+        }
+        .default-button {
+            padding: 0 2rem;
+            &::after {
+                background-color: rgba($white-color, $alpha: .9);
+            }
+        }
+        p {
+            text-transform: capitalize;
+            @extend %mb-30;
+            @extend %pr-30;
+            line-height: 30px;
+        }
+    }
+    &-style2 {
+        @include breakpoint(md) {
+            padding: 240px 0 330px;
+        }
+        @include breakpoint(lg) {
+            background-position: top center;
+        }
+        .banner {
+            &__content {
+                h1 {
+                    @include transform(translateY(450px));
+                    @include transition(1s ease);
+                }
+                h2 {
+                    @include transform(translateY(450px));
+                    @include transition(1s ease);
+                }
+                h3 {
+                    @include transform(translateY(450px));
+                    @include transition(1s ease);
+                }
+                .default-button {
+                    padding: 0 2rem;
+                    @include transform(translateY(350px));
+                    @include transition(1s ease);
+                    &::after {
+                        background-color: rgba($white-color, $alpha: .9);
+                    }
+                }
+                p {
+                    text-transform: capitalize;
+                    @extend %mb-30;
+                    line-height: 30px;
+                    @include transform(translateY(350px));
+                    @include transition(1s ease);
+                }
+            }
+        }
+    }
+}
+.swiper-slide-active, .swiper-slide-duplicate-active {
+    .banner {
+        &__content {
+            @include breakpoint(xl) {
+                margin-bottom: -150px;
+            }
+            h1 {
+                @include transform(translateY(0px));
+            }
+            h2 {
+                @include transform(translateY(0px));
+            }
+            
+            h3 {
+                @include transform(translateY(0px));
+            }
+            .default-button {
+                @include transform(translateY(0px));
+            }
+            p {
+                @include transform(translateY(0px));
+            }
+        }
+    }
+}
+
+//============================================
+// * pageheader sectin start here
+//============================================
+
+
+.pageheader-section {
+    padding: 150px 0;
+    padding-top: calc(150px + 147px);
+    background-size: cover;
+    background-position: center;
+    .pageheader-title {
+        @include font-size(48px);
+        @extend %text-clamp-1;
+    }
+    .breadcrumb {
+        li {
+            a {
+                @extend %theme-color;
+                &:hover {
+                    @extend %white-color;
+                }
+            }
+            &.active {
+                @extend %white-color;
+            }
+        }
+    }
+}

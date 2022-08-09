@@ -1,0 +1,108 @@
+.tunament {
+    .section-wrapper {
+        @include breakpoint(max-lg) {
+            overflow-x: auto;
+        }
+    }
+    &__footer {
+        padding-top: 20px;
+        margin-top: 30px;
+        border-top: 1px solid rgba($white-color, $alpha: .1);
+    }
+    &__left {
+        h5 {
+            @extend %mb-0;
+        }
+    }
+    &__right {
+        ul {
+            @extend %mp-0;
+            li {
+                .page-link {
+                    color: $theme-color;
+                    &:hover, &.active {
+                        background: $theme-color;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.achievement-area {
+    background: $primary-color;
+    @extend %p-30;
+    @include breakpoint(max-lg) {
+        width: 850px;
+    }
+    ul {
+        @extend %mb-15;
+        @extend %pb-15;
+        border: none;
+        justify-content: center;
+        li {
+            vertical-align: middle;
+            .nav-link {
+                border: none;
+                @extend %rel;
+                @include font-size(24px);
+                @extend %text-bold;
+                text-transform: uppercase;
+                color: $white-color !important;
+                @include border-radius(6px);
+                padding: 10px 20px;
+                margin: 5px;
+                &.active {
+                    background-color: $theme-color;
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+                img {
+                    @extend %w-100;
+                }
+            }
+        }
+    }
+    .tab-content {
+        .table>:not(:last-child)>:last-child>* {
+            border-bottom-color: inherit;
+        }
+        .table {
+            thead {
+                tr {
+                    vertical-align: middle;
+                    border-color: rgba($white-color, $alpha: .1);
+                    th {
+                        padding: 20px 0;
+                        text-align: center;
+                        text-transform: uppercase;
+                        &:first-child {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    vertical-align: middle;
+                    border-color: rgba($white-color, $alpha: .1);
+                    &:last-child {
+                        border-color: $primary-color;
+                        td {
+                            @extend %pb-0;
+                        }
+                    }
+                    td {
+                        padding: 20px 0;
+                        text-align: center;
+                        &:first-child {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.start-screen{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 100%;
+  background: #000;
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: inset 0 0 85px 20px #000;
+  }
+  .clouds{
+    z-index: 2;
+    background: transparent url(img/clouds_white.png) repeat center center;
+    opacity: .4;
+  }
+  .mk-logo{
+    width: 27%;
+  }
+  .mk-logo img{
+    animation: logo-animate 1.5s ease-in-out 1;
+    opacity: .4;
+    display: block;
+    width: 100%;
+  }
+}
+
+.start-screen-add-bg{
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  animation: start-screen-bg 30s linear infinite alternate-reverse;
+}
+
+.start-screen-add-bg img{
+
+  height: auto;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 2s ease-in-out;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.start-screen-add-bg img.visible{
+  opacity: 1;
+}
+
+.start-screen-menu{
+  position: absolute;
+  z-index: 2;
+  margin-top: 7%;
+  &__item{
+    .title;
+    background: url(img/ui/buttons.png) 0px -7px no-repeat;
+    display: block;
+    height: 96px;
+    width: 257px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    justify-content: center;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.81);
+    &:hover{
+      background-position: 0px -152px;
+    }
+    &:active{
+      background-position: 0px -297px;
+      color: rgba(255, 255, 255, 0.53);
+    }
+    &:last-child{
+      animation-delay: 1s;
+    }
+  }
+}
+
+.mk-logo{
+  position: relative;
+  z-index: 1;
+  border-radius: 100%;
+  overflow: hidden;
+  img{
+    border-radius: 100%;
+    transition: all 1s ease;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -7%;
+    width: 0%;
+    z-index: -1;
+    height: 200%;
+    transform: rotate(28deg);
+    animation: logo-animate-effect 1.5s 1.5s ease-in-out 1;
+  }
+}
+
+@keyframes logo-animate-effect {
+  0%{
+    background-color: rgba(255,255,255,0.4);
+    transition: none;
+  }
+  100%{
+    width: 200%;
+    background-color: rgba(255,255,255,0);
+    transition: all 0.3s ease-out;
+  }
+}
+
+@keyframes logo-animate {
+  0%{
+    filter: invert(1);
+    transform: scale(.5);
+  }
+  100%{
+    filter: invert(0);
+    transform: scale(1);
+  }
+}
+
+@keyframes start-screen-bg {
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(-25%);
+  }
+}

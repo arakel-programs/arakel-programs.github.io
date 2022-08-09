@@ -1,0 +1,197 @@
+//*----------------------------
+//** Game collection item
+//*----------------------------
+
+.game-section {
+    @include breakpoint(max-sm) {
+        background-image: none !important;
+        background: rgba($primary-color, $alpha: .3);
+    }
+}
+.game {
+    &__item {
+        transition: $transition;
+        
+    }
+    &__inner {
+        @extend %p-30;
+        background: $primary-color;
+        @include border-radius(6px);
+        @extend %justify-center;
+
+        &:hover {
+            .game__overlay {
+                visibility: visible;
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+
+            }
+        }
+    }
+    &__thumb {
+        @extend %mb-30;
+    }
+    &__content {
+        h4 {
+            @extend %mb-15;
+        }
+    }
+    &__overlay {
+        @extend %abs;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .45s cubic-bezier(.68, -0.55, .27, 1.55);
+        display: grid;
+        place-content: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        background-color: rgba($black-color, $alpha: .80);
+        .default-button {
+            line-height: 50px;
+        }
+    }
+    &-style2 {
+        .game {
+            &__item {
+                transition: $transition;
+                
+            }
+            &__inner {
+                @extend %flex;
+                @extend %align-items-center;
+            }
+            &__thumb {
+                @include breakpoint(sm) {
+                    margin-bottom: 0;
+                    width: 150px;
+                }
+            }
+            &__content {
+                @include breakpoint(sm) {
+                    width: calc(100% - 150px);
+                    text-align: left;
+                    padding-left: 30px;
+                }
+                h4 {
+                    @extend %mb-15;
+                }
+                p {
+                    @extend %mb-0;
+                }
+            }
+        }
+    }
+    &__filter {
+        @extend %flex;
+        justify-content: center;
+        margin: -5px;
+        margin-bottom: 30px;
+        li {
+            border-radius: 4px;
+            padding: 5px 20px;
+            font-size: 14px;
+            font-weight: 700;
+            color: $white-color;
+            text-transform: uppercase;
+            margin: 5px;
+            cursor: pointer;
+            @extend %rel;
+            // background: $white-color;
+            &.is-checked {
+                background: $theme-color;
+            }
+        }
+        @include breakpoint(md) {
+            margin-bottom: 60px;
+        }
+    }
+    &-style3 {
+        padding: 60px 0;
+        background-size: cover;
+        .game {
+            &__thumb {
+                @include breakpoint(xl) {
+                    animation: lab_zoominout 15s linear infinite;
+                }
+                img {
+                    @include breakpoint(xl) {
+                        max-width: none;
+                        transform: translateX(-150px);
+                    }
+                }
+            }
+            &__content {
+                p {
+                    @extend %mb-30;
+                }
+            }
+        }
+    }
+}
+
+.grid {
+    .game {
+        &__item {}
+        &__inner {
+            @extend %p-30;
+            background: $primary-color;
+            @include border-radius(6px);
+            &:hover {
+                .game__overlay {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: translate(-50%, 0%) scale(1);
+    
+                }
+            }
+        }
+        &__thumb {
+            @extend %mb-30;
+        }
+        &__overlay {
+            height: auto;
+            background-color: rgba($theme-color, $alpha: .80);
+            @extend %flex;
+            @extend %justify-between;
+            @extend %align-items-center;
+            @extend %w-100;
+            padding: 15px 30px;
+            bottom: 0;
+            top: auto;
+            &-left {
+                text-align: left;
+                p {
+                    @extend %mb-0;
+                }
+            }
+        }
+        &__filter {
+            @extend %flex;
+            justify-content: center;
+            margin: -5px;
+            margin-bottom: 30px;
+            li {
+                border-radius: 4px;
+                padding: 5px 20px;
+                font-size: 14px;
+                font-weight: 700;
+                color: $white-color;
+                text-transform: uppercase;
+                margin: 5px;
+                cursor: pointer;
+                @extend %rel;
+                // background: $white-color;
+                &.is-checked {
+                    background: $theme-color;
+                }
+            }
+            @include breakpoint(md) {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+

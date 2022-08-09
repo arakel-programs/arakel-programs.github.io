@@ -1,0 +1,106 @@
+
+/* @@@@@@@@@@@@@  FAQ Section Start Here  @@@@@@@@@@@@@@ */
+.faq {
+    background: #080e37;
+    .faq-left-part {
+        margin-bottom: 15px;
+        .section-header {
+            margin-bottom: 45px;
+            &:after {
+                display: none;
+            }
+            h2 {
+                &:first-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .section-wrapper {
+        .accordion {
+            margin: 0;
+            li {
+                padding: 20px 30px;
+                border: none;
+                box-shadow: 0 0 3px rgba(136, 136, 136, .10);
+                @extend %mb-10;
+                .accordion-list {
+                    width: 100%;
+                    @extend %flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    cursor: pointer;
+                    &.in {
+                        .left {
+                            .icon {
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    .left {
+                        width: 40px;
+                        text-align: center;
+                        background: transparent;
+                        &::after, &::before {
+                            display: none;
+                        }
+                        .icon {
+                            @extend %rel;
+                            width: 30px;
+                            height: 30px;
+                            background: $theme-color;
+                            @include border-radius(100%);
+                            &::after, &::before {
+                                @extend %abs;
+                                background: $white-color;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                            &::after {
+                                width: 15px;
+                                height: 2px;
+                            }
+                            &::before {
+                                width: 2px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                    .right {
+                        width: calc(100% - 40px);
+                        h6 {
+                            margin: 0;
+                            color: $white-color;
+                        }
+                    }
+                }
+                .accordion-answer {
+                    display: none;
+                    p {
+                        padding-top: 10px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .faq-right-part {
+        margin-bottom: 40px;
+        @include breakpoint(lg) {
+            margin-bottom: 0;
+        }
+        .faq-thumb {
+            text-align: center;
+            @include breakpoint(xl) {
+                margin-right: -30px;
+                animation: lab_zoominout 15s linear infinite;
+                img {
+                    max-width: none;
+                }
+            }
+        }
+    }
+}

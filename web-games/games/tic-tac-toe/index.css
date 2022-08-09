@@ -1,0 +1,102 @@
+ /* CSS Code */
+    /* Heading */
+
+body{
+    background: orangered
+}
+    h1 {
+        color: #000;
+        font-size: 45px;
+    }
+ 
+    /* 3*3 Grid */
+    #b1, #b2, #b3, #b4, #b5,
+    #b6, #b7, #b8, #b9 {
+        width: 80px;
+        height: 52px;
+        margin: auto;
+        border: 1px solid #000;
+        color: #000;
+        border-radius: 6px;
+        font-size: 30px;
+        text-align: center;
+    }
+ 
+    /* Reset Button */
+    #but {
+        box-sizing: border-box;
+        width: 95px;
+        height: 40px;
+        border: 1px solid dodgerblue;
+        margin: auto;
+        border-radius: 4px;
+        font-family: Verdana,
+            Geneva, Tahoma, sans-serif;
+ 
+        background-color: dodgerblue;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+ 
+    /* Player turn space */
+    #print {
+        font-family: Verdana,
+            Geneva, Tahoma, sans-serif;
+ 
+        color: #fff;
+        font-size: 20px;
+    }
+ 
+    /* Main Container */
+    #main {
+        text-align: center;
+    }
+ 
+    /* Game Instruction Text */
+    #ins {
+        font-family: Verdana,
+            Geneva, Tahoma, sans-serif;
+             
+        color: #fff;
+        font-size: 17px;
+    }
+
+.btn-back-menu{
+    border: none;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 5px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    color: #000;
+    background: #fff;
+}
+.btn-back-menu:hover{
+    color: #fff;
+    background: #000;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.8);
+}
+
+@media (max-width: 450px){
+    .btn-back-menu{
+        top: auto;
+        bottom: 0;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 2px;
+        font-size: 12px;
+    }
+    #ins{
+        font-size: 12px;
+    }
+    h1 {
+        color: #000;
+        font-size: 25px;
+    }
+}

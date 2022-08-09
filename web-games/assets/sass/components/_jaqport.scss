@@ -1,0 +1,164 @@
+.jaqport {
+    background-size: cover;
+    background-position: center;
+    &__top {
+        margin-bottom: 40px;
+    }
+    &__left {
+        .jaqport__title {
+            margin-bottom: 10px;
+        }
+    }
+    &__right {}
+    &__title {
+        @extend %flex;
+        @extend %justify-between;
+        @extend %align-items-center;
+        background: $theme-color;
+        @extend %mb-30;
+        @include border-radius(6px);
+        border-bottom: 4px solid #ddd;
+        @include breakpoint(max-sm) {
+            text-align: center
+        }
+        &-title {
+            @extend %p-15;
+            @include breakpoint(max-sm) {
+                width: 100%;
+            }
+            h4 {
+                @extend %mb-0;
+            }
+        }
+        &-button {
+            @include breakpoint(max-sm) {
+                width: 100%;
+            }
+            a {
+                &.default-button, &::before {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    @include breakpoint(lg) {
+                        @include breakpoint(max-xl) {
+                            padding: 0 8px;
+                        }
+                    }
+                    @include breakpoint(max-sm) {
+                        width: 100%;
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                        border-bottom-left-radius: 4px;
+                    }
+                }
+                &::after {
+                    display: none;
+                }
+                &:hover {
+                    transform: translate(0px, 0px);
+                    color: $theme-color;
+                    &::before {
+                        background: $white-color;
+                    }
+                }
+            }
+        }
+        &-gametime {
+            background: $white-color;
+            padding: 16px;
+            @extend %rel;
+            @include breakpoint(max-sm) {
+                width: 100%;
+            }
+            &::before {
+                @extend %abs;
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-left: 10px solid red;
+                border-bottom: 10px solid transparent;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                @include breakpoint(max-sm) {
+                    display: none;
+                }
+            }
+            @include breakpoint(sm) {
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 4px;
+            }
+            ul {
+                @extend %flex;
+                @extend %mb-0;
+                li {
+                    @extend %flex;
+                    padding: 0 15px;
+                    @include font-size(18px);
+                    font-weight: 700;
+                    color: $theme-color;
+                    @extend %text-uppercase;
+                    @extend %rel;
+                    @include breakpoint(max-sm) {
+                        justify-content: center;
+                        padding: 0 5px;
+                    }
+                    @include breakpoint(lg) {
+                        @include breakpoint(max-xl) {
+                            padding: 0 10px;
+                        }
+                    }
+                    &::after {
+                        position: absolute;
+                        content: ":";
+                        right: -5px;
+                    }
+                    &:last-child {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                    .count-number {
+                        @extend %mr-10;
+                        @include breakpoint(max-sm) {
+                            margin-right: 0;
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    p {
+                        @extend %mb-0;
+                    }
+                }
+            }
+        }
+    }
+    &__body {}
+    &__gamelist {
+        @extend %flex;
+        justify-content: space-between;
+        @extend %align-items-center;
+        padding: 15px;
+        background: #20276cd9;
+        margin-bottom: 1px;
+        &-left {
+            width: 50%;
+            p {
+                @extend %mb-0;
+            }
+        }
+        &-middle {
+            width: 20%;
+            @extend %text-center;
+        }
+        &-right {
+            width: 30%;
+            @extend %text-right;
+            h6 {
+                font-weight: 500;
+                @extend %mb-0;
+            }
+        }
+    }
+}
+
+
