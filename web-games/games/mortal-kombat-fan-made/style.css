@@ -1349,6 +1349,9 @@ flex-offset-95{
         font-size: 10px;
         padding: 10px;
     }
+}
+@media(max-width: 1180px){
+    
     .mobile-controller{
         display: block;
     }
