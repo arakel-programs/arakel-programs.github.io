@@ -1,0 +1,131 @@
+#start-again-button,
+#in-game-load-button,
+#save-button,
+#pause-button,
+#create-10-worker-button,
+#funeral-process-img,
+#starvation-warning {
+    display: none;
+}
+
+/*RESOURCES*/
+#click-resource-wood-row,
+#click-resource-stone-row,
+#empty-row-before-knowledge,
+#knowledge-row,
+#scroll-row,
+#empty-row-before-weapon,
+#weapon-row {
+    display: none;
+}
+
+/* PEOPLE*/
+#people-productivity-table,
+#create-max-worker-button,
+#corpse-row,
+#in-graves-row,
+#empty-row-before-happiness,
+#happiness-row,
+#health-row,
+#empty-row-before-productivity,
+#productivity-row {
+    display: none;
+}
+
+#pets-table {
+    display: none;
+}
+
+/* WORKERS*/
+#work-table,
+.ten-work-td,
+.max-work-td,
+#empty-row-before-job-funeral,
+#job-funeral-process-row,
+#empty-row-before-job-scientist,
+#job-scientist-row,
+#job-writer-row,
+#empty-row-before-job-leader,
+#job-leader-row,
+#job-warrior-row,
+#empty-row-before-job-in-club,
+#job-dj-row,
+#job-instructor-row,
+#empty-row-before-job-master,
+#job-weapon-master-row {
+    display: none;
+}
+
+/* BUILDINGS*/
+#building-table,
+#build-grave-row,
+#build-graveyard-row,
+#build-scroll-row,
+#build-storage-granary-row,
+#build-storage-pit-row,
+#empty-row-before-population-building,
+#build-population-hut-row,
+#build-population-duplex-row,
+#empty-row-before-knowledge-building,
+#build-knowledge-campfire-row,
+#build-knowledge-dolmen-row,
+#build-knowledge-parthenon-row,
+#build-library-row,
+#empty-row-before-build-club,
+#build-music-club-row,
+#build-yoga-club-row,
+#build-palace-row,
+#empty-row-before-build-war,
+#build-war-armory-row,
+#build-war-barrack-row {
+    display: none;
+}
+
+/* TECHNOLOGIES*/
+#technology-table,
+#tech-agriculture-row,
+#tech-architecture-row,
+#tech-funeral-row,
+#tech-changes2-row,
+#tech-leadership-row,
+#tech-agriculture-2-row,
+#tech-architecture-2-row,
+#tech-stone-age-row,
+#tech-architecture-3-row,
+#tech-music-row,
+#tech-sport-row,
+#tech-tools-row,
+#tech-hoe-row,
+#tech-axe-row,
+#tech-pickaxe-row,
+#tech-weapon-row,
+#tech-2-side-scroll-row,
+#tech-architecture-4-row,
+#tech-bronze-age-row,
+#tech-wheel-row,
+#tech-agriculture-3-row,
+#tech-leadership-2-row,
+#tech-packaging-row,
+#tech-scouting-row,
+#tech-architecture-5-row,
+#tech-domestication-row,
+#tech-mysticism-row,
+#tech-tool-age-row {
+    display: none;
+}
+
+#orc-radio-div,
+#sparta-radio-div,
+#amazon-radio-div,
+#human-radio-div,
+#dragon-radio-div,
+#ufo-radio-div,
+#dwarf-radio-div,
+#elf-radio-div {
+    display: none;
+}
+
+#attack-section,
+#attack-section2 {
+    display: none;
+}

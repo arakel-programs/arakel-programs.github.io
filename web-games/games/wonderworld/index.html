@@ -1,0 +1,1194 @@
+<!--<!doctype html>-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <link rel="shortcut icon" href="res/img/common/torch.png" type="image/png">
+    <title>Wonder World</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/hidden.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+</head>
+
+<body>
+    <header>
+        <img alt="header img" src="res/img/common/header.jpg">
+        <div id="goal-div" class="alert alert-primary" role="alert" data-toggle="tooltip" title="You goal">
+            Your today's target is:
+                1)Build a palace <img src="res/img/stone%20age/palace.png" alt="palace img">
+                2)Capture Sparta palace <img src="res/img/race/spartan.png" alt="sparta img">
+                3)Collect 1 million <img src="res/img/common/knowledge.png" alt="knowledge img">.
+        </div>
+    </header>
+    <hr>
+    <div class="game-container">
+        <section id="resource-people-section">
+            <h2><span id="user-name"></span><i> master.</i></h2>
+            <section id="starvation-warning" class="alert alert-dark" role="alert">
+                <img src="res/img/common/grim-reaper.png" alt="death img" title="Death img"><b> Death is here...</b>
+            </section>
+
+            <table id="click-resource-table" class="table table-striped table-sm table-dark" >
+                <caption>Resources</caption>
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="3"></th>
+                        <th>Workers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="click-resource-food-row">
+                        <td><img src="res/img/common/berry.png" alt="food img" data-toggle="tooltip" data-placement="right" title="Food"></td>
+                        <td><span id="food-quantity">0</span>/<span id="max-food-quantity-span">100</span></td>
+                        <td><button type="button" id="food-click-button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="right" title="Click to get some food">Get <img src="res/img/common/berry.png" alt="food img"> (+1)</button></td>
+                        <td><span id="food-production-span"><span id="food-production-quantity">0</span>/sec</span></td>
+                    </tr>
+                    <tr id="click-resource-wood-row">
+                        <td><img src="res/img/common/branch.png" alt ="branch img" data-toggle="tooltip" data-placement="right" title="Wood"></td>
+                        <td><span id="wood-quantity">0</span>/<span id="max-wood-quantity-span">100</span></td>
+                        <td><button type="button" id="wood-click-button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="right" title="Click to get some wood">Get <img src="res/img/common/branch.png" alt ="branch img"> (+1)</button></td>
+                        <td><span id="wood-production-span"><span id="wood-production-quantity">0</span>/sec</span></td>
+                    </tr>
+                    <tr id="click-resource-stone-row">
+                        <td><img src="res/img/common/stone.png" alt="stone img" data-toggle="tooltip" data-placement="right" title="Stone"></td>
+                        <td><span id="stone-quantity">0</span>/<span id="max-stone-quantity-span">100</span></td>
+                        <td><button type="button" id="stone-click-button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="right" title="Click to get some stones">Get <img src="res/img/common/stone.png" alt="stone img"> (+1)</button></td>
+                        <td><span id="stone-production-span"><span id="stone-production-quantity">0</span>/sec</span></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="empty-row-before-knowledge" class="table-primary">
+                        <td colspan="4"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="knowledge-row">
+                        <td><img src="res/img/common/knowledge.png" alt="knowledge img" data-toggle="tooltip" data-placement="right" title="Knowledge"></td>
+                        <td><span id="knowledge-quantity">0</span>/<span id="max-knowledge-quantity-span">30</span></td>
+                        <td><i>Citizens produce it</i></td>
+                        <td><span id="knowledge-production-quantity">0</span>/sec</td>
+                    </tr>
+                    <tr id="scroll-row">
+                        <td><img src="res/img/changes/scroll.png" alt="scroll img" data-toggle="tooltip" data-placement="right" title="Scroll"></td>
+                        <td><span class="scroll-quantity">0</span></td>
+                        <td><i>Writers produce it</i></td>
+                        <td><span id="scroll-production-quantity">0</span>/sec</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="empty-row-before-weapon" class="table-primary">
+                        <td colspan="4"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="weapon-row">
+                        <td><img src="res/img/bronze%20age/ancient-weapon.png" alt="knowledge img" data-toggle="tooltip" data-placement="right" title="Weapon"></td>
+                        <td><span id="weapon-quantity">0</span></td>
+                        <td><i>Masters produce it</i></td>
+                        <td><span id="weapon-production-span"><span id="weapon-production-quantity">0</span>/sec</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="people-productivity-table" class="table table-striped  table-sm  table-dark">
+                <caption>People</caption>
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="3"></th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="res/img/common/team.png" alt="citizen img" data-toggle="tooltip" data-placement="right" title="Citizen"></td>
+                        <td><span id="current-population">0</span>/<span id="max-population">5</span></td>
+                        <td id="create-new-citizen-td">
+                            <button type="button" id="create-worker-button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="right" title="Spend 10 food to create a new citizen">New citizen</button>
+                            <button type="button" id="create-10-worker-button" class="btn btn-info btn-sm ten-work-td">+10</button>
+                            <button type="button" id="create-max-worker-button" class="btn btn-info btn-sm max-work-td">+max</button>
+                        </td>
+                        <td><span id="citizen-cost">10</span> <img alt="food img" src="res/img/common/berry.png"></td>
+                    </tr>
+                    <tr id="corpse-row">
+                        <td><img src="res/img/common/corpse.png" alt="corpse img" data-toggle="tooltip" data-placement="right" title="Corpse"/></td>
+                        <td id="corpse-quantity">0</td>
+                        <td colspan="2">RIP (not buried)</td>
+                    </tr>
+                    <tr id="in-graves-row">
+                        <td><img src="res/img/changes/grave.png" alt="grave img" data-toggle="tooltip" data-placement="right" title="Grave"/></td>
+                        <td><span id="in-graves-quantity">0</span>/<span id="max-in-graves-quantity">0</span></td>
+                        <td colspan="2">In graves</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="empty-row-before-happiness" class="table-primary">
+                        <td colspan="4"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="happiness-row">
+                        <td><img src="res/img/common/happy.png" alt="happy img" data-toggle="tooltip" data-placement="right" title="Happiness"/></td>
+                        <td><span id="current-happy-people">0</span>/<span id="max-happy-people">0</span></td>
+                        <td colspan="2">Happiness</td>
+                    </tr>
+                    <tr id="health-row">
+                        <td><img src="res/img/common/warrior-pose-white.png" alt="health img" data-toggle="tooltip" data-placement="right" title="Health"/></td>
+                        <td><span id="current-healthy-people">0</span>/<span id="max-healthy-people">0</span></td>
+                        <td colspan="2">Health</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="empty-row-before-productivity" class="table-primary">
+                        <td colspan="4"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="productivity-row">
+                        <td><img src="res/img/common/productivity.png" alt="productivity img" data-toggle="tooltip" data-placement="right" title="Productivity"/></td>
+                        <td><span id="productivity-quantity">100</span>%</td>
+                        <td colspan="2">Productivity</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="pets-table" class="table table-striped  table-sm  table-dark">
+                <caption>Pets</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2"></th>
+                        <th>Food</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="cat-row-element">
+                        <td><img src="res/img/pets/cat.png" alt="cat img"> Cats:</td>
+                        <td id="cat-quantity-element">32</td>
+                        <td><span id="cat-consumption-element">3.2</span>/sec</td>
+                    </tr>
+                    <tr id="dragon-row-element">
+                        <td><img src="res/img/pets/dragon.png" alt="dragon img"> Dragons:</td>
+                        <td id="dragon-quantity-element">1</td>
+                        <td><span id="dragon-consumption-element">2</span>/sec</td>
+                    </tr>
+                </tbody>
+            </table>
+            <section id="menu-button-section">
+                <button type="button" id="in-game-load-button" class="btn btn-secondary btn-sm load-button" data-toggle="tooltip" data-placement="right" title="Load a game">Load GAME</button>
+                <button type="button" id="pause-button" class="btn btn-secondary btn-sm" data-toggle="tooltip" data-placement="right" title="Pause the game"><img src="res/img/changes2/pause-hand-drawn-symbol-white.png" alt="pause img"></button>
+                <button type="button" id="save-button" class="btn btn-secondary btn-sm" data-toggle="tooltip" data-placement="right" title="Save a game">Save GAME</button>
+                <button type="button" id="start-again-button" class="btn btn-secondary btn-sm" data-toggle="tooltip" data-placement="right" title="Start a new game">Start again</button>
+
+                <!--<button id="get-100-w">Get 100 warriors</button>-->
+                <!--<button id="get-1k-n">Get 1k knowledge</button>-->
+            </section>
+
+            <!--<button type="button" id="getFullButton">Test</button>-->
+            <img src="res/img/worker/funeral%20(3).png" id="funeral-process-img" alt="funeral img"/>
+            <p id="author" data-toggle="tooltip" title="Last update in August 18, 2019.">August 18, 2019, made by Alex/Igor/Max, tested by Andrew.</p>
+        </section>
+
+        <section id="work-building-section">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist" style="display:none;">
+                    <a class="nav-item nav-link active" id="nav-people-tab" data-toggle="tab" href="#nav-people" role="tab" aria-controls="nav-people" aria-selected="true">People</a>
+                    <a class="nav-item nav-link" id="nav-work-tab" data-toggle="tab" href="#nav-work" role="tab" aria-controls="nav-home" aria-selected="false">Work</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-world" role="tab" aria-controls="nav-profile" aria-selected="false">World</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-people" role="tabpanel" aria-labelledby="nav-people-tab">
+                </div>
+                <div class="tab-pane fade" id="nav-work" role="tabpanel" aria-labelledby="nav-work-tab">
+                </div>
+                <div class="tab-pane fade" id="nav-world" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <table id="world-table" class="table table-striped table-sm table-dark">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th></th>
+                            <th>Speciality</th>
+                            <th class="max-work-td"></th>
+                            <th class="ten-work-td"></th>
+                            <th colspan="3"></th>
+                            <th class="ten-work-td"></th>
+                            <th class="max-work-td"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><img src="res/img/worker/barista.png" alt="lazybones worker" data-toggle="tooltip" data-placement="right" title="Lazybones"/></td>
+                            <td>Lazybones</td>
+                            <td class="max-work-td"></td>
+                            <td class="ten-work-td"></td>
+                            <td></td>
+                            <td><span class="lazybone-quantity">0</span></td>
+                            <td></td>
+                            <td class="ten-work-td"></td>
+                            <td class="max-work-td"></td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr class="empty-row table-primary">
+                            <td colspan="5"></td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td><img src="res/img/worker/detective.png" alt="scout worker" data-toggle="tooltip" data-placement="right" title="Scout"/></td>
+                            <td data-toggle="tooltip" data-placement="right" title="Automatically scout new locations">Scouts:</td>
+                            <td class="max-work-td"><button type="button" id="remove-all-scout-button" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Remove all workers">min</button></td>
+                            <td class="ten-work-td"><button type="button" id="remove-10-scout-button" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Remove 10 workers">&lt;&lt;</button></td>
+                            <td><button type="button" id="remove-scout-button" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Remove a worker">&lt;</button></td>
+                            <td id="scout-quantity">0</td>
+                            <td><button type="button" id="add-scout-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Add a worker">&gt;</button></td>
+                            <td class="ten-work-td"><button type="button" id="add-10-scout-button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Add 10 worker">&gt;&gt;</button></td>
+                            <td class="max-work-td"><button type="button" id="add-max-scout-button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Add max workers">max</button></td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr id="job-warrior-row">
+                            <td><img src="res/img/worker/troglodyte%20(1)-white.png" alt="warrior worker" data-toggle="tooltip" data-placement="right" title="Warrior"/></td>
+                            <td data-toggle="tooltip" data-placement="right" title="Can protect and fight">Warriors:</td>
+                            <td class="empty-td max-work-td"></td>
+                            <td class="empty-td ten-work-td"></td>
+                            <td class="empty-td"></td>
+                            <td><span id="warrior-quantity">0</span>/<span id="max-warrior-quantity">0</span></td>
+                            <td><button type="button" id="add-warrior-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Add a warrior">&gt;</button></td>
+                            <td class="empty-td ten-work-td"></td>
+                            <td class="empty-td max-work-td"></td>
+                            <!--<td><button type="button" data-toggle="tooltip" data-placement="right" title="Add 10 worker" id="add-10-warrior-button">&gt;&gt;</button></td>-->
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>Total power: <i><span id="total-power-span"></span></i></p>
+
+                    <div id="scout-div">
+                        Scout:<br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="scoutOption" id="scout-around-radio" value="around" checked>
+                            <label class="form-check-label" for="scout-around-radio"><img src="res/img/bronze%20age/map-location.png" alt="around img" data-toggle="tooltip" title="Scout around"></label>
+                        </div>
+                        <div class="form-check form-check-inline" id="orc-radio-div">
+                            <input class="form-check-input" type="radio" name="scoutOption" id="orc-radio" value="orc">
+                            <label class="form-check-label" for="orc-radio"><img src="res/img/stone%20age/orc.png" alt="orc img" data-toggle="tooltip" title="Orcs"></label>
+                        </div>
+                        <div class="form-check form-check-inline" id="sparta-radio-div">
+                            <input class="form-check-input" type="radio" name="scoutOption" id="spartaRadio" value="sparta">
+                            <label class="form-check-label" for="spartaRadio"><img src="res/img/race/spartan.png" alt="sparta img" data-toggle="tooltip" title="Sparta civilization"></label>
+                        </div>
+                        <div class="form-check form-check-inline" id="amazon-radio-div">
+                            <input class="form-check-input" type="radio" name="scoutOption" id="amazonRadio" value="amazon">
+                            <label class="form-check-label" for="amazonRadio"><img src="res/img/race/gaia.png" alt="amazon img" data-toggle="tooltip" title="Wild Amazons"></label>
+                        </div>
+                        <div class="form-check form-check-inline" id="human-radio-div">
+                            <input class="form-check-input" type="radio" name="scoutOption" id="humanRadio" value="human">
+                            <label class="form-check-label" for="humanRadio"><img src="res/img/race/woman%20(1).png" alt="human img" data-toggle="tooltip" title="Human race"></label>
+                        </div>
+                        <div class="form-check form-check-inline" id="dragon-radio-div">
+                            <input class="form-check-input" type="radio" name="scoutOption" id="dragonRadio" value="dragon">
+                            <label class="form-check-label" for="dragonRadio"><img src="res/img/race/dragon.png" alt="dragon img" data-toggle="tooltip" title="Dragon caves"></label>
+                        </div>
+                        <div class="form-check form-check-inline" id="ufo-radio-div">
+                            <input class="form-check-input" type="radio" name="scoutOption" id="ufoRadio" value="ufo">
+                            <label class="form-check-label" for="ufoRadio"><img src="res/img/achievement/alien.png" alt="ufo img" data-toggle="tooltip" title="UFO"></label>
+                        </div>
+                        <div class="form-check form-check-inline" id="dwarf-radio-div">
+                            <input class="form-check-input" type="radio" name="scoutOption" id="dwarfRadio" value="dwarf">
+                            <label class="form-check-label" for="dragonRadio"><img src="res/img/race/gnome%20(1).png" alt="dwarf img" data-toggle="tooltip" title="Dwarf civilization"></label>
+                        </div>
+                        <div class="form-check form-check-inline" id="elf-radio-div">
+                            <input class="form-check-input" type="radio" name="scoutOption" id="elfRadio" value="elf">
+                            <label class="form-check-label" for="elfRadio"><img src="res/img/race/elf.png" alt="elf img" data-toggle="tooltip" title="Elf forests"></label>
+                        </div>
+                        <div class="form-check form-check-inline" id="unknown-radio-div">
+                            <input class="form-check-input" type="radio" name="scoutOption" id="unknownRadio" value="unknown" disabled>
+                            <label class="form-check-label" for="unknownRadio">???</label>
+                        </div>
+                    </div>
+
+                    <br>
+                    <p><i>Scout around</i></p>
+                    <div class="progress">
+                        <div  id="scout-progress" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                    </div>
+
+                    <hr>
+
+                    <div id="attack-div">
+                        <span>Attack:</span><br>
+                    </div>
+
+                    <br>
+                    <section id="attack-section">
+                        <p>Attack: <i id="attack-i"></i><span style="float: right">(Enemy power: <i id="enemy-power-i"></i>)</span></p>
+                        <div class="progress">
+                            <div id = "your-power-progress-bar" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%"></div>
+                            <div id = "enemy-power-progress-bar" class="progress-bar progress-bar-striped progress-bar-animated bg-danger text-white" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%"></div>
+                        </div>
+                    </section>
+                    <section id="attack-section2">
+                        <p>Attack: <i id="attack-i2"></i></p>
+                        <div class="progress">
+                            <div id = "no-battle-progress-bar" class="progress-bar progress-bar-striped progress-bar-animated bg-dark text-white" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <table id="work-table" class="table table-striped table-sm table-dark">
+                <caption>Work</caption>
+                <thead class="thead-dark">
+                <tr>
+                    <th></th>
+                    <th>Speciality</th>
+                    <th class="max-work-td"></th>
+                    <th class="ten-work-td"></th>
+                    <th colspan="3"></th>
+                    <th class="ten-work-td"></th>
+                    <th class="max-work-td"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><img src="res/img/worker/barista.png" alt="lazybones worker" data-toggle="tooltip" data-placement="right" title="Lazybones"/></td>
+                    <td>Lazybones</td>
+                    <td class="max-work-td"></td>
+                    <td class="ten-work-td"></td>
+                    <td></td>
+                    <td><span class="lazybone-quantity">0</span></td>
+                    <td></td>
+                    <td class="ten-work-td"></td>
+                    <td class="max-work-td"></td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr id="empty-row-before-job-leader" class="empty-row table-primary">
+                    <td colspan="5"></td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr id="job-leader-row">
+                    <td><img src="res/img/changes2/leadership.png" alt="leader worker" data-toggle="tooltip" data-placement="right" title="Leader"/></td>
+                    <td data-toggle="tooltip" data-placement="right" title="Allows to group people">Leaders:</td>
+                    <td class="empty-td max-work-td"></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <td class="empty-td"></td>
+                    <td><span id="leader-quantity">0</span></td>
+                    <td><button type="button" id="add-leader-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Add a leader">&gt;</button></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <td class="empty-td max-work-td"></td>
+                    <!--<td><button type="button" data-toggle="tooltip" data-placement="right" title="Add 10 worker" id="add-10-leader-button">&gt;&gt;</button></td>-->
+                </tr>
+                </tbody>
+                <tbody>
+                <tr class="empty-row table-primary">
+                    <td colspan="5"></td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr>
+                    <td><img src="res/img/worker/farmer.png" alt="farmer worker" data-toggle="tooltip" data-placement="right" title="Farmer"/></td>
+                    <td data-toggle="tooltip" data-placement="right" title="Automatically gather food">Farmers:</td>
+                    <td class="max-work-td"><button type="button" id="remove-all-farmer-button" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Remove all workers">min</button></td>
+                    <td class="ten-work-td"><button type="button" id="remove-10-farmer-button" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Remove 10 workers">&lt;&lt;</button></td>
+                    <td><button type="button" id="remove-farmer-button" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Remove a worker">&lt;</button></td>
+                    <td id="farmer-quantity">0</td>
+                    <td><button type="button" id="add-farmer-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Add a worker">&gt;</button></td>
+                    <td class="ten-work-td"><button type="button" id="add-10-farmer-button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Add 10 workers">&gt;&gt;</button></td>
+                    <td class="max-work-td"><button type="button" id="add-max-farmer-button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Add max workers">max</button></td>
+                </tr>
+                <tr>
+                    <td><img src="res/img/worker/lumberjack%20(1).png" alt="lumberjack worker" data-toggle="tooltip" data-placement="right" title="Woodman"/></td>
+                    <td data-toggle="tooltip" data-placement="right" title="Automatically cut wood">Woodmen:</td>
+                    <td class="max-work-td"><button type="button" id="remove-all-woodcutter-button" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Remove all workers">min</button></td>
+                    <td class="ten-work-td"><button type="button" id="remove-10-woodcutter-button" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Remove 10 workers">&lt;&lt;</button></td>
+                    <td><button type="button" id="remove-woodcutter-button" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Remove a worker">&lt;</button></td>
+                    <td id="woodcutter-quantity">0</td>
+                    <td><button type="button" id="add-woodcutter-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Add a worker">&gt;</button></td>
+                    <td class="ten-work-td"><button type="button" id="add-10-woodcutter-button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Add 10 worker">&gt;&gt;</button></td>
+                    <td class="max-work-td"><button type="button" id="add-max-woodcutter-button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Add max workers">max</button></td>
+                </tr>
+                <tr>
+                    <td><img src="res/img/worker/miner2.png" alt="miner worker" data-toggle="tooltip" data-placement="right" title="Miner"/></td>
+                    <td data-toggle="tooltip" data-placement="right" title="Automatically mine stone">Miners:</td>
+                    <td class="max-work-td"><button type="button" id="remove-all-miner-button" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Remove all workers">min</button></td>
+                    <td class="ten-work-td"><button type="button" id="remove-10-miner-button" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Remove 10 workers">&lt;&lt;</button></td>
+                    <td><button type="button" id="remove-miner-button" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Remove a worker">&lt;</button></td>
+                    <td id="miner-quantity">0</td>
+                    <td><button type="button" id="add-miner-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Add a worker">&gt;</button></td>
+                    <td class="ten-work-td"><button type="button" id="add-10-miner-button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Add 10 worker">&gt;&gt;</button></td>
+                    <td class="max-work-td"><button type="button" id="add-max-miner-button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Add max workers">max</button></td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr id="empty-row-before-job-scientist" class="empty-row table-primary">
+                    <td colspan="5"></td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr id="job-scientist-row">
+                    <td><img src="res/img/worker/einstein.png" alt="scientist worker" data-toggle="tooltip" data-placement="right" title="Scientist"/></td>
+                    <td data-toggle="tooltip" data-placement="right" title="Produce knowledge">Scientists:</td>
+                    <td class="max-work-td"><button type="button" id="remove-all-scientist-button" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Remove all workers">min</button></td>
+                    <td class="ten-work-td"><button type="button" id="remove-10-scientist-button" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Remove 10 workers">&lt;&lt;</button></td>
+                    <td><button type="button" id="remove-scientist-button" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Remove a worker">&lt;</button></td>
+                    <td><span id="scientist-quantity">0</span>/<span id="max-scientist-quantity">0</span></td>
+                    <td><button type="button" id="add-scientist-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Add a worker">&gt;</button></td>
+                    <td class="ten-work-td"><button type="button" id="add-10-scientist-button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Add 10 worker">&gt;&gt;</button></td>
+                    <td class="max-work-td"><button type="button" id="add-max-scientist-button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Add max workers">max</button></td>
+                </tr>
+                <tr id="job-writer-row">
+                    <td><img src="res/img/worker/writer.png" alt="dj worker" data-toggle="tooltip" data-placement="right" title="Writer"/></td>
+                    <td data-toggle="tooltip" data-placement="right" title="Produce scrolls">Writers:</td>
+                    <td></td>
+                    <td class="empty-td max-work-td"></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <td><span id="writer-quantity">0</span>/<span id="max-writer-quantity">0</span></td>
+                    <td><button type="button" id="add-writer-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Add a worker">&gt;</button></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <td class="empty-td max-work-td"></td>
+                    <!--<td><button type="button" data-toggle="tooltip" data-placement="right" title="Add 10 worker" id="add-10-dj-button">&gt;&gt;</button></td>-->
+                </tr>
+                </tbody>
+                <tbody>
+                <tr id="empty-row-before-job-funeral" class="empty-row table-primary">
+                    <td colspan="5"></td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr id="job-funeral-process-row">
+                    <td><img src="res/img/worker/people.png" alt="funeral worker" data-toggle="tooltip" data-placement="right" title="Funeral"/></td>
+                    <td data-toggle="tooltip" data-placement="right" title="2 people needs to dig graves">Funeral(x2):</td>
+                    <td class="empty-td max-work-td"></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <!--<td><button type="button" data-toggle="tooltip" data-placement="right" title="Remove 10 workers" id="remove-10-funeral-process-button">&lt;&lt;</button></td>-->
+                    <td><button type="button" id="remove-funeral-button" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Gives 2 lazybones">&lt;</button></td>
+                    <td id="funeral-process-quantity">0</td>
+                    <td><button type="button" id="add-funeral-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Needs 2 lazybones">&gt;</button></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <td class="empty-td max-work-td"></td>
+                    <!--<td><button type="button" data-toggle="tooltip" data-placement="right" title="Add 10 worker" id="add-10-funeral-process-button">&gt;&gt;</button></td>-->
+                </tr>
+                </tbody>
+                <tbody>
+                <tr id="empty-row-before-job-in-club" class="empty-row table-primary">
+                    <td colspan="5"></td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr id="job-dj-row">
+                    <td><img src="res/img/worker/singer.png" alt="dj worker" data-toggle="tooltip" data-placement="right" title="Musician"/></td>
+                    <td data-toggle="tooltip" data-placement="right" title="Increase people productivity by increasing their happiness">Ancient Djs:</td>
+                    <td></td>
+                    <td class="empty-td max-work-td"></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <td><span id="dj-quantity">0</span>/<span id="max-dj-quantity">0</span></td>
+                    <td><button type="button" id="add-dj-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Add a worker">&gt;</button></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <td class="empty-td max-work-td"></td>
+                    <!--<td><button type="button" data-toggle="tooltip" data-placement="right" title="Add 10 worker" id="add-10-dj-button">&gt;&gt;</button></td>-->
+                </tr>
+                <tr id="job-instructor-row">
+                    <td><img src="res/img/worker/gymnast-girl.png" alt="instructor worker" data-toggle="tooltip" data-placement="right" title="Instructor"/></td>
+                    <td data-toggle="tooltip" data-placement="right" title="Increase people productivity by increasing their health">Instructors:</td>
+                    <td></td>
+                    <td class="empty-td max-work-td"></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <td><span id="instructor-quantity">0</span>/<span id="max-instructor-quantity">0</span></td>
+                    <td><button type="button" id="add-instructor-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Add a worker">&gt;</button></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <td class="empty-td max-work-td"></td>
+                    <!--<td><button type="button" data-toggle="tooltip" data-placement="right" title="add 10 worker" id="add-10-instructor-button">&gt;&gt;</button></td>-->
+                </tr>
+                </tbody>
+                <tbody>
+                <tr id="empty-row-before-job-master" class="empty-row table-primary">
+                    <td colspan="5"></td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr id="job-weapon-master-row">
+                    <td><img src="res/img/worker/man.png" alt="instructor worker" data-toggle="tooltip" data-placement="right" title="Weapon master"/></td>
+                    <td data-toggle="tooltip" data-placement="right" title="Produce weapons">Weapon masters:</td>
+                    <td class="empty-td max-work-td"></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <td><button type="button" id="remove-weapon-master-button" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="right" title="Remove a worker">&lt;</button></td>
+                    <td><span id="weapon-master-quantity">0</span>/<span id="max-weapon-master-quantity">0</span></td>
+                    <td><button type="button" id="add-weapon-master-button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="right" title="Add a worker">&gt;</button></td>
+                    <td class="empty-td ten-work-td"></td>
+                    <td class="empty-td max-work-td"></td>
+                    <!--<td><button type="button" data-toggle="tooltip" data-placement="right" title="add 10 worker" id="add-10-instructor-button">&gt;&gt;</button></td>-->
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-striped table-sm table-dark" id="building-table">
+                <caption>Build</caption>
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="3">Type</th>
+                        <th>Description</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody id="build-table-tbody-storage">
+                    <tr id="build-grave-row">
+                        <td><img src="res/img/changes/grave.png" alt="grave img" data-toggle="tooltip" data-placement="right" title="Grave"/></td>
+                        <td><span id="grave-quantity">0</span></td>
+                        <td><button type="button" id="build-grave-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+1 empty grave">Grave</button></td>
+                        <td>+1 empty grave</td>
+                        <td>10<img src="res/img/common/branch.png" alt ="branch img"> 10<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                    <tr id="build-graveyard-row">
+                        <td><img src="res/img/bronze%20age/cemetery.png" alt="graveyard img" data-toggle="tooltip" data-placement="right" title="Graveyard"/></td>
+                        <td><span id="graveyard-quantity">0</span></td>
+                        <td><button type="button" id="build-graveyard-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+75 empty graves">Graveyard</button></td>
+                        <td>+75 empty graves</td>
+                        <td>1k<img src="res/img/common/branch.png" alt ="branch img"> 1k<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                    <tr id="build-scroll-row">
+                        <td><img src="res/img/changes/scroll.png" alt="scroll img" data-toggle="tooltip" data-placement="right" title="Scroll"/></td>
+                        <td><span class="scroll-quantity">0</span></td>
+                        <td><button type="button" id="build-scroll-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+5 space for knowledge">Scroll</button></td>
+                        <td>+<span id="build-scroll-definition">5</span> space for <img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                        <td>10<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                    <tr id="build-storage-granary-row">
+                        <td><img src="res/img/stone%20age/granary.png" alt="granary img" data-toggle="tooltip" data-placement="right" title="Granary"/></td>
+                        <td><span id="granary-quantity">0</span></td>
+                        <td><button type="button" id="build-storage-granary-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="increase food storage">Granary</button></td>
+                        <td>+<span class="build-resources-in-storage-definition">50</span> max food</td>
+                        <td>50<img src="res/img/common/branch.png" alt ="branch img"> 50<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                    <tr id="build-storage-pit-row">
+                        <td><img src="res/img/changes2/pit.png" alt="pit img" data-toggle="tooltip" data-placement="right" title="Pit"/></td>
+                        <td><span id="pit-quantity">0</span></td>
+                        <td><button type="button" id="build-storage-pit-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="increase storage for wood/stone">Pit</button></td>
+                        <td>+<span class="build-resources-in-storage-definition">50</span> max for <img src="res/img/common/branch.png" alt ="branch img">/<img src="res/img/common/stone.png" alt="stone img"></td>
+                        <td>50<img src="res/img/common/branch.png" alt ="branch img"> 50<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="empty-row-before-population-building" class="build-empty-row table-primary">
+                        <td colspan="5"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="build-population-tent-row">
+                        <td><img src="res/img/common/tent.png" alt="tent img" data-toggle="tooltip" data-placement="right" title="Tent"/></td>
+                        <td><span id="tent-quantity">0</span></td>
+                        <td><button type="button" id="build-tent-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+2 max population">Tent</button></td>
+                        <td>+2 max population</td>
+                        <td>20<img src="res/img/common/branch.png" alt ="branch img"></td>
+                    </tr>
+                    <tr id="build-population-hut-row">
+                        <td><img src="res/img/changes/hut.png" alt="hut img" data-toggle="tooltip" data-placement="right" title="Hut"/></td>
+                        <td><span id="hut-quantity">0</span></td>
+                        <td><button type="button" id="build-hut-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+5 max population">Bungalo</button></td>
+                        <td>+5 max population</td>
+                        <td>50<img src="res/img/common/branch.png" alt ="branch img"> 20<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                    <tr id="build-population-duplex-row">
+                        <td><img src="res/img/bronze%20age/duplex.png" alt="duplex img" data-toggle="tooltip" data-placement="right" title="Duplex"/></td>
+                        <td><span id="duplex-quantity">0</span></td>
+                        <td><button type="button" id="build-duplex-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+20 max population">Duplex</button></td>
+                        <td>+20 max population</td>
+                        <td>300<img src="res/img/common/branch.png" alt ="branch img"> 300<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="empty-row-before-knowledge-building" class="build-empty-row table-primary">
+                        <td colspan="5"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="build-knowledge-campfire-row">
+                        <td><img src="res/img/changes/campfire.png" alt="campfire img" data-toggle="tooltip" data-placement="right" title="Campfire"/></td>
+                        <td><span id="campfire-quantity">0</span></td>
+                        <td><button type="button" id="build-campfire-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+2 scientists">Campfire</button></td>
+                        <td>+2 scientists</td>
+                        <td>30<img src="res/img/common/branch.png" alt ="branch img"> 10<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                    <tr id="build-knowledge-dolmen-row">
+                        <td><img src="res/img/stone%20age/dolmen.png" alt="dolmen img" data-toggle="tooltip" data-placement="right" title="Dolmen"/></td>
+                        <td><span id="dolmen-quantity">0</span></td>
+                        <td><button type="button" id="build-dolmen-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+5 scientists">Dolmen</button></td>
+                        <td>+5 scientists</td>
+                        <td>80<img src="res/img/common/branch.png" alt ="branch img"> 80<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                    <tr id="build-knowledge-parthenon-row">
+                        <td><img src="res/img/bronze%20age/parthenon.png" alt="parthenon img" data-toggle="tooltip" data-placement="right" title="Parthenon"/></td>
+                        <td><span id="parthenon-quantity">0</span></td>
+                        <td><button type="button" id="build-parthenon-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+12 scientists">Parthenon</button></td>
+                        <td>+12 scientists</td>
+                        <td>150<img alt ="branch img" src="res/img/common/branch.png"> 300<img alt="stone img" src="res/img/common/stone.png"></td>
+                    </tr>
+                    <tr id="build-library-row">
+                        <td><img src="res/img/bronze%20age/library.png" alt="barrack img" data-toggle="tooltip" data-placement="right" title="Library"/></td>
+                        <td><span id="library-quantity">0</span></td>
+                        <td><button type="button" id="build-library-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+1 librarian">Library</button></td>
+                        <td>+1 librarian</td>
+                        <td>300<img src="res/img/common/branch.png" alt ="branch img"> 300<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="empty-row-before-build-club" class="build-empty-row table-primary">
+                        <td colspan="5"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="build-music-club-row">
+                        <td><img src="res/img/stone%20age/guitar.png" alt="music img" data-toggle="tooltip" data-placement="right" title="Music club"/></td>
+                        <td><span id="music-club-quantity">0</span></td>
+                        <td><button type="button" id="build-music-club-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="1 Dj makes 25 happy people">Music club</button></td>
+                        <td>+1 Dj(25 happy people)</td>
+                        <td>225<img src="res/img/common/branch.png" alt ="branch img"> 225<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                    <tr id="build-yoga-club-row">
+                        <td><img src="res/img/stone%20age/yoga.png" alt="yoga img" data-toggle="tooltip" data-placement="right" title="Yoga club"/></td>
+                        <td><span id="yoga-club-quantity">0</span></td>
+                        <td><button type="button" id="build-yoga-club-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="1 Instructor makes 25 healthy people">Yoga club</button></td>
+                        <td>+1 Instructor(25 healthy people)</td>
+                        <td>225<img src="res/img/common/branch.png" alt ="branch img"> 225<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                    <tr id="build-palace-row">
+                        <td><img src="res/img/stone%20age/palace.png" alt="palace img" data-toggle="tooltip" data-placement="right" title="Palace"/></td>
+                        <td><span id="palace-quantity">0</span></td>
+                        <td><button type="button" id="build-palace-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+5 dolmens/sport/music clubs">Palace</button></td>
+                        <td>+5 dolmens/sport/music clubs</td>
+                        <td>2,5k<img src="res/img/common/branch.png" alt ="branch img"> 2,5k<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="empty-row-before-build-war" class="build-empty-row table-primary">
+                        <td colspan="5"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr id="build-war-armory-row">
+                        <td><img src="res/img/bronze%20age/blacksmith.png" alt="barrack img" data-toggle="tooltip" data-placement="right" title="Armory"/></td>
+                        <td><span id="armory-quantity">0</span></td>
+                        <td><button type="button" id="build-armory-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+1 weapon master">Armory</button></td>
+                        <td>+1 weapon master</td>
+                        <td>300<img src="res/img/common/branch.png" alt ="branch img"> 300<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                    <tr id="build-war-barrack-row">
+                        <td><img src="res/img/stone%20age/barrack.png" alt="barrack img" data-toggle="tooltip" data-placement="right" title="Barrack"/></td>
+                        <td><span id="barrack-quantity">0</span></td>
+                        <td><button type="button" id="build-barrack-button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="+10 warriors">Barrack</button></td>
+                        <td>+10 warriors</td>
+                        <td>500<img src="res/img/common/branch.png" alt ="branch img"> 250<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="achievement-technology-section">
+            <section id="achievement-section" class="alert alert-success" role="alert" data-toggle="tooltip" title="Try to get all achievements.">
+                <span>Achievements(<span id="got-achievement-quantity-span">0</span>/12):</span>
+                <hr>
+                <span id="not-achievement">🙊🙈🙉 Not yet, please, do something.</span>
+            </section>
+            <section id="events-section">
+                <span>Events:</span>
+            </section>
+            <table id="technology-table" class="table table-striped table-sm table-dark">
+                <caption>New Ideas/Technologies</caption>
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="2">Idea</th>
+                        <th>Description</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="tech-changes-row">
+                        <td><img src="res/img/common/changes.png" alt="changes img" data-toggle="tooltip" data-placement="right" title="Changes"/></td>
+                        <td><button type="button" id="tech-changes-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Get new buildings and upgrades">Changes</button></td>
+                        <td>Get new buildings/upgrades</td>
+                        <td>10<img src="res/img/common/branch.png" alt ="branch img">10<img src="res/img/common/stone.png" alt="stone img"></td>
+                    </tr>
+                    <tr id="tech-agriculture-row">
+                        <td><img src="res/img/changes/agriculture.png" alt="agriculture img" data-toggle="tooltip" data-placement="right" title="Agriculture"/></td>
+                        <td><button type="button" id="tech-agriculture-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Improve ways to get food">Agriculture</button></td>
+                        <td>Increase farmer(<img src="res/img/common/berry.png" alt="food img">) production</td>
+                        <td>30<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-architecture-row">
+                        <td><img src="res/img/changes/sketch-white.png" alt="architecture img" data-toggle="tooltip" data-placement="right" title="Architecture"/></td>
+                        <td><button type="button" id="tech-architecture-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Unlock new buildings">Architecture</button></td>
+                        <td>Unlock new buildings</td>
+                        <td>30<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-funeral-row">
+                        <td><img src="res/img/common/funeral.png" alt="funeral img" data-toggle="tooltip" data-placement="right" title="Funeral"/></td>
+                        <td><button type="button" id="tech-funeral-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Unlock funeral process">Funeral</button></td>
+                        <td>Unlock funeral process</td>
+                        <td>30<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-changes2-row">
+                        <td><img src="res/img/common/changes.png" alt="changes img" data-toggle="tooltip" data-placement="right" title="Changes II"/></td>
+                        <td><button type="button" id="tech-changes2-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="More buildings and upgrades (II)">Changes II</button></td>
+                        <td>More buildings and upgrades (II)</td>
+                        <td>75<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-leadership-row">
+                        <td><img src="res/img/changes2/leadership.png" alt="leadership img" data-toggle="tooltip" data-placement="right" title="Leadership"/></td>
+                        <td><button type="button" id="tech-leadership-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Allows to group people">Leadership</button></td>
+                        <td>Allows to group people</td>
+                        <td>100<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-agriculture-2-row">
+                        <td><img src="res/img/changes/agriculture.png" alt="agriculture img" data-toggle="tooltip" data-placement="right" title="Agriculture"/></td>
+                        <td><button type="button" id="tech-agriculture-2-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Improve ways to get food (II)">Agriculture II</button></td>
+                        <td>Increase farmer(<img src="res/img/common/berry.png" alt="food img">) production (II)</td>
+                        <td>100<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-architecture-2-row">
+                        <td><img src="res/img/changes/sketch-white.png" alt="architecture img" data-toggle="tooltip" data-placement="right" title="Architecture II"/></td>
+                        <td><button type="button" id="tech-architecture-2-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Unlock new buildings">Architecture II</button></td>
+                        <td>Unlock new buildings (II)</td>
+                        <td>100<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-stone-age-row">
+                        <td><img src="res/img/changes2/troglodyte.png" alt="stone age img" data-toggle="tooltip" data-placement="right" title="Stone age"/></td>
+                        <td><button type="button" id="tech-stone-age-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Go to another age">Stone age</button></td>
+                        <td>Welcome to 2.5 millions y.a.</td>
+                        <td>300<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-architecture-3-row">
+                        <td><img src="res/img/changes/sketch-white.png" alt="architecture img" data-toggle="tooltip" data-placement="right" title="Architecture III"/></td>
+                        <td><button type="button" id="tech-architecture-3-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Unlock new buildings">Architecture III</button></td>
+                        <td>Unlock new buildings (III)</td>
+                        <td>250<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-music-row">
+                        <td><img src="res/img/stone%20age/music.png" alt="music img" data-toggle="tooltip" data-placement="right" title="Music"/></td>
+                        <td><button type="button" id="tech-music-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Unlock musical instruments">Music</button></td>
+                        <td>Unlock musical instruments</td>
+                        <td>250<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-sport-row">
+                        <td><img src="res/img/stone%20age/stretching-exercises.png" alt="sport img" data-toggle="tooltip" data-placement="right" title="Sport"/></td>
+                        <td><button type="button" id="tech-sport-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Unlock ways to increase health">Sport</button></td>
+                        <td>Unlock ways to increase health</td>
+                        <td>250<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-tools-row">
+                        <td><img src="res/img/stone%20age/tools.png" alt="tool img" data-toggle="tooltip" data-placement="right" title="Tools"/></td>
+                        <td><button type="button" id="tech-tools-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Unlock different tools/gadgets">Tools</button></td>
+                        <td>Unlock different tools/gadgets</td>
+                        <td>250<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-hoe-row">
+                        <td><img src="res/img/stone%20age/hoe.png" alt="hoe img" data-toggle="tooltip" data-placement="right" title="Hoe"/></td>
+                        <td><button type="button" id="tech-hoe-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Increase food production">Hoe</button></td>
+                        <td>Increase <img src="res/img/common/berry.png" alt="food img"> production</td>
+                        <td>300<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-axe-row">
+                        <td><img src="res/img/stone%20age/axe.png" alt="axe img" data-toggle="tooltip" data-placement="right" title="Axe"/></td>
+                        <td><button type="button" id="tech-axe-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Increase wood production">Axe</button></td>
+                        <td>Increase <img src="res/img/common/branch.png" alt ="branch img"> production</td>
+                        <td>300<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-pickaxe-row">
+                        <td><img src="res/img/stone%20age/pickaxe.png" alt="pickaxe img" data-toggle="tooltip" data-placement="right" title="Pickaxe"/></td>
+                        <td><button type="button" id="tech-pickaxe-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Increase stone production">Pickaxe</button></td>
+                        <td>Increase <img src="res/img/common/stone.png" alt="stone img"> production</td>
+                        <td>300<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-2-side-scroll-row">
+                        <td><img src="res/img/changes/scroll.png" alt="scroll img" data-toggle="tooltip" data-placement="right" title="2 side scroll"></td>
+                        <td><button type="button" id="tech-2-side-scroll-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Allows to use another side of scroll">2-side scrolls</button></td>
+                        <td>Allows to use another side of scroll</td>
+                        <td>10<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-bronze-age-row">
+                        <td><img src="res/img/stone%20age/orc.png" alt="orc img" data-toggle="tooltip" data-placement="right" title="Bronze age"/></td>
+                        <td><button type="button" id="tech-bronze-age-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Welcome to 2.5k y.a.">Bronze age</button></td>
+                        <td>Welcome to 2.5k y.a.</td>
+                        <td>1,2k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-architecture-4-row">
+                        <td><img src="res/img/changes/sketch-white.png" alt="architecture img" data-toggle="tooltip" data-placement="right" title="Architecture IV"/></td>
+                        <td><button type="button" id="tech-architecture-4-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="More buildings (IV)">Architecture IV</button></td>
+                        <td>More buildings (IV)</td>
+                        <td>1k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-wheel-row">
+                        <td><img src="res/img/bronze%20age/wheel.png" alt="orc img" data-toggle="tooltip" data-placement="right" title="Bronze age"/></td>
+                        <td><button type="button" id="tech-wheel-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Increase all production(+25%)">Wheel</button></td>
+                        <td>Increase all production(+25%)</td>
+                        <td>1k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-agriculture-3-row">
+                        <td><img src="res/img/changes/agriculture.png" alt="orc img" data-toggle="tooltip" data-placement="right" title="Bronze age"/></td>
+                        <td><button type="button" id="tech-agriculture-3-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Increase farmer production">Agriculture III</button></td>
+                        <td>Increase <img src="res/img/common/berry.png" alt="food img"> production</td>
+                        <td>1,5k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-leadership-2-row">
+                        <td><img src="res/img/changes2/leadership.png" alt="orc img" data-toggle="tooltip" data-placement="right" title="Bronze age"/></td>
+                        <td><button type="button" id="tech-leadership-2-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Hint: hire at least 10 leaders">Leadership II</button></td>
+                        <td>Hint: hire at least 10 leaders</td>
+                        <td>1,5k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-packaging-row">
+                        <td><img src="res/img/bronze%20age/icon.png" alt="orc img" data-toggle="tooltip" data-placement="right" title="Bronze age"/></td>
+                        <td><button type="button" id="tech-packaging-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Double space for pit/granary">Packaging</button></td>
+                        <td>Double space for pit/granary</td>
+                        <td>1,5k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-scouting-row">
+                        <td><img src="res/img/bronze%20age/map-location.png" alt="orc img" data-toggle="tooltip" data-placement="right" title="Bronze age"/></td>
+                        <td><button type="button" id="tech-scouting-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Allows to scout">Scouting</button></td>
+                        <td>Let's make a map, it allows the scouting</td>
+                        <td>1,5k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-weapon-row">
+                        <td><img src="res/img/stone%20age/spear.png" alt="weapon img" data-toggle="tooltip" data-placement="right" title="Weapon"/></td>
+                        <td><button type="button" id="tech-ancient-weapon-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Unlock ancient weapon">Ancient weapon</button></td>
+                        <td>Unlock tools to fight</td>
+                        <td>2k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <!--<tr id="tech-armory-row">-->
+                        <!--<td><img src="res/img/bronze%20age/blacksmith.png" alt="orc img" data-toggle="tooltip" data-placement="right" title="Bronze age"/></td>-->
+                        <!--<td><button type="button" id="tech-armory-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Allows to build weapon">Armory</button></td>-->
+                        <!--<td>Allows to build weapon</td>-->
+                        <!--<td>1,5k <img src="res/img/common/knowledge.png" alt="knowledge img"></td>-->
+                    <!--</tr>-->
+                    <tr id="tech-architecture-5-row">
+                        <td><img src="res/img/changes/sketch-white.png" alt="orc img" data-toggle="tooltip" data-placement="right" title="Bronze age"/></td>
+                        <td><button type="button" id="tech-architecture-5-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Design new buildings">Architecture V</button></td>
+                        <td>Design new buildings</td>
+                        <td>2,5k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-domestication-row">
+                        <td><img src="res/img/bronze%20age/fox.png" alt="orc img" data-toggle="tooltip" data-placement="right" title="Bronze age"/></td>
+                        <td><button type="button" id="tech-domestication-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Coming soon(Allows to tame the wild animals)">Domestication</button></td>
+                        <td>Coming soon(Allows to tame the wild animals)</td>
+                        <td>5k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-mysticism-row">
+                        <td><img src="res/img/bronze%20age/fortune-teller.png" alt="orc img" data-toggle="tooltip" data-placement="right" title="Bronze age"/></td>
+                        <td><button type="button" id="tech-mysticism-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Coming soon(Allows to contact with the undead)">Mysticism</button></td>
+                        <td>Coming soon(Allows to contact with the undead)</td>
+                        <td>5k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                    <tr id="tech-tool-age-row">
+                        <td><img src="res/img/stone%20age/orc.png" alt="orc img" data-toggle="tooltip" data-placement="right" title="Tool age"/></td>
+                        <td><button type="button" id="tech-tool-age-button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Coming soon">Tool age</button></td>
+                        <td>Coming soon</td>
+                        <td>5k<img src="res/img/common/knowledge.png" alt="knowledge img"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <p class="alert alert-success" data-toggle="tooltip" title="Please give us some feedback. ¯\_(ツ)_/¯ " role="alert">If you have any suggestions for balance, any ideas or find bugs, please let me know: alex.veselov14@yandex.ru</p>
+        </section>
+    </div>
+
+    <!-- MUSIC -->
+    <!--<embed src="res/music/erik-jackson-with-new-eyes-original-mix(mp3novinki.net).mp3" width="180" height="90" loop="true"-->
+    <!--autostart="true" hidden="true"/>-->
+
+    <!-- Modal -->
+    <div id="main-menu-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">＼(￣▽￣)／ Hi boss, say me your name</h4>
+                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                        <!--<span aria-hidden="true">&times;</span>-->
+                    <!--</button>-->
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="user-name-input" class="form-control-label">User name:</label>
+                            <input id="user-name-input" type="text" class="form-control">
+                            <input type="text" style="display: none;">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="main-menu-load-button" class="btn btn-primary load-button" data-dismiss="modal">Load</button>
+                    <button id="main-menu-new-game-button" type="button" class="btn btn-primary" data-dismiss="modal">New</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="get-food-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="getFoodModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="getFoodModalLabel">＼(￣▽￣)／ It's time to get some food</h4>
+                </div>
+                <div class="modal-body">
+                    <figure>
+                        <figcaption>Collect some food by clicking the button.</figcaption>
+                        <img src="res/img/instruction/Screenshot_1.png" alt="Getting food...1">
+                    </figure>
+                    <figure>
+                        <figcaption>15-20 will be enough.</figcaption>
+                        <img src="res/img/instruction/Screenshot_2.png" alt="Getting food...2">
+                    </figure>
+                    <p>If you understand everything, click ok</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="citizen-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="citizenModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="citizenModalLabel">＼(￣▽￣)／ Hi, boss. Let's talk about Citizens</h4>
+                </div>
+                <div class="modal-body">
+                    <figure>
+                        <figcaption>When you have enough food you can create a new citizen</figcaption>
+                        <img src="res/img/instruction/Screenshot_3.png" alt="Create citizen...1">
+                    </figure>
+                    <figure>
+                        <figcaption>Each citizen eats some food every second.</figcaption>
+                        <img src="res/img/instruction/Screenshot_4.png" alt="Create citizen...2">
+                    </figure>
+                    <figure>
+                        <figcaption>You can send them to work for example as a farmers.</figcaption>
+                        <img src="res/img/instruction/Screenshot_5.png" alt="Create citizen...3">
+                    </figure>
+                    <figure>
+                        <figcaption>After that your citizens will produce resources automatically.</figcaption>
+                        <img src="res/img/instruction/Screenshot_8.png" alt="Create citizen...4">
+                    </figure>
+                    <p>If you understand everything, click ok</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="building-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="buildingModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="buildingModalLabel">＼(￣▽￣)／ Hi, boss. Let's talk about Buildings</h4>
+                </div>
+                <div class="modal-body">
+                    <figure>
+                        <figcaption>When you have enough resources you can build new buildings.</figcaption>
+                        <img src="res/img/instruction/Screenshot_7.png" alt="Build building...1">
+                    </figure>
+                    <p>Each building gives you special bonus, which you can read.</p>
+                    <p>If you understand everything, click ok</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="technology-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="technologyModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="technologyModalLabel">＼(￣▽￣)／ Hi, boss. Let's talk about technologies</h4>
+                </div>
+                <div class="modal-body">
+                    <figure>
+                        <figcaption>When you have enough knowledge you can conduct a research.</figcaption>
+                        <img src="res/img/instruction/Screenshot_6.png" alt="Conduct a research...1">
+                    </figure>
+                    <p>Each research opens you new opportunities or bonuses.</p>
+                    <p>If you understand everything, click ok</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="save-load-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="saveLoadModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="saveLoadModalLabel">＼(￣▽￣)／ Hi, boss. Please wait a bit</h4>
+                </div>
+                <div class="modal-body">
+                    <figure>
+                        <figcaption>Wonder World, 2019.</figcaption>
+                        <img src="res/img/common/wide-wallpaper-1920x1080-018.jpg" alt="In process...">
+                    </figure>
+                    <p><i id="progress-p"></i></p>
+                    <div class="progress">
+                        <div id="save-load-progress" class="progress-bar bg-success progress-bar-animated progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="build-palace-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="saveLoadModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="buildPalaceModal">Hi, Boss. ＼(￣▽￣)／</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="build-palace-last-msg"></p>
+                    <figure>
+                        <img src="res/img/modal/big_mammoth.png" alt="In process...">
+                        <figcaption>The continue coming soon...</figcaption>
+                    </figure>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="zombie-apocalypse-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="saveLoadModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="zombieApocalypseModal">Hi, Boss. ＼(￣▽￣)／</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>You had too many unburied corpses, they killed your civilization....</p>
+                    <figure>
+                        <img src="res/img/modal/zombie-ap.jpg" alt="In process...">
+                        <figcaption>The continue coming soon...</figcaption>
+                    </figure>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cat-apocalypse-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="saveLoadModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-light bg-dark">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="catApocalypseModal">Hi, Boss. ＼(￣▽￣)／</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Cats and kittens captured your world</p>
+                    <figure>
+                        <img src="res/img/modal/cat-ap.png" alt="In process...">
+                        <figcaption>The continue coming soon...</figcaption>
+                    </figure>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio-modal">
+        <source src="res/sounds/modal.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-no">
+        <source src="res/sounds/no.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-build">
+        <source src="res/sounds/build.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-tech">
+        <source src="res/sounds/tech.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-attack">
+        <source src="res/sounds/attack.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-game-over">
+        <source src="res/sounds/game-over.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-change-ui">
+        <source src="res/sounds/changeUI.wav" type="audio/mpeg">
+    </audio>
+    <!--Event sounds-->
+    <audio id="audio-ok">
+        <source src="res/sounds/ok-event.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-ufo">
+        <source src="res/sounds/ufo-event.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-farmer">
+        <source src="res/sounds/farmer-event.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-weather">
+        <source src="res/sounds/weather-event.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-amazon">
+        <source src="res/sounds/amazon-event.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-elf">
+        <source src="res/sounds/elf-event.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio-blood-moon">
+        <source src="res/sounds/full-moon-event.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-birth-cycle">
+        <source src="res/sounds/baby-event.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-pet">
+        <source src="res/sounds/cat-event.wav" type="audio/mpeg">
+    </audio>
+
+    <audio id="audio-build-achievement">
+        <source src="res/sounds/achievement.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio-build-palace">
+        <source src="res/sounds/build-palace-2.wav" type="audio/mpeg">
+    </audio>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>
+    <script src="dist/main.js" defer></script>
+
+
+    <!-- Yandex.Metrika informer -->
+    <a href="https://metrika.yandex.com/stat/?id=54145261&amp;from=informer"
+       target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/54145261/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+                                           style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="54145261" data-lang="ru" /></a>
+    <!-- /Yandex.Metrika informer -->
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(54145261, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/54145261" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</body>
+</html>

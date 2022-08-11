@@ -1,0 +1,266 @@
+body {
+    background: url("../res/img/common/wide-wallpaper-1920x1080-018-opacity-75.jpg") no-repeat;
+    background-size: 100% 100%;
+    margin: 0 20px 0 20px !important;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#resource-people-section {
+    flex: 1 auto;
+    max-width: 355px;
+}
+
+section#work-building-section {
+    flex: 2 auto;
+    max-width: 600px;
+    margin-left: 5px;
+}
+
+section#achievement-technology-section {
+    flex: 1 2;
+    max-width: 500px;
+    margin-left: 5px;
+}
+
+@media all and (min-width: 1600px) {
+    .game-container {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .game-container {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .section:nth-child(n) {
+        max-width: 100%;
+    }
+}
+
+h2 {
+    color: #efca0f;
+}
+
+/*IMAGES*/
+header > img {
+    opacity: 0.7;
+    width: 525px;
+    height: 130px;
+}
+
+
+#goal-div img {
+    height: 25px;
+}
+
+table td:first-child img,
+#starvation-warning img {
+    height: 35px;
+}
+
+table img {
+    height: 19px;
+}
+
+#achievement-section img {
+    height: 25px;
+    margin-right: 5px;
+}
+
+#funeral-process-img {
+    position: absolute;
+    top: 265px;
+    left: 390px;
+    height: 40px;
+    z-index: 1;
+}
+
+#pause-button img {
+    height: 21px;
+}
+
+/* Yandex Metrica */
+a img {
+    position: absolute;
+    left: 465px;
+    top: 35px;
+    opacity: 0.1;
+}
+
+/*TABLES*/
+table:hover, header img:hover,
+#author:hover {
+    opacity: 0.7;
+}
+
+table {
+    opacity: 0.75;
+}
+
+#work-table,
+#world-table,
+.tab-content #people-productivity-table {
+    width: fit-content;
+}
+
+table caption {
+    caption-side: top;
+    color: white;
+}
+
+table td, table th {
+    vertical-align: middle !important;
+    border-top: 0 !important;
+}
+
+th {
+    text-align: center !important;
+}
+
+#create-new-citizen-td {
+    text-align: center;
+}
+
+td:last-child,
+#work-table td:nth-child(5) {
+    text-align: right;
+}
+
+#building-table td:last-child,
+#technology-table td:last-child,
+#work-table td:nth-child(2),
+#building-table td:nth-child(4) {
+    font-style: italic;
+}
+
+.table-primary td {
+    padding: 1px !important;
+}
+
+/*BUTTONS*/
+button {
+    width: 135px;
+    box-shadow: 0 0 3px 3px lightgoldenrodyellow;
+}
+
+button.btn {
+    padding: 3px;
+}
+
+#work-table button,
+#world-table button {
+    width: 35px;
+    padding: 0;
+    font-size: 10px;
+}
+
+#getFullButton {
+    position: absolute;
+    left: 300px;
+    top: 9px;
+}
+
+#create-worker-button,
+#create-10-worker-button,
+#create-max-worker-button {
+    width: fit-content;
+}
+
+#menu-button-section {
+    display: flex;
+}
+
+#menu-button-section button {
+    max-width: 95px;
+    margin: 5px;
+}
+
+button#pause-button {
+    max-width: 40px;
+}
+
+/* EVENTS */
+#events-section {
+    max-height: 200px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#events-section:hover {
+    overflow-y: auto;
+}
+
+#events-section div {
+    display: none;
+    margin: 0 0 2px 0 !important;
+    max-width: 480px;
+    padding: 5px 8px;
+}
+
+.alert {
+    opacity: 0.8;
+}
+
+.alert:hover {
+    opacity: 1;
+}
+
+#starvation-warning {
+    padding: 10px;
+}
+
+/*OTHERS*/
+#author {
+    position: absolute;
+    left: 200px;
+    top: 110px;
+    font-style: italic;
+    font-size: 11px;
+    opacity: 0.3;
+    color: white;
+    background: #676757;
+    padding: 2px 10px;
+    border-radius: 5%;
+}
+
+.modal img {
+    width: 465px;
+}
+
+#nav-world .progress {
+    height: 7px;
+}
+
+#scout-div img {
+    height: 32px;
+}
+
+#attack-div button {
+    margin: 5px;
+}
+
+.highlight {
+    box-shadow: 0 0 3px 8px #ffffff;
+}
+
+.highlight2 {
+    box-shadow: 0 0 3px 3px #b53b3b;
+}
+
+#build-palace-last-msg {
+    white-space: pre-wrap;
+}
+
+#build-palace-modal .close,
+#zombie-apocalypse-modal .close,
+#cat-apocalypse-modal .close {
+    width: auto;
+    box-shadow: none;
+}

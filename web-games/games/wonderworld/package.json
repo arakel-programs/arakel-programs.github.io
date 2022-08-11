@@ -1,0 +1,26 @@
+{
+  "name": "wonder_world",
+  "version": "1.0.0",
+  "description": "Strategy-clicker game(html, css, js, jQuery)",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --mode=development --watch",
+    "build": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmk1409/wonder_world.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmk1409/wonder_world/issues"
+  },
+  "homepage": "https://github.com/rmk1409/wonder_world#readme",
+  "devDependencies": {
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
