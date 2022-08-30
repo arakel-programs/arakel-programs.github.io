@@ -7,6 +7,15 @@ border-radius: 100px;
  margin: 0;
 }
 
+.img-bg{
+    background-image: url("bg.webp"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 button {
     -webkit-touch-callout:none;
     -webkit-user-select:none;
