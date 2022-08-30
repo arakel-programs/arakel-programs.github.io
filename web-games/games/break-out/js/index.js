@@ -24,7 +24,7 @@ function start(){
     var rightPressed = false,leftPressed = false;
     var ctx = c.getContext('2d');
     var b = new Ball(w/2,h/2,10,'white',ctx);
-    var p = new Paddle(w/2-140,h-30,200,30,'blue',ctx);
+    var p = new Paddle(w/2-140,h-30,200,30,'#FFFE5E',ctx);
     var lives = new Text('',20,20,ctx,'white');
     var livesNum = 3;
     var scoreNum = 0;
@@ -40,7 +40,7 @@ function start(){
         for (var j=0;j<bColumn;j++){
             var x = bPadding + (bPadding + bWidth) * j;
             var y = bPadding + (bPadding + bHeight) * i;
-            bricks[i][j] = new Brick(x,y,bWidth,bHeight,'blue',ctx);
+            bricks[i][j] = new Brick(x,y,bWidth,bHeight,'#3AADA9',ctx);
         }
     }
     var bx = 3, by = -3;
