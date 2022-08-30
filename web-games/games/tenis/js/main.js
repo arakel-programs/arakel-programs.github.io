@@ -129,7 +129,7 @@ function drawNet(){
 }
 
 function drawEverything(){
-    colorRect(0,0,canvas.width, canvas.height, 'black' );
+    colorRect(0,0,canvas.width, canvas.height, 'blue' );
 
     if(showingWinScreen){
 
@@ -149,8 +149,8 @@ function drawEverything(){
     colorRect(canvas.width-paddle_thickness1,y_paddlePostion1,paddle_thickness1, paddle_height1, 'white' );
     drawNet();
     //colorRect(x_ballPostion,200,10, 10, 'red' );
-    colorCircle(x_ballPostion, y_ballPostion, 10, 'red')
-    canvasContext.fillStyle = 'green'; 
+    colorCircle(x_ballPostion, y_ballPostion, 10, 'yellow')
+    canvasContext.fillStyle = 'white'; 
     canvasContext.fillText(player1Score, 100,100);
     canvasContext.fillText(player2Score, canvas.width-100, 100);
 }
