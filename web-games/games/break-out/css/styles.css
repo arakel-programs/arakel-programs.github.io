@@ -4,5 +4,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: black;
+}
+.img-bg{
+    background-image: url("../bg.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    outline: none;
 }

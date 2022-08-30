@@ -1,5 +1,5 @@
 function start(){
-    alert('Break out game made in Visual studio code by Mohammad Saadman Nuheen(MSN) \nUse A and D or Right and Left arrow keys to move the paddle!');
+    alert('Welcome to Breakout game \nUse A and D or Right and Left arrow keys to move the paddle!');
     var w = 750;
     var h = window.innerHeight - 20;
     var c = document.getElementById('c');
@@ -23,12 +23,12 @@ function start(){
     c.height = h;
     var rightPressed = false,leftPressed = false;
     var ctx = c.getContext('2d');
-    var b = new Ball(w/2,h/2,10,'green',ctx);
+    var b = new Ball(w/2,h/2,10,'white',ctx);
     var p = new Paddle(w/2-140,h-30,200,30,'blue',ctx);
-    var lives = new Text('',20,20,ctx,'green');
+    var lives = new Text('',20,20,ctx,'white');
     var livesNum = 3;
     var scoreNum = 0;
-    var score = new Text('',w-140,20,ctx,'green');
+    var score = new Text('',w-140,20,ctx,'white');
     var bricks = [];
     var bColumn = 6;
     var bRow = 3;
