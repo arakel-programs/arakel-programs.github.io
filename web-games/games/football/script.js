@@ -25,12 +25,12 @@ function opengame(){
   player1name = document.getElementById("name1").value;
   player2name = document.getElementById("name2").value;
   if(player1name == "" || player2name == ""){
-  alert("İSİM GİRİNİZ"); 
+  alert("PLEASE, ENTER NAME"); 
   canvas.style.display = "none";
   table.style.display = "none";
   }
   else if(player1name == "" && player2name == ""){
-  alert("İSİM GİRİNİZ");
+  alert("PLEASE, ENTER NAME");
   canvas.style.display = "none";
   table.style.display = "none";
   }
@@ -178,7 +178,7 @@ function checkBallBounds(){
 			reset();
       setTimeout(function(){
       logs.appendChild(logsMessages)
-      logsMessages.innerHTML += "Kırmızı takım Gol attı!<br>";
+      logsMessages.innerHTML += "Red team scored!<br>";
       logsMessages.style.color = "#c33";
       goals[0].style.display = "none";
       },1000);
@@ -194,7 +194,7 @@ function checkBallBounds(){
 			reset();
       setTimeout(function(){
       logs.appendChild(logsMessages)
-      logsMessages.innerHTML += "Mavi takım Gol attı!<br>";
+      logsMessages.innerHTML += "Blue team scored!<br>";
       logsMessages.style.color = "blue";
       goals[1].style.display = "none";
       },1000);
