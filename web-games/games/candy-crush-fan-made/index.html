@@ -1,19 +1,9 @@
-<!--
-CandyCrush
-Your Name: Edward Hughes
-Collaborators: nobody
--->
 <!DOCTYPE html>
 <html>
-<!--
-/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
- * Redistribution of original or derived work requires permission of course staff.
- */
--->
 
 	<head>
 		<meta charset="utf-8">
-		<title>Candy Crush</title>
+		<title>Candy Crush (Fan-Made) | Web-Games Arakel</title>
 		
 		<!-- Load style sheets -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
@@ -26,13 +16,14 @@ Collaborators: nobody
 		<!-- Load any supplemental Javascript libraries here -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js"></script>
+    	<link rel="icon" href="../../assets/images/jaqport/28.jpg">
 		<script src="candy.js"></script>
 		<script src="board.js"></script>
 		<script src="rules.js"></script>
 		<script src="handler.js"></script>
 	</head>
 
-	<body>
+	<body class="img-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3" id="firstColumn">
@@ -44,7 +35,7 @@ Collaborators: nobody
 				
 				<div class="col-md-6" id="mainColumn">
 					<div id="cover"></div>
-					<div id="gameBoard"></div>
+					<div class="bg-img" id="gameBoard"></div>
 					<canvas id="canvas" width="320" height="320">
 						<p>Canvas not supported on your browser.</p>
 					</canvas>
