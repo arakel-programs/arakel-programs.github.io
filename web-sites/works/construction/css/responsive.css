@@ -1,0 +1,166 @@
+/*
+    Construction Responsive
+*/
+
+@media (max-width: 1024px) {
+	
+}
+
+/* ---- Start of max-width 992px CSS ---- */
+@media (max-width: 992px) {
+    .sm-padding{ padding: 15px; }
+    .sm-br-none br{
+        display: none;
+    }
+    .fz-45{ font-size: 35px;}
+    .video-content{
+        padding: 0;
+    }
+    .sm-no-padding{
+        padding: 0;
+    }
+    .height-500, 
+    .height-550, 
+    .height-600, 
+    .height-650, 
+    .height-660, 
+    .height-670, 
+    .height-700, 
+    .height-750{
+        height: 450px;
+    }
+    .mainmenu li a{
+        font-size: 11px;
+    }
+    .wedding-content-block .ptb-95{
+        padding: 30px;
+    }
+    .content-block-full .ptb-115,
+    .content-block-full .entry-content{
+        padding: 45px 0;
+        margin-left: 15px;
+    }
+    .content-block-full h2 br{
+        display: none;
+    }
+    .tab-menus li a{
+        padding: 8px 15px;
+    }
+    .pricing-content.pl-50{ padding-left: 0; }
+
+}
+/* ---- End of max-width 992px CSS ---- */
+
+
+/* ---- Start of min-width 480px and max-width 768px CSS ---- */
+@media all and (min-width: 480px) and (max-width: 768px) {
+	
+}
+/* ---- End of min-width 480px and max-width 768px CSS ---- */
+
+
+/* ---- Start of max-width 767px CSS ---- */
+@media all and (max-width: 767px) {
+	body{ overflow: scroll; }
+    body, p{
+        font-size: 12px;
+    }
+    .padding{ padding: 60px 0; }
+    .padding-100, .padding-120{ padding: 80px 0; }
+    .fz-40, .fz-45, .fz-50{ font-size: 30px; }
+    .xs-padding{
+        padding: 15px;
+    }
+    .xs-text-left{ text-align: left;}
+    .xs-text-center{ text-align: center; }
+    .xs-no-padding{ padding: 0; }
+    .xs-ptb-50{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .xs-t-white{ color: #fff; }
+    .xs-br-none br{ display: none; }
+    .mb-xs-20{ margin-bottom: 20px!important; }
+    .mb-xs-10{ margin-bottom: 10px; }
+    .mb-100{ margin-bottom: 40px; }
+    .height-500, 
+    .height-550, 
+    .height-600, 
+    .height-650, 
+    .height-660, 
+    .height-670, 
+    .height-700, 
+    .height-750{
+        height: 400px;
+    }
+    .hero-w-form.height-600{
+        height: auto;
+    }
+    .js .slicknav_menu {
+        display:block;
+    }
+	.testi-content{
+		margin-left: 0;
+	}
+    .bg-color{
+        width: 100%;
+    }
+    .google-map{
+      height: 280px;
+    }
+    .filter-items .padding-10{ padding: 5px; }
+    .subs-custom .email-field{ line-height: 43px; }
+}
+/* ---- End of max-width 767px CSS ---- */
+
+
+/* ---- Start of max-width 480px CSS ---- */
+@media all and (max-width: 520px) {
+    .col-xs-6{
+        float: none;
+        width: 100%;
+    }
+    .counter-section .col-xs-6{
+        float: left;
+        width: 50%;
+    }
+    .food-menu .padding-50{
+        padding: 40px;
+    }
+    .menu_list li h4, .menu_list li span.price{
+        font-size: 16px;
+    }
+    .ptb-140{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .subs-custom .col-xs-8,
+    .subs-custom .col-xs-4{
+        width: 100%;
+        padding: 10px;
+    }
+    .subs-custom .b-btn{ margin: 0; }
+
+}
+/* ---- End of max-width 480px CSS ---- */
+
+
+/* ---- Start of max-width 420px CSS ---- */
+@media all and (max-width: 420px) {
+    .tab-container{
+        min-height: 330px;
+    }
+}
+/* ---- End of max-width 420px CSS ---- */
+
+
+/* ---- Start of max-width 380px CSS ---- */
+@media all and (max-width: 380px) {
+	h1.fz-45{
+		font-size: 20px;
+	}
+	h1.fz-60{
+		font-size: 30px;
+	}
+}
+/* ---- End of max-width 380px CSS ---- */
