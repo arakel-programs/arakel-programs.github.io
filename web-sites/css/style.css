@@ -331,9 +331,14 @@ button:focus {
   text-align: left; }
   @media (max-width: 1680px) {
     .banner-content {
-      text-align: center; } }
+      text-align: left; } } 
+    @media (max-width: 800px){
+    .banner-content {
+      text-align: center; }
+    }
   @media (max-width: 680px) {
     .banner-content {
+      text-align: center;
       padding: 48px 20px;
       background: #fff;
       margin: 0 15px; } }
