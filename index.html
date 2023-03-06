@@ -99,6 +99,33 @@
         a {
             text-decoration: none;
         }
+        .img-hover-txt{}
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(0,0,0,0.8);
+        }
+        .img-hover-txt:hover .overlay{
+          opacity: 1;
+        }
+        .overlay-text{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -240,7 +267,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D91a1a1a', en
                 <div class="t941__content t-col">
                     <div class="t941__textwrapper">
                         <div class="t941__title t-title t-title_sm " field="title" style="color:#ffffff;text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);">Hi, I'm Gor,<br>Wordpress<br>Developer</div>
-                        <div class="t941__descr t-descr t-descr_sm " field="descr" style="color:#f5f5f5;font-size:20px;">I love building<br>Wordpress Websites</div>
+                        <div class="t941__descr t-descr t-descr_sm " field="descr" style="color:#f5f5f5;font-size:20px;">I love create and build<br>Wordpress Websites</div>
                     </div>
                     <div class="t941__buttonwrapper t-btnwrapper"> <a href="#form" target="" class="t941__btn t-btn t-btn_md " style="color:#1a1a1a;border:1px solid #1a1a1a;background-color:#ffffff;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);"> <span class="t941__btn-title"> Contact
                             </span> </a> </div>
@@ -382,43 +409,91 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D91a1a1a', en
                     <div class="t827__grid-item t827__grid-item_mb-20 " style="width: 400px;" itemscope="" itemtype="http://schema.org/ImageObject">
                         <meta itemprop="image">
                         <meta itemprop="caption" content="Photo Arakel">
-                        <a href="https://yess24.ru" target="_blank">
-                            <img class="t827__image t-slds__img t-img" imgfield="gi_img__0" src="img/web-2.jpg" alt="Website Arakel / Yess24.ru" title="Website Arakel / Yess24.ru">
+                        <a href="https://arakel-programs.github.io/web-games/" class="img-hover-txt" target="_blank">
+                            <img class="t827__image t-slds__img t-img" imgfield="gi_img__0" src="img/web-2.jpg" alt="Website Arakel / Web-Games" title="Website Arakel / Web-Games">
+                            <div class="overlay">
+                                <h4 class="overlay-text mc">Web-Games<br>HTML, CSS, JS</h4>
+                            </div>
                         </a>
                     </div>
                     <div class="t827__grid-item t827__grid-item_mb-20 " style="width: 400px;">
                         <meta itemprop="image">
                         <meta itemprop="caption" content="Photo Arakel">
-                        <a href="https://yess24.ru" target="_blank">
+                        <a href="https://yess24.ru" class="img-hover-txt"  target="_blank">
                             <img class="t827__image t-slds__img t-img" imgfield="gi_img__1" src="img/web-1.jpg" alt="Website Arakel / Yess24.ru" title="Website Arakel / Yess24.ru">
+                            <div class="overlay">
+                                <h4 class="overlay-text mc">Yess24<br>WordPress</h4>
+                            </div>
                         </a>
                     </div>
                     <div class="t827__grid-item t827__grid-item_mb-20 " style="width: 400px;">
                         <meta itemprop="image">
                         <meta itemprop="caption" content="Photo Arakel">
-                        <a href="https://angybuonarroti.com/" target="_blank">
+                        <a href="https://angybuonarroti.com/" class="img-hover-txt" target="_blank">
                             <img class="t827__image t-slds__img t-img" imgfield="gi_img__2" src="img/web-3.jpg" alt="Website Arakel / AngyBuonarroti.com" title="Website Arakel / AngyBuonarroti.com">
+                            <div class="overlay">
+                                <h4 class="overlay-text mc">AngyBuonarroti<br>WordPress</h4>
+                            </div>
                         </a>
                     </div>
                     <div class="t827__grid-item t827__grid-item_mb-20 " style="width: 400px;">
                         <meta itemprop="image">
                         <meta itemprop="caption" content="Photo Arakel">
-                        <a href="https://dolma-armenia.com/" target="_blank">
-                            <img class="t827__image t-slds__img t-img" imgfield="gi_img__3" src="img/web-4.jpg" alt="Website Arakel / Dolma-Armenia.com" title="Website Arakel / Dolma-Armenia.com">
+                        <a href="http://armatura-web.vararak.com/" class="img-hover-txt" target="_blank">
+                            <img class="t827__image t-slds__img t-img" imgfield="gi_img__3" src="img/web-4.jpg" alt="Website Arakel / Mukti.com" title="Website Arakel / Mukti.com">
+                            <div class="overlay">
+                                <h4 class="overlay-text mc">Mukti<br>HTML, CSS, JS</h4>
+                            </div>
                         </a>
                     </div>
                     <div class="t827__grid-item t827__grid-item_mb-20 " style="width: 400px;">
                         <meta itemprop="image">
                         <meta itemprop="caption" content="Photo Arakel">
-                        <a href="https://angybuonarroti.com/" target="_blank">
-                            <img class="t827__image t-slds__img t-img" imgfield="gi_img__4" src="img/web-5.jpg" alt="Website Arakel / AngyBuonarroti.com" title="Website Arakel / AngyBuonarroti.com">
+                        <a href="https://haghartsin.com/" class="img-hover-txt" target="_blank">
+                            <img class="t827__image t-slds__img t-img" imgfield="gi_img__4" src="img/web-5.jpg" alt="Website Arakel / Haghartsin.com" title="Website Arakel / Haghartsin.com">
+                            <div class="overlay">
+                                <h4 class="overlay-text mc">Haghartsin<br>WordPress, HTML, CSS, JS</h4>
+                            </div>
                         </a>
                     </div>
                     <div class="t827__grid-item t827__grid-item_mb-20 " style="width: 400px;">
                         <meta itemprop="image">
                         <meta itemprop="caption" content="Photo Arakel">
-                        <a href="https://dolma-armenia.com/" target="_blank">
+                        <a href="https://dolma-armenia.com/" class="img-hover-txt" target="_blank">
                             <img class="t827__image t-slds__img t-img" imgfield="gi_img__5" src="img/web-6.jpg" alt="Website Arakel / Dolma-Armenia.com" title="Website Arakel / Dolma-Armenia.com">
+                            <div class="overlay">
+                                <h4 class="overlay-text mc">Dolma-Armenia<br>WordPress</h4>
+                            </div>
+                        </a>
+                    </div>          
+                    <div class="t827__grid-item t827__grid-item_mb-20 " style="width: 400px;" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="image">
+                        <meta itemprop="caption" content="Photo Arakel">
+                        <a href="https://play.google.com/store/apps/details?id=com.arakel.quizgeek" class="img-hover-txt" target="_blank">
+                            <img class="t827__image t-slds__img t-img" imgfield="gi_img__0" src="img/web-8.jpg" alt="Games Arakel / QuizGeek" title="Games Arakel / QuizGeek">
+                            <div class="overlay">
+                                <h4 class="overlay-text mc">QuizGeek<br>JAVA (Android)</h4>
+                            </div>
+                        </a>
+                    </div>          
+                    <div class="t827__grid-item t827__grid-item_mb-20 " style="width: 400px;">
+                        <meta itemprop="image">
+                        <meta itemprop="caption" content="Photo Arakel">
+                        <a href="http://azhdanak.vararak.com/" class="img-hover-txt"  target="_blank">
+                            <img class="t827__image t-slds__img t-img" imgfield="gi_img__1" src="img/web-7.jpg" alt="Website Arakel / Azhdanak" title="Website Arakel / Azhdanak">
+                            <div class="overlay">
+                                <h4 class="overlay-text mc">Azhdanak<br>HTML, CSS, JS</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="t827__grid-item t827__grid-item_mb-20 " style="width: 400px;">
+                        <meta itemprop="image">
+                        <meta itemprop="caption" content="Photo Arakel">
+                        <a href="https://2048.vararak.com/" class="img-hover-txt" target="_blank">
+                            <img class="t827__image t-slds__img t-img" imgfield="gi_img__2" src="img/web-9.jpg" alt="Website Arakel / 2048" title="Website Arakel / 2048">
+                            <div class="overlay">
+                                <h4 class="overlay-text mc">2048<br>HTML, CSS, JS</h4>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -497,7 +572,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D91a1a1a', en
                         <div class="t906__wrapper">
                             <div class="t906__col t-col_9 " data-hook-content="covercontent">
                                 <div class="t906__title t-title t-title_sm" style="" field="title">
-                                    <div style="text-align: left;" data-customstyle="yes">Knowledge in languages:<br>HTML, CSS, JS, PHP<br><br>Knowledge CMS:<br>Wordpress.</div>
+                                    <div style="text-align: left;" data-customstyle="yes">Knowledge in languages:<br>HTML, CSS, JS, PHP, Java(Android).<br><br>Knowledge CMS:<br>Wordpress.</div>
                                 </div>
                             </div>
                             <div class="t906__col t-col_100 t-prefix_3"> </div>
