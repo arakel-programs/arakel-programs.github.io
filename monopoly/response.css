@@ -1,0 +1,72 @@
+
+@media screen and (max-width: 420px) {
+    h3.subtitle {
+        font-size: 65px;
+        line-height: 90px;
+    }
+    h1.title{
+        border-radius: 12px;
+    }
+    h1.title span {
+        line-height: 130px;
+        font-size: 110px;
+        border-radius: 10px;
+    }
+    h1.title span::after {
+        left: calc(50% - 420px);
+        width: 100px;
+        height: 100px;
+        font-size: 60px;
+        line-height: 100px;
+    }
+}
+
+@media screen and (max-width: 1026px) and (max-height: 1368px) and (min-width: 1022px) and (min-height: 1364px) {
+    h1.title span::after{
+        left: calc(50% - 345px);
+    }
+    #moneybarwrap{
+        min-width: 30px;
+        top: 0px;
+        right: -65px;
+    }
+}
+
+@media screen and (max-width: 822px) and (max-height: 1182px) and (min-width: 818px) and (min-height: 1178px) {
+    h1.title span::after{
+        left: calc(50% - 325px);
+    }
+    #moneybarwrap{
+        min-width: 30px;
+        top: 0px;
+        right: -65px;
+    }
+}
+
+@media screen and (max-width: 770px) and (max-height: 1026px) and (min-width: 766px) and (min-height: 1022px) {
+    h3.subtitle {
+        font-size: 50px;
+        line-height: 90px;
+    }
+    h1.title span {
+        line-height: 115px;
+        font-size: 100px;
+    }
+    .sel-num{
+        font-size: 35px;
+        line-height: 50px;
+        width: 50%;
+    }
+    .sel-num select{
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    .player-input{
+        
+    }
+    #moneybarwrap{
+        min-width: 30px;
+        top: 0px;
+        right: -65px;
+    }
+}
