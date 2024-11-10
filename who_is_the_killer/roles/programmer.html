@@ -25,6 +25,32 @@
             <option value="es">Español</option>
             <!-- Add more languages as needed -->
         </select>
-        <img src="../assets/img/dev_card.png">
-        <script src="assets/js/roles.js"></script>
+        <img id="language-image" src="../assets/img/dev_card.png" alt="Language Image" />
+        <script>
+            // Function to update the image based on the selected language
+            function updateImageBasedOnLanguage(language) {
+                const languageImage = document.getElementById('language-image');
+                
+                // Map each language to a specific image
+                const images = {
+                    en: "../assets/img/dev_card.png",
+                    es: "../assets/img/es/dev_card.png",
+                    ru: "../assets/img/ru/dev_card.png",
+                    am: "../assets/img/am/dev_card.png"
+                    // Add more languages and their corresponding images here
+                };
+
+                // Update the image source based on the selected language
+                languageImage.src = images[language] || images['en']; // Default to English image if not found
+            }
+
+            // Event listener for language selection dropdown
+            document.getElementById('language-select').addEventListener('change', function() {
+                const selectedLanguage = this.value;
+                updateImageBasedOnLanguage(selectedLanguage);
+            });
+
+            // Initialize with default language image (optional)
+            updateImageBasedOnLanguage('en');
+        </script>
     </body>
