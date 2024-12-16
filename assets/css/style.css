@@ -5636,3 +5636,12 @@ a.wp-block-button__link {
 		text-align: center!important;
 	}
 }
+.collapsed-prod {
+	display: none;
+}
+.mr-t-50 {
+	margin-top: 50px;
+}
+.mr-t-150 {
+	margin-top: 150px;
+}
