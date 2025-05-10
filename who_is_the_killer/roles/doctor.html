@@ -13,19 +13,29 @@
         <meta property="og:title" content="Who is the Killer">
         <meta property="og:description" content="Uncover the mystery in 'Who is the Killer' – an engaging detective experience. Can you find the culprit?">
         <meta property="og:image" content="../assets/img/favicon.jpg">
-        <!-- <meta property="og:url" content="https://yourwebsite.com/who-is-the-killer"> -->
+        <meta property="og:url" content="https://arakel-programs.github.io/who_is_the_killer">
         <meta property="og:type" content="website">
     </head>
     <body>
-        <label for="language-select">Select Language:</label>
-        <select id="language-select">
-            <option value="en">English</option>
-            <option value="ru">Русский</option>
-            <option value="am">Հայերեն</option>
-            <option value="es">Español</option>
-            <!-- Add more languages as needed -->
-        </select>
-        <img id="language-image" src="../assets/img/doc_card.png" alt="Language Image" />
+        <header>
+            <label for="language-select">Select Language:</label>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="ru">Русский</option>
+                <option value="am">Հայերեն</option>
+            </select>
+        </header>
+        <img id="language-image" src="../assets/img/doc_card.png" alt="Language Image" />  
+        <div class="btn-box">
+            <a class="button-inst" id="inst-btn" href="../instruction.html" target="_blank">Instructions</a>
+            <a class="button-inst" id="new-btn" href="../index.html">New Game</a>
+        </div>   
+        <footer>
+            <p>&copy; 2024 - <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> <a href="https://arakel-programs.github.io/" target="_blank">Arakel</a>. All rights reserved. <a href="../privacy-policy.html" target="_blank">Privacy Policy</a></p>
+        </footer>
         <script>
             // Function to update the image based on the selected language
             function updateImageBasedOnLanguage(language) {
@@ -36,7 +46,9 @@
                     en: "../assets/img/doc_card.png",
                     es: "../assets/img/es/doc_card.png",
                     ru: "../assets/img/ru/doc_card.png",
-                    am: "../assets/img/am/doc_card.png"
+                    am: "../assets/img/am/doc_card.png",
+                    fr: "../assets/img/fr/doc_card.png",
+                    de: "../assets/img/de/doc_card.png"
                     // Add more languages and their corresponding images here
                 };
 
