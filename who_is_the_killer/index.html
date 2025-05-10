@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Dive into the mystery with 'Who is the Killer,' an immersive experience that challenges you to uncover the clues and reveal the culprit.">
+        <meta name="keywords" content="mystery, detective game, crime solving, whodunit, interactive story, puzzle game">
+        <meta name="author" content="Arakel">
+        <title>Who is the killer</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" href="assets/img/favicon.jpg" type="image/x-icon">
+        <!-- Open Graph metadata for better sharing on social media -->
+        <meta property="og:title" content="Who is the Killer">
+        <meta property="og:description" content="Uncover the mystery in 'Who is the Killer' – an engaging detective experience. Can you find the culprit?">
+        <meta property="og:image" content="assets/img/favicon.jpg">
+        <meta property="og:url" content="https://arakel-programs.github.io/who_is_the_killer">
+        <meta property="og:type" content="website">
+    </head>
+<body>
+    <div class="container">
+        <div class="top">
+            <header>
+                <h1 id="title-lang">Who is the Killer ?</h1>
+                <p id="subtitle-lang">Welcome, Detective! Click on the button to begin your investigation and uncover the mystery.</p>
+                <label for="language-select">Select Language:</label>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="ru">Русский</option>
+                    <option value="am">Հայերեն</option>
+                </select>
+            </header>
+        </div>
+        <div class="middle">
+            <button class="button-start" id="start-button" onclick="goToRandomLink()">Start the Game</button>
+        </div>
+        <div class="bottom">
+            <a class="button-inst" id="inst-btn" href="instruction.html" target="_blank">Instructions</a>
+            <footer>
+                <p>&copy; 2024 - <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> <a href="https://arakel-programs.github.io/" target="_blank">Arakel</a>. All rights reserved. <a href="privacy-policy.html" target="_blank">Privacy Policy</a></p>
+            </footer>
+        </div>
+    </div>
+
+  <script>
+    // Button label translations
+    const buttonLabels = {
+        en: "Start the Game",
+        ru: "Начать игру",
+        am: "Սկսել խաղը",
+        es: "Iniciar el juego",
+        de: "Spiel starten",
+        fr: "Commencer le jeu"
+    };
+    const titleText = {
+        en: "Who is the Killer?",
+        ru: "Кто убийца?",
+        am: "Ո՞վ է սպանողը։",
+        es: "¿Quién es el asesino?",
+        de: "Wer ist der Mörder?",
+        fr: "Qui est le tueur ?"
+    };
+    const subtitleText = {
+        en: "Welcome, Detective! Click on the button to begin your investigation and uncover the mystery.",
+        ru: "Добро пожаловать, детектив! Нажмите на кнопку, чтобы начать расследование и раскрыть тайну.",
+        am: "Բարի գալուստ, դետեկտիվ։ Սեղմեք կոճակը՝ ձեր հետաքննությունը սկսելու և առեղծվածը բացահայտելու համար։",
+        es: "¡Bienvenido, detective! Haz clic en el botón para comenzar tu investigación y descubrir el misterio.",
+        de: "Willkommen, Detektiv! Klicken Sie auf die Schaltfläche, um Ihre Untersuchung zu beginnen und das Geheimnis zu lüften.",
+        fr: "Bienvenue, détective ! Cliquez sur le bouton pour commencer votre enquête et percer le mystère."
+    };
+    const instBtn = {
+        en: "Instructions",
+        ru: "Инструкции",
+        am: "Հրահանգներ",
+        es: "Instrucciones",
+        de: "Anleitung",
+        fr: "Instructions"
+    };
+
+    // Update button text based on language selection
+    function updateButtonText(language) {
+        const startButton = document.getElementById('start-button');
+        const titleLang = document.getElementById('title-lang');
+        const subtitleLang = document.getElementById('subtitle-lang');
+        const instLang = document.getElementById('inst-btn');
+        startButton.textContent = buttonLabels[language] || buttonLabels['en'];
+        titleLang.textContent = titleText[language] || titleText['en'];
+        subtitleLang.textContent = subtitleText[language] || subtitleText['en'];
+        instLang.textContent = instBtn[language] || instBtn['en'];
+    }
+
+    // Listen for language changes
+    document.getElementById('language-select').addEventListener('change', function () {
+        const selectedLanguage = this.value;
+        updateButtonText(selectedLanguage);
+    });
+
+    // Initialize with default text
+    updateButtonText('en');
+</script>
+
+  <script>
+    const links = [
+      "/roles/business.html",
+      "/roles/chef.html",
+      "/roles/doctor.html",
+      "/roles/housekeeper.html",
+      "/roles/journalist.html",
+      "/roles/jurist.html",
+      "/roles/killer.html",
+      "/roles/police.html",
+      "/roles/programmer.html",
+      "/roles/singer.html",
+      "/roles/waiter.html",
+      "/roles/worker.html"
+    ];
+
+    function goToRandomLink() {
+      const randomIndex = Math.floor(Math.random() * links.length);
+      window.location.href = links[randomIndex];
+    }
+  </script>
+</body>
+</html>
