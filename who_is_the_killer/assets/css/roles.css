@@ -9,10 +9,14 @@ body {
     text-align: center;
 }
 
+header {
+    padding: 20px;
+    color: #fff;
+}
 /* Style for the <select> dropdown */
 #language-select {
     appearance: none; /* Remove default styling */
-    padding: 10px 16px;
+    padding: 10px 30px;
     font-size: 1em;
     border: 2px solid #f46b45;
     border-radius: 5px;
@@ -36,4 +40,46 @@ body {
 #language-select:focus {
     border-color: #eea849;
     box-shadow: 0 0 5px rgba(238, 168, 73, 0.5);
+}
+/* Footer styling */
+footer {
+    color: #fff;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+.btn-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px;
+}
+.button-inst{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    transition: .5s;
+    margin: 0 5px;
+}
+.button-inst:hover, .button-inst:focus{
+    border-color: linear-gradient(to bottom right, #eea849, #f46b45);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
+    color: #f46b45;
+    background: #fff;
 }
