@@ -5059,6 +5059,15 @@ a.wp-block-button__link {
 	background: #eaeaea;
 }
 
+.project-links{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:10px;
+  flex-direction: column;
+}
+
+
 /**
 * Responsive
 **/
