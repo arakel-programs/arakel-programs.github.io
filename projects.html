@@ -43,6 +43,16 @@
 	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
   <link rel="apple-touch-icon" href="assets/images/favicon.png">
 
+
+<style>
+  .projects-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:20px 0 10px;flex-wrap:wrap;}
+  .projects-search{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:10px 12px;min-width:260px;box-shadow:0 6px 20px rgba(0,0,0,.04);}
+  .projects-search input{border:0;outline:none;background:transparent;width:100%;font-size:14px;}
+  .projects-sort{display:flex;align-items:center;gap:10px;}
+  .projects-sort select{border:1px solid rgba(0,0,0,.08);border-radius:10px;padding:8px 10px;background:#fff;outline:none;}
+  .projects-no-results{padding:18px 0;color:#555;text-align:center;}
+</style>
+
 </head>
 
 <body class="home light-skin">
@@ -161,498 +171,512 @@
             <!-- Section - Works -->
 			<section class="lui-section lui-gradient-top" id="works-section">
 
-                <!-- Heading -->
-                <div class="lui-heading">
-                  <div class="container">
+        <!-- Heading -->
+        <div class="lui-heading">
+          <div class="container">
         
-                    <div class="m-titles align-center">
-                      <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
-                        <span> Portfolio </span>
-                      </h2>
-                      <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
-                        <span> my <b>Cases</b>
-                        </span>
-                      </div>
-                    </div>
+            <div class="m-titles align-center">
+              <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> Portfolio </span>
+              </h2>
+              <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words" data-animate="active">
+                <span> my <b>Cases</b>
+                </span>
+              </div>
+            </div>
         
-                  </div>
-                        </div>
-        
-                <!-- Works -->
-                        <div class="v-line v-line-right">
-                  <div class="container">
-        
-                    <div class="works-box">
-                      <div class="filter-links scrolla-element-anim-1 scroll-animate" data-animate="active">
-                        <a href="#" class="lui-subtitle active" data-href=".works-col"> All </a>
-                        <a href="#" class="lui-subtitle" data-href=".sorting-web"> Web </a>
-                        <a href="#" class="lui-subtitle" data-href=".sorting-backend"> Backend </a>
-                        <a href="#" class="lui-subtitle" data-href=".sorting-game-dev"> Game Dev </a>
-                        <a href="#" class="lui-subtitle" data-href=".sorting-security"> Security </a>
-                        <a href="#" class="lui-subtitle" data-href=".sorting-android"> Android </a>
-                      </div>
-                      <div class="works-items works-masonry-items row">
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-web">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://arakel-programs.github.io/web-games/" target="_blank">
-                                  <img decoding="async" src="assets/images/work-1.jpg" alt="Web Games" >
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Web </span>
-                              <h5 class="name">
-                                <a href="https://arakel-programs.github.io/web-games/" target="_blank">Web Games</a>
-                              </h5>
-                              <div class="text">
-                                <p>Interactive browser-based game collection built with vanilla JavaScript, featuring modular architecture, reusable components, and optimized performance.<br><br><br></p>
-                              </div>
-                              <a href="https://arakel-programs.github.io/web-games/" target="_blank" class="lnk">See project</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-security">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://github.com/arakel-programs/NetCrypt" target="_blank">
-                                  <img decoding="async" src="assets/images/work-security.jpg" alt="Secure Chat App">
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Security </span>
-                              <h5 class="name">
-                                <a href="https://github.com/arakel-programs/NetCrypt" target="_blank">Secure Encrypted Chat</a>
-                              </h5>
-                              <div class="text">
-                                <p>End-to-end encrypted messaging system using RSA (2048-bit), AES session encryption, Diffie-Hellman key exchange, and socket-based communication.</p>
-                                <p>Tech: Python • RSA • AES • Sockets • Tkinter</p>
-                              </div>
-                              <a href="https://github.com/arakel-programs/NetCrypt" target="_blank" class="lnk">Private Repository</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://github.com/arakel-programs/QuiZGeeK/releases/tag/v1.0.0" target="_blank" rel="noopener">
-                                  <img decoding="async" src="assets/images/work-4.jpg" alt="QuiZGeeK">
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Android </span>
-                              <h5 class="name">
-                                <a href="https://github.com/arakel-programs/QuiZGeeK/releases/tag/v1.0.0" target="_blank" rel="noopener">QuiZGeeK</a>
-                              </h5>
-                              <div class="text">
-                                <p>Android trivia app built with Java, featuring structured question flow, scoring system, and clean activity lifecycle handling.</p>
-                                <p>Tech: Java • Android SDK • XML • Gradle</p>
-                              </div>
-                              <div class="project-links">
-                                <a href="https://github.com/arakel-programs/QuiZGeeK/releases/tag/v1.0.0" target="_blank" rel="noopener" class="lnk">GitHub</a>
-                                <a href="https://github.com/arakel-programs/QuiZGeeK/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener" class="lnk">Download APK</a>
-                              </div>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-                        
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-backend">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://github.com/arakel-programs/GameVault" target="_blank">
-                                  <img decoding="async" src="assets/images/work-backend.jpg" alt="GameVault API">
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Backend </span>
-                              <h5 class="name">
-                                <a href="https://github.com/arakel-programs/GameVault" target="_blank">GameVault API</a>
-                              </h5>
-                              <div class="text">
-                                <p>FastAPI-based REST system with SQLite integration, barcode scanning support, and structured API endpoints for game collection management.</p>
-                                <p>Tech: FastAPI • SQLite • REST API • JSON</p>
-                              </div>
-                              <a href="https://github.com/arakel-programs/GameVault" target="_blank" class="lnk">Private Repository</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-game-dev">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://github.com/arakel-programs/ushio-to-tora" target="_blank">
-                                  <img decoding="async" src="assets/images/work-game.jpg" alt="2D Game System Prototype">
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Game Development </span>
-                              <h5 class="name">
-                                <a href="https://github.com/arakel-programs/ushio-to-tora" target="_blank">2D RPG Battle System Prototype</a>
-                              </h5>
-                              <div class="text">
-                                <p>Modular 2D RPG system developed in Godot using C#, implementing combat logic, player state machines, event-driven architecture, and scalable scene management.</p>
-                              </div>
-                              <a href="https://github.com/arakel-programs/ushio-to-tora" target="_blank" class="lnk">Private Repository</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android sorting-game-dev">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://github.com/arakel-programs/SuperheroesCrush/releases/tag/v1.0.0" target="_blank" rel="noopener">
-                                  <img decoding="async" src="assets/images/work-12.jpg" alt="SuperheroesCrush">
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Android / Game Dev </span>
-                              <h5 class="name">
-                                <a href="https://github.com/arakel-programs/SuperheroesCrush/releases/tag/v1.0.0" target="_blank" rel="noopener">
-                                  SuperheroesCrush
-                                </a>
-                              </h5>
-                              <div class="text">
-                                <p>
-                                  Fast-paced Android arcade game built with Java, featuring score tracking,
-                                  level progression, interactive gameplay mechanics, and optimized UI performance.
-                                </p>
-                              </div>
-                              <div class="project-links">
-                                <a href="https://github.com/arakel-programs/SuperheroesCrush/releases/tag/v1.0.0" target="_blank" class="lnk">GitHub</a>
-                                <a href="https://github.com/arakel-programs/SuperheroesCrush/releases/download/v1.0.0/app-release.apk" target="_blank" class="lnk">Download APK</a>
-                              </div>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-web">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://moviohub.github.io/web/" target="_blank">
-                                  <img decoding="async" src="assets/images/work-2.jpg" alt="Movio" >
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Front-End </span>
-                              <h5 class="name">
-                                <a href="https://moviohub.github.io/web/" target="_blank">Movio</a>
-                              </h5>
-                              <div class="text">
-                                <p>Designed and developed 'Movio', featuring HTML/CSS/JS games for an interactive online experience.</p>
-                              </div>
-                              <a href="https://moviohub.github.io/web/" target="_blank" class="lnk">See project</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android ">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.spaceflight" target="_blank">
-                                  <img decoding="async" src="assets/images/work-5.jpg" alt="SpaceWars: Rebels vs Empire" >
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Android </span>
-                              <h5 class="name">
-                                <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.spaceflight" target="_blank">SpaceWars: Rebels vs Empire</a>
-                              </h5>
-                              <div class="text">
-                                <p>Crafted 'SpaceWars: Rebels vs Empire' game for Android using Java, offering engaging trivia challenges for users.</p>
-                              </div>
-                              <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.spaceflight" target="_blank" class="lnk">See project</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-web">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://honeyandnuts.github.io/web/" target="_blank">
-                                  <img decoding="async" src="assets/images/work-3.jpg" alt="Honey & Nuts" >
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Front-End </span>
-                              <h5 class="name">
-                                <a href="https://honeyandnuts.github.io/web/" target="_blank">Honey & Nuts</a>
-                              </h5>
-                              <div class="text">
-                                <p>Designed and developed 'Honey & Nuts', featuring HTML/CSS/JS games for an interactive online experience.</p>
-                              </div>
-                              <a href="https://honeyandnuts.github.io/web/" target="_blank" class="lnk">See project</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android ">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.slidethenumber" target="_blank">
-                                  <img decoding="async" src="assets/images/work-7.jpg" alt="SlideTheNumber" >
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Android </span>
-                              <h5 class="name">
-                                <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.slidethenumber" target="_blank">SlideTheNumber</a>
-                              </h5>
-                              <div class="text">
-                                <p>Crafted 'SlideTheNumber: Rebels vs Empire' game for Android using Java, offering engaging trivia challenges for users.</p>
-                              </div>
-                              <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.slidethenumber" target="_blank" class="lnk">See project</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-web">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://daily-box.github.io/web/" target="_blank">
-                                  <img decoding="async" src="assets/images/work-14.jpg" alt="DailyBox" >
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Front-End </span>
-                              <h5 class="name">
-                                <a href="https://daily-box.github.io/web/" target="_blank">DailyBox</a>
-                              </h5>
-                              <div class="text">
-                                <p>Designed and developed 'DailyBox', featuring HTML/CSS/JS games for an interactive online experience.</p>
-                              </div>
-                              <a href="https://daily-box.github.io/web/" target="_blank" class="lnk">See project</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android ">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://play.google.com/store/apps/details?id=com.arakel.progrmas.feedthefish" target="_blank">
-                                  <img decoding="async" src="assets/images/work-8.jpg" alt="Feed the Fish" >
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Android </span>
-                              <h5 class="name">
-                                <a href="https://play.google.com/store/apps/details?id=com.arakel.progrmas.feedthefish" target="_blank">Feed the Fish</a>
-                              </h5>
-                              <div class="text">
-                                <p>Crafted 'Feed the Fish' game for Android using Kotlin, offering engaging trivia challenges for users.</p>
-                              </div>
-                              <a href="https://play.google.com/store/apps/details?id=com.arakel.progrmas.feedthefish" target="_blank" class="lnk">See project</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-web">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://arakel-programs.github.io/who_is_the_killer/" target="_blank">
-                                  <img decoding="async" src="assets/images/work-13.jpg" alt="who is the killer?" >
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Front-End </span>
-                              <h5 class="name">
-                                <a href="https://arakel-programs.github.io/who_is_the_killer/" target="_blank">Who is the killer?</a>
-                              </h5>
-                              <div class="text">
-                                <p>Designed and developed 'Who is the killer?', featuring HTML/CSS/JS games for an interactive online experience.</p>
-                              </div>
-                              <a href="https://arakel-programs.github.io/who_is_the_killer/" target="_blank" class="lnk">See project</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android ">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.supertictactoe" target="_blank">
-                                  <img decoding="async" src="assets/images/work-9.jpg" alt="SuperTicTacToe" >
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Android </span>
-                              <h5 class="name">
-                                <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.supertictactoe" target="_blank">SuperTicTacToe</a>
-                              </h5>
-                              <div class="text">
-                                <p>Crafted 'SuperTicTacToe' game for Android using Java, offering engaging trivia challenges for users.</p>
-                              </div>
-                              <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.supertictactoe" target="_blank" class="lnk">See project</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android ">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.just2048" target="_blank">
-                                  <img decoding="async" src="assets/images/work-10.jpg" alt="Just 2048" >
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Android </span>
-                              <h5 class="name">
-                                <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.just2048" target="_blank">Just 2048</a>
-                              </h5>
-                              <div class="text">
-                                <p>Crafted 'Just 2048' game for Android using Java, offering engaging trivia challenges for users.</p>
-                              </div>
-                              <a href="https://play.google.com/store/apps/details?id=am.arakel.programs.just2048" target="_blank" class="lnk">See project</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                        <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android ">
-                          <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
-                            <div class="image">
-                              <div class="img">
-                                <a href="https://play.google.com/store/apps/details?id=com.arakel.progrmas.flysurvival" target="_blank">
-                                  <img decoding="async" src="assets/images/work-11.jpg" alt="FlySurvivale" >
-                                  <span class="overlay"></span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="desc">
-                              <span class="category"> Android </span>
-                              <h5 class="name">
-                                <a href="https://play.google.com/store/apps/details?id=com.arakel.progrmas.flysurvival" target="_blank">FlySurvival</a>
-                              </h5>
-                              <div class="text">
-                                <p>Crafted 'FlySurvival' game for Android using Kotlin, offering engaging trivia challenges for users.</p>
-                              </div>
-                              <a href="https://play.google.com/store/apps/details?id=com.arakel.progrmas.flysurvival" target="_blank" class="lnk">See project</a>
-                            </div>
-                            <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-        
-                    <div class="lui-bgtitle">
-                      <span> Portfolio </span>
-                    </div>
-        
-                            </div>
-                        </div>
-        
-              </section>
+          </div>
         </div>
-<div class="footer">
-    <div class="footer__builder">
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        
+        <!-- Works -->
+        <div class="v-line v-line-right">
+          <div class="container">
+        
+            <div class="works-box">
+              <div class="filter-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+                <a href="#" class="lui-subtitle active" data-href=".works-col"> All </a>
+                <a href="#" class="lui-subtitle" data-href=".sorting-web"> Web </a>
+                <a href="#" class="lui-subtitle" data-href=".sorting-backend"> Backend </a>
+                <a href="#" class="lui-subtitle" data-href=".sorting-game-dev"> Game Dev </a>
+                <a href="#" class="lui-subtitle" data-href=".sorting-security"> Security </a>
+                <a href="#" class="lui-subtitle" data-href=".sorting-android"> Android </a>
+              </div>
 
-      <div class="social-links scrolla-element-anim-1 scroll-animate" data-animate="active">
-        <a target="_blank" rel="nofollow" href="https://www.linkedin.com/in/gor-arakelyan-513316234">
-          <i aria-hidden="true" class="fab fa-linkedin"></i>
-        </a>
-        <a target="_blank" rel="nofollow" href="https://github.com/arakel-programs">
-          <i aria-hidden="true" class="fab fa-github"></i>
-        </a>
-        <a target="_blank" rel="nofollow" href="https://t.me/gor_arakelyan">
-          <i aria-hidden="true" class="fab fa-telegram"></i>
-        </a>
-      </div>
+              <div class="works-items works-masonry-items row">
 
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-web">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                   <div class="image">
+                      <div class="img">
+                        <a href="https://arakel-programs.github.io/web-games/" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-1.jpg" alt="Web Games" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Web </span>
+                      <h5 class="name">
+                        <a href="https://arakel-programs.github.io/web-games/" target="_blank" rel="noopener noreferrer">Web Games</a>
+                      </h5>
+                      <div class="text">
+                        <p>Interactive browser-based mini‑games collection with responsive UI, smooth animations, and optimized performance.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                      <a href="https://arakel-programs.github.io/web-games/" target="_blank" class="lnk">Live demo</a>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-security">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://github.com/arakel-programs/NetCrypt" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-security.jpg" alt="Secure Chat App">
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Security </span>
+                      <h5 class="name">
+                        <a href="https://github.com/arakel-programs/NetCrypt" target="_blank" rel="noopener noreferrer">Secure Encrypted Chat</a>
+                      </h5>
+                      <div class="text">
+                        <p>End‑to‑end encrypted messenger prototype with secure key exchange, message encryption, and file transfer focus.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> Python, Sockets, RSA, Diffie‑Hellman, AES, Tkinter</p>
+                        <a href="https://github.com/arakel-programs" target="_blank" class="lnk">Private repository</a>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://github.com/arakel-programs/QuiZGeeK/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-4.jpg" alt="QuiZGeeK">
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Android </span>
+                      <h5 class="name">
+                        <a href="https://github.com/arakel-programs/QuiZGeeK/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">QuiZGeeK</a>
+                      </h5>
+                      <div class="text">
+                        <p>Android trivia app with categories, scoring, and level progression. Clean UI with structured activity lifecycle and local data flow.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> Java, Android SDK, Activity Lifecycle</p>
+                      <div class="project-links">
+                        <div class="links">
+                          <a href="https://github.com/arakel-programs/QuiZGeeK/releases/tag/v1.0.0" target="_blank" class="lnk">GitHub release</a>
+                        </div>
+                        <a href="https://github.com/arakel-programs/QuiZGeeK/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer" class="lnk">Download APK</a>
+                      </div>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+                        
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-backend">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://github.com/arakel-programs/GameVault" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-backend.jpg" alt="GameVault API">
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Backend </span>
+                      <h5 class="name">
+                        <a href="https://github.com/arakel-programs/GameVault" target="_blank" rel="noopener noreferrer">GameVault API</a>
+                      </h5>
+                      <div class="text">
+                        <p>REST API for managing a game/console collection: CRUD endpoints, search, and barcode‑friendly workflows.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> FastAPI, SQLite, REST API, JSON</p>
+                      <a href="https://github.com/arakel-programs" target="_blank" class="lnk">Private repository</a>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-game-dev">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://github.com/arakel-programs/ushio-to-tora" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-game.jpg" alt="2D Game System Prototype">
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Game Development </span>
+                      <h5 class="name">
+                        <a href="https://github.com/arakel-programs/ushio-to-tora" target="_blank" rel="noopener noreferrer">2D RPG Battle System Prototype</a>
+                      </h5>
+                      <div class="text">
+                        <p>Modular turn‑based battle prototype with encounter flow, UI scenes, and extendable enemy/player logic.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> Godot, GDScript (optionally C#), State machines</p>
+                      <a href="https://github.com/arakel-programs" target="_blank" class="lnk">Private repository</a>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://github.com/arakel-programs/SuperheroesCrush/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-12.jpg" alt="SuperheroesCrush">
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Android / Game Dev </span>
+                      <h5 class="name">
+                        <a href="https://github.com/arakel-programs/SuperheroesCrush/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">SuperheroesCrush</a>
+                      </h5>
+                      <div class="text">
+                        <p>Fast‑paced match/arcade game with level progression, combo mechanics, and performance‑friendly UI updates.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> Kotlin, Android SDK, Canvas, Animations</p>
+                      <div class="project-links">
+                        <div class="links">
+                          <a href="https://github.com/arakel-programs/SuperheroesCrush/releases/tag/v1.0.0" target="_blank" class="lnk">GitHub release</a>
+                        </div>
+                      <a href="https://github.com/arakel-programs/SuperheroesCrush/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer" class="lnk">Download APK</a>
+                      </div>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-web">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://moviohub.github.io/web/" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-2.jpg" alt="Movio" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Web </span>
+                      <h5 class="name">
+                        <a href="https://moviohub.github.io/web/" target="_blank" rel="noopener noreferrer">Movio</a>
+                      </h5>
+                      <div class="text">
+                        <p>Movie/TV hub website with responsive pages, modern UI blocks, and clean navigation structure.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                      <a href="https://moviohub.github.io/web/" target="_blank" class="lnk">Live demo</a>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+                      
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android ">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://github.com/arakel-programs/FeedtheFish/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-8.jpg" alt="Feed the Fish" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Android </span>
+                      <h5 class="name">
+                        <a href="https://github.com/arakel-programs/FeedtheFish/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer">Feed the Fish</a>
+                      </h5>
+                      <div class="text">
+                        <p>Casual arcade game: control the fish, collect points, avoid hazards, and improve your high score.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> Kotlin, Android SDK, Canvas/UI</p>
+                      <div class="project-links">
+                        <div class="links">
+                          <a href="https://github.com/arakel-programs/FeedtheFish/releases/tag/v1.0.0" target="_blank" class="lnk">GitHub release</a>
+                        </div>
+                        <a href="https://github.com/arakel-programs/FeedtheFish/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer" class="lnk">Download APK</a>
+                      </div>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-web">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://honeyandnuts.github.io/web/" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-3.jpg" alt="Honey & Nuts" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Web </span>
+                      <h5 class="name">
+                        <a href="https://honeyandnuts.github.io/web/" target="_blank" rel="noopener noreferrer">Honey & Nuts</a>
+                      </h5>
+                      <div class="text">
+                        <p>Product landing / e‑commerce website with responsive layout, interactive sections, and SEO‑friendly structure.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                      <a href="https://honeyandnuts.github.io/web/" target="_blank" class="lnk">Live demo</a>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android ">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://github.com/arakel-programs/SuperTicTacToe/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-9.jpg" alt="SuperTicTacToe" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Android </span>
+                      <h5 class="name">
+                        <a href="https://github.com/arakel-programs/SuperTicTacToe/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer">SuperTicTacToe</a>
+                      </h5>
+                      <div class="text">
+                        <p>Enhanced Tic‑Tac‑Toe with offline play and simple local multiplayer UX.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> Java, Android SDK</p>
+                      <div class="project-links">
+                        <div class="links">
+                          <a href="https://github.com/arakel-programs/SuperTicTacToe/releases/tag/v1.0.0" target="_blank" class="lnk">GitHub release</a>
+                        </div>
+                        <a href="https://github.com/arakel-programs/SuperTicTacToe/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer" class="lnk">Download APK</a>
+                      </div>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-web">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://daily-box.github.io/web/" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-14.jpg" alt="DailyBox" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Web </span>
+                      <h5 class="name">
+                        <a href="https://daily-box.github.io/web/" target="_blank" rel="noopener noreferrer">DailyBox</a>
+                      </h5>
+                      <div class="text">
+                        <p>E‑commerce storefront concept for kitchen & home products with promo banners, product sections, and responsive UI.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                      <a href="https://daily-box.github.io/web/" target="_blank" class="lnk">Live demo</a>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android ">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://github.com/arakel-programs/Just2048/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-10.jpg" alt="Just 2048" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Android </span>
+                      <h5 class="name">
+                        <a href="https://github.com/arakel-programs/Just2048/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer">Just 2048</a>
+                      </h5>
+                      <div class="text">
+                        <p>P48-style puzzle game with smooth animations, scoring, and restart/continue flow.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> Java, Android SDK</p>
+                      <div class="project-links">
+                        <div class="links">
+                          <a href="https://github.com/arakel-programs/Just2048/releases/tag/v1.0.0" target="_blank" class="lnk">GitHub release</a>
+                        </div>
+                        <a href="https://github.com/arakel-programs/Just2048/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer" class="lnk">Download APK</a>
+                      </div>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-web">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://arakel-programs.github.io/who_is_the_killer/" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-13.jpg" alt="who is the killer?" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Web </span>
+                      <h5 class="name">
+                        <a href="https://arakel-programs.github.io/who_is_the_killer/" target="_blank" rel="noopener noreferrer">Who is the killer?</a>
+                      </h5>
+                      <div class="text">
+                        <p>Interactive mystery web game with story flow and UI components for a fun detective experience.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                      <a href="https://arakel-programs.github.io/who_is_the_killer/" target="_blank" class="lnk">Live demo</a>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android ">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://github.com/arakel-programs/FlySurvival/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-11.jpg" alt="FlySurvivale" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Android </span>
+                      <h5 class="name">
+                        <a href="https://github.com/arakel-programs/FlySurvival/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer">FlySurvival</a>
+                      </h5>
+                      <div class="text">
+                        <p>Arcade flying survival game: dodge obstacles/enemies, shoot, and chase a higher score.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> Kotlin, Android SDK, Game loop</p>
+                      <div class="project-links">
+                        <div class="links">
+                          <a href="https://github.com/arakel-programs/FlySurvival/releases/tag/v1.0.0" target="_blank" class="lnk">GitHub release</a>
+                        </div>
+                        <a href="https://github.com/arakel-programs/FlySurvival/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer" class="lnk">Download APK</a>
+                      </div>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+                <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-android ">
+                  <div class="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <div class="image">
+                      <div class="img">
+                        <a href="https://github.com/arakel-programs/FisherHandBook/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer">
+                          <img decoding="async" src="assets/images/work-15.jpg" alt="Fisherman Handbook" >
+                          <span class="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <span class="category"> Android </span>
+                      <h5 class="name">
+                        <a href="https://github.com/arakel-programs/FisherHandBook/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer">Fisherman Handbook</a>
+                      </h5>
+                      <div class="text">
+                        <p>Offline fisherman handbook app (RU) with searchable articles, images, and category navigation.</p>
+                      </div>
+                      <p class="tech"><strong>Tech:</strong> Java, Android SDK, RecyclerView</p>
+                      <div class="project-links">
+                        <div class="links">
+                          <a href="https://github.com/arakel-programs/FisherHandBook/releases/tag/v1.0.0" target="_blank" class="lnk">GitHub release</a>
+                        </div>
+                        <a href="https://github.com/arakel-programs/FisherHandBook/releases/download/v1.0.0/app-release.apk" target="_blank" rel="noopener noreferrer" class="lnk">Download APK</a>
+                      </div>
+                    </div>
+                    <div class="bg-img" style="background-image: url(assets/images/pat-2.png);"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        
+            <div class="lui-bgtitle">
+              <span> Portfolio </span>
+            </div>
+        
+          </div>
+        </div>
+        
+      </section>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-      <div class="copyright-text align-center scrolla-element-anim-1 scroll-animate" data-animate="active">
-        © <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> <strong>Arakelyan Gor</strong>. All rights reserved
+    <div class="footer">
+      <div class="footer__builder">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+              <div class="social-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+                <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/in/gor-arakelyan-513316234">
+                  <i aria-hidden="true" class="fab fa-linkedin"></i>
+                </a>
+                <a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/arakel-programs">
+                  <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a target="_blank" rel="nofollow noopener noreferrer" href="https://t.me/gor_arakelyan">
+                  <i aria-hidden="true" class="fab fa-telegram"></i>
+                </a>
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+              <div class="copyright-text align-center scrolla-element-anim-1 scroll-animate" data-animate="active">
+                © <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> <strong>Arakelyan Gor</strong>. All rights reserved
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
+
   </div>
-</div>
-    </div>
-</div>
 
-</div>
+  <!-- cursor -->
+  <div class="cursor"></div>
 
-<!-- cursor -->
-<div class="cursor"></div>
-
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.validate.min.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/swiper.js"></script>
-<script src="assets/js/splitting.js"></script>
-<script src="assets/js/jarallax.min.js"></script>
-<script src="assets/js/magnific-popup.js"></script>
-<script src="assets/js/imagesloaded.pkgd.js"></script>
-<script src="assets/js/isotope.pkgd.js"></script>
-<script src="assets/js/jquery.scrolla.js"></script>
-<script src="assets/js/skrollr.js"></script>
-<script src="assets/js/jquery.cookie.js"></script>
-<script src="assets/js/typed.js"></script>
-<script src="assets/js/common.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/splitting.js"></script>
+  <script src="assets/js/jarallax.min.js"></script>
+  <script src="assets/js/magnific-popup.js"></script>
+  <script src="assets/js/imagesloaded.pkgd.js"></script>
+  <script src="assets/js/isotope.pkgd.js"></script>
+  <script src="assets/js/jquery.scrolla.js"></script>
+  <script src="assets/js/skrollr.js"></script>
+  <script src="assets/js/jquery.cookie.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script src="assets/js/common.js"></script>
 
 </body>
 </html>
