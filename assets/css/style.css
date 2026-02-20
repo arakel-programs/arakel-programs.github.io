@@ -5067,6 +5067,26 @@ a.wp-block-button__link {
   flex-direction: column;
 }
 
+.works-item {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.works-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.project-links .lnk {
+  font-weight: 600;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.project-links .lnk:hover {
+  color: #6c4ccf;
+}
 
 /**
 * Responsive
