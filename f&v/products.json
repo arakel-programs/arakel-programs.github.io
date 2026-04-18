@@ -613,5 +613,362 @@
         ]
       }
     }
+  },
+  {
+    "id": 13,
+    "name": {
+      "en": "Баклажаны армянские кг",
+      "hy": "Սմբուկ (հայկական) կգ",
+      "ru": "Eggplants (armenian) kg"
+    },
+    "image": "images/1776535106442_eggplants_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "025083",
+      "discountCode": "016153",
+      "scaleCode": "11133",
+      "scaleDiscountCode": "14127"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian eggplants are elongated vegetables with smooth purple skin and tender, light-colored flesh. They have a mild, slightly earthy flavor and are widely used in Armenian cuisine in both cooked and grilled dishes.",
+        "hy": "Հայկական սմբուկները երկարավուն բանջարեղեն են՝ հարթ մանուշակագույն կեղևով և նուրբ, բաց գույնի միջուկով։ Դրանք ունեն մեղմ, թեթևակի հողային համ և լայնորեն օգտագործվում են հայկական խոհանոցում՝ ինչպես եփած, այնպես էլ խորոված ուտեստներում։",
+        "ru": "Армянские баклажаны — это удлинённые овощи с гладкой фиолетовой кожурой и нежной светлой мякотью. Они имеют мягкий, слегка землистый вкус и широко используются в армянской кухне в приготовленных и запечённых блюдах."
+      },
+      "healthy": {
+        "en": "Eggplants are rich in fiber, vitamins, and antioxidants. They support heart health, help regulate cholesterol levels, and aid digestion. They are low in calories and suitable for a healthy diet.",
+        "hy": "Սմբուկները հարուստ են բջջանյութով, վիտամիններով և հակաօքսիդանտներով։ Դրանք նպաստում են սրտի առողջությանը, օգնում են կարգավորել խոլեստերինի մակարդակը և բարելավում են մարսողությունը։ Դրանք քիչ կալորիական են և հարմար են առողջ սննդակարգի համար։",
+        "ru": "Баклажаны богаты клетчаткой, витаминами и антиоксидантами. Они поддерживают здоровье сердца, помогают регулировать уровень холестерина и улучшают пищеварение. Низкокалорийны и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "grilled or roasted",
+          "used in traditional dishes like eggplant caviar",
+          "fried or baked with vegetables",
+          "stuffed with meat or rice",
+          "used in salads and appetizers"
+        ],
+        "hy": [
+          "խորովել կամ թխել",
+          "օգտագործել ավանդական ուտեստներում, օրինակ՝ սմբուկի խավիար",
+          "տապակել կամ թխել բանջարեղենի հետ",
+          "լցոնել մսով կամ բրնձով",
+          "օգտագործել աղցանների և նախուտեստների մեջ"
+        ],
+        "ru": [
+          "жарить на гриле или запекать",
+          "использовать в традиционных блюдах, например баклажанной икре",
+          "жарить или запекать с овощами",
+          "фаршировать мясом или рисом",
+          "использовать в салатах и закусках"
+        ]
+      }
+    }
+  },
+  {
+    "id": 14,
+    "name": {
+      "en": "Eggplant greenhouse kg",
+      "hy": "Սմբուկ ջերմոցի կգ",
+      "ru": "Баклажаны парниковые кг"
+    },
+    "image": "images/1776537089604_eggplants_greenhouse_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "011786",
+      "discountCode": "093862",
+      "scaleCode": "10676",
+      "scaleDiscountCode": "13798"
+    },
+    "description": {
+      "what": {
+        "en": "Greenhouse eggplant is a smooth, elongated vegetable with deep purple skin and tender flesh. It is grown in controlled greenhouse conditions, ensuring consistent quality, mild flavor, and availability throughout the year.",
+        "hy": "Ջերմոցային սմբուկը հարթ, երկարավուն բանջարեղեն է՝ մուգ մանուշակագույն կեղևով և նուրբ միջուկով։ Այն աճեցվում է վերահսկվող ջերմոցային պայմաններում՝ ապահովելով կայուն որակ, մեղմ համ և հասանելիություն ամբողջ տարվա ընթացքում։",
+        "ru": "Тепличный баклажан — это гладкий продолговатый овощ с тёмно-фиолетовой кожурой и нежной мякотью. Он выращивается в контролируемых тепличных условиях, что обеспечивает стабильное качество, мягкий вкус и доступность в течение всего года."
+      },
+      "healthy": {
+        "en": "Eggplants are rich in fiber, vitamins, and antioxidants. They support heart health, help regulate cholesterol levels, and improve digestion. They are low in calories and suitable for a healthy diet.",
+        "hy": "Սմբուկները հարուստ են բջջանյութով, վիտամիններով և հակաօքսիդանտներով։ Դրանք նպաստում են սրտի առողջությանը, օգնում են կարգավորել խոլեստերինի մակարդակը և բարելավում են մարսողությունը։ Դրանք քիչ կալորիական են և հարմար են առողջ սննդակարգի համար։",
+        "ru": "Баклажаны богаты клетчаткой, витаминами и антиоксидантами. Они поддерживают здоровье сердца, помогают регулировать уровень холестерина и улучшают пищеварение. Низкокалорийны и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "grilled or roasted",
+          "fried or baked with vegetables",
+          "used in stews and casseroles",
+          "stuffed with meat or rice",
+          "used in salads and appetizers"
+        ],
+        "hy": [
+          "խորովել կամ թխել",
+          "տապակել կամ թխել բանջարեղենի հետ",
+          "օգտագործել շոգեխաշած և ջեռոցային ուտեստներում",
+          "լցոնել մսով կամ բրնձով",
+          "օգտագործել աղցանների և նախուտեստների մեջ"
+        ],
+        "ru": [
+          "жарить на гриле или запекать",
+          "жарить или запекать с овощами",
+          "использовать в рагу и запеканках",
+          "фаршировать мясом или рисом",
+          "использовать в салатах и закусках"
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "name": {
+      "en": "Banan kg",
+      "hy": "Բանան կգ",
+      "ru": "Банан кг"
+    },
+    "image": "images/1776537447790_banan_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "011400",
+      "discountCode": "094942",
+      "scaleCode": "10593",
+      "scaleDiscountCode": "13893"
+    },
+    "description": {
+      "what": {
+        "en": "Banana is a soft, elongated tropical fruit with a yellow peel and creamy flesh. It has a naturally sweet taste and smooth texture, making it one of the most popular fruits worldwide.",
+        "hy": "Բանանը փափուկ, երկարավուն արևադարձային պտուղ է՝ դեղին կեղևով և կրեմային միջուկով։ Այն ունի բնական քաղցր համ և հարթ կառուցվածք՝ լինելով աշխարհի ամենահայտնի մրգերից մեկը։",
+        "ru": "Банан — это мягкий продолговатый тропический фрукт с жёлтой кожурой и кремовой мякотью. Он обладает естественным сладким вкусом и нежной текстурой, являясь одним из самых популярных фруктов в мире."
+      },
+      "healthy": {
+        "en": "Bananas are rich in potassium, vitamin B6, vitamin C, and fiber. They support heart health, provide quick energy, and help improve digestion. They are a convenient and nutritious snack.",
+        "hy": "Բանանը հարուստ է կալիումով, վիտամին B6-ով, վիտամին C-ով և բջջանյութով։ Այն նպաստում է սրտի առողջությանը, ապահովում է արագ էներգիա և բարելավում է մարսողությունը։ Այն հարմար և սննդարար խորտիկ է։",
+        "ru": "Бананы богаты калием, витамином B6, витамином C и клетчаткой. Они поддерживают здоровье сердца, быстро дают энергию и улучшают пищеварение. Это удобный и питательный перекус."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to smoothies",
+          "used in desserts and cakes",
+          "added to breakfast cereals",
+          "used in baking like banana bread"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել սմուզիների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "ավելացնել նախաճաշի հացահատիկների մեջ",
+          "օգտագործել թխվածքների մեջ, օրինակ՝ բանանի հաց"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять в смузи",
+          "использовать в десертах и тортах",
+          "добавлять в завтраки и каши",
+          "использовать в выпечке, например банановом хлебе"
+        ]
+      }
+    }
+  },
+  {
+    "id": 16,
+    "name": {
+      "en": "Banan Sabrostar kg",
+      "hy": "Բանան Սաբրոստար կգ",
+      "ru": "Банан Sabrostar кг"
+    },
+    "image": "images/1776537745741_banan_sabrostar_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "178605",
+      "discountCode": "X",
+      "scaleCode": "81682",
+      "scaleDiscountCode": "81683"
+    },
+    "description": {
+      "what": {
+        "en": "Banana Sabrostar is a premium banana variety known for its uniform size, bright yellow peel, and smooth, creamy flesh. It has a naturally sweet taste and pleasant aroma, making it ideal for everyday consumption.",
+        "hy": "Բանան Sabrostar-ը բարձրորակ բանանի տեսակ է՝ հավասարաչափ չափերով, վառ դեղին կեղևով և հարթ, կրեմային միջուկով։ Այն ունի բնական քաղցր համ և հաճելի բույր՝ լինելով իդեալական ամենօրյա օգտագործման համար։",
+        "ru": "Банан Sabrostar — это премиальный сорт банана с ровным размером, ярко-жёлтой кожурой и мягкой кремовой мякотью. Он обладает естественным сладким вкусом и приятным ароматом, идеально подходит для ежедневного употребления."
+      },
+      "healthy": {
+        "en": "Bananas are rich in potassium, vitamin B6, vitamin C, and fiber. They help support heart health, provide quick energy, and aid digestion. They are a convenient and nutritious snack.",
+        "hy": "Բանանը հարուստ է կալիումով, վիտամին B6-ով, վիտամին C-ով և բջջանյութով։ Այն նպաստում է սրտի առողջությանը, ապահովում է արագ էներգիա և օգնում է բարելավել մարսողությունը։ Այն հարմար և սննդարար խորտիկ է։",
+        "ru": "Бананы богаты калием, витамином B6, витамином C и клетчаткой. Они поддерживают здоровье сердца, дают быструю энергию и улучшают пищеварение. Это удобный и питательный перекус."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to smoothies",
+          "used in desserts and cakes",
+          "added to breakfast cereals",
+          "used in baking like banana bread"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել սմուզիների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "ավելացնել նախաճաշի հացահատիկների մեջ",
+          "օգտագործել թխվածքների մեջ, օրինակ՝ բանանի հաց"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять в смузи",
+          "использовать в десертах и тортах",
+          "добавлять в завтраки и каши",
+          "использовать в выпечке, например банановом хлебе"
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "name": {
+      "en": "Banan A kg",
+      "hy": "Բանան Ա կգ",
+      "ru": "Банан А кг"
+    },
+    "image": "images/1776538021449_banan_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "091264",
+      "discountCode": "X",
+      "scaleCode": "13647",
+      "scaleDiscountCode": "X"
+    },
+    "description": {
+      "what": {
+        "en": "Banana A is a high-quality banana with a bright yellow peel and soft, creamy flesh. It has a naturally sweet taste and smooth texture, making it ideal for daily consumption.",
+        "hy": "Բանան A-ը բարձրորակ բանան է՝ վառ դեղին կեղևով և փափուկ, կրեմային միջուկով։ Այն ունի բնական քաղցր համ և հարթ կառուցվածք՝ իդեալական ամենօրյա օգտագործման համար։",
+        "ru": "Банан A — это высококачественный банан с ярко-жёлтой кожурой и мягкой кремовой мякотью. Он обладает естественным сладким вкусом и нежной текстурой, идеально подходит для ежедневного употребления."
+      },
+      "healthy": {
+        "en": "Bananas are rich in potassium, vitamin B6, vitamin C, and fiber. They support heart health, provide quick energy, and help improve digestion. They are a nutritious and convenient snack.",
+        "hy": "Բանանը հարուստ է կալիումով, վիտամին B6-ով, վիտամին C-ով և բջջանյութով։ Այն նպաստում է սրտի առողջությանը, ապահովում է արագ էներգիա և բարելավում է մարսողությունը։ Այն սննդարար և հարմար խորտիկ է։",
+        "ru": "Бананы богаты калием, витамином B6, витамином C и клетчаткой. Они поддерживают здоровье сердца, быстро дают энергию и улучшают пищеварение. Это питательный и удобный перекус."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to smoothies",
+          "used in desserts and cakes",
+          "added to breakfast cereals",
+          "used in baking like banana bread"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել սմուզիների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "ավելացնել նախաճաշի հացահատիկների մեջ",
+          "օգտագործել թխվածքների մեջ, օրինակ՝ բանանի հաց"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять в смузи",
+          "использовать в десертах и тортах",
+          "добавлять в завтраки и каши",
+          "использовать в выпечке, например банановом хлебе"
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "name": {
+      "en": "Banan mini kg",
+      "hy": "Բանան մինի կգ",
+      "ru": "Банан мини кг"
+    },
+    "image": "images/1776538310460_banan_mini_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "028440",
+      "discountCode": "094257",
+      "scaleCode": "11289",
+      "scaleDiscountCode": "13855"
+    },
+    "description": {
+      "what": {
+        "en": "Mini banana is a smaller variety of banana with a thin yellow peel and soft, creamy flesh. It has a sweeter and more intense flavor than regular bananas, making it especially popular as a quick snack.",
+        "hy": "Մինի բանանը բանանի փոքր տեսակ է՝ բարակ դեղին կեղևով և փափուկ, կրեմային միջուկով։ Այն ունի ավելի քաղցր և հագեցած համ, քան սովորական բանանը, և շատ հարմար է որպես արագ խորտիկ։",
+        "ru": "Мини-банан — это небольшой сорт банана с тонкой жёлтой кожурой и мягкой кремовой мякотью. Он обладает более сладким и насыщенным вкусом по сравнению с обычными бананами и идеально подходит как быстрый перекус."
+      },
+      "healthy": {
+        "en": "Mini bananas are rich in potassium, vitamin B6, vitamin C, and fiber. They help provide quick energy, support heart health, and aid digestion. They are nutritious, convenient, and easy to carry.",
+        "hy": "Մինի բանանը հարուստ է կալիումով, վիտամին B6-ով, վիտամին C-ով և բջջանյութով։ Այն ապահովում է արագ էներգիա, նպաստում է սրտի առողջությանը և բարելավում է մարսողությունը։ Այն սննդարար է, հարմար և հեշտ տեղափոխելի։",
+        "ru": "Мини-бананы богаты калием, витамином B6, витамином C и клетчаткой. Они быстро дают энергию, поддерживают здоровье сердца и улучшают пищеварение. Питательные, удобные и легко брать с собой."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to smoothies",
+          "used in desserts and cakes",
+          "added to breakfast cereals",
+          "used as a topping for yogurt or oatmeal"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել սմուզիների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "ավելացնել նախաճաշի հացահատիկների մեջ",
+          "օգտագործել յոգուրտի կամ շիլաների վրա որպես հավելում"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять в смузи",
+          "использовать в десертах и тортах",
+          "добавлять в завтраки и каши",
+          "использовать как добавку к йогурту или овсянке"
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "name": {
+      "en": "Broccoli (armenian) kg",
+      "hy": "Բրոկկոլի (հայկական) կգ",
+      "ru": "Брокколи армянский кг"
+    },
+    "image": "images/1776538608090_broccoli_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "043104",
+      "discountCode": "093941",
+      "scaleCode": "12186",
+      "scaleDiscountCode": "13819"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian broccoli is a fresh green vegetable with dense florets and a firm stem. It has a mild, slightly earthy flavor and is widely used in Armenian cuisine in soups, side dishes, and healthy meals.",
+        "hy": "Հայկական բրոկոլին թարմ կանաչ բանջարեղեն է՝ խիտ ծաղկաբույլերով և ամուր ցողունով։ Այն ունի մեղմ, թեթևակի հողային համ և լայնորեն օգտագործվում է հայկական խոհանոցում՝ ապուրների, խավարտների և առողջ ուտեստների մեջ։",
+        "ru": "Армянская брокколи — это свежий зелёный овощ с плотными соцветиями и крепким стеблем. Она обладает мягким, слегка землистым вкусом и широко используется в армянской кухне в супах, гарнирах и полезных блюдах."
+      },
+      "healthy": {
+        "en": "Broccoli is rich in vitamins C, K, and A, as well as fiber and antioxidants. It supports the immune system, promotes healthy digestion, and helps maintain overall health. It is low in calories and highly nutritious.",
+        "hy": "Բրոկոլին հարուստ է վիտամին C-ով, K-ով և A-ով, ինչպես նաև բջջանյութով և հակաօքսիդանտներով։ Այն ամրացնում է իմունիտետը, բարելավում է մարսողությունը և նպաստում է ընդհանուր առողջությանը։ Այն քիչ կալորիական է և շատ սննդարար։",
+        "ru": "Брокколи богата витаминами C, K и A, а также клетчаткой и антиоксидантами. Она укрепляет иммунитет, улучшает пищеварение и поддерживает общее здоровье. Низкокалорийная и очень питательная."
+      },
+      "eat": {
+        "en": [
+          "steamed or boiled",
+          "used in soups",
+          "added to salads",
+          "stir-fried with vegetables",
+          "baked or roasted as a side dish"
+        ],
+        "hy": [
+          "շոգեխաշել կամ եփել",
+          "օգտագործել ապուրների մեջ",
+          "ավելացնել աղցանների մեջ",
+          "տապակել այլ բանջարեղենի հետ",
+          "թխել որպես խավարտ"
+        ],
+        "ru": [
+          "готовить на пару или варить",
+          "использовать в супах",
+          "добавлять в салаты",
+          "жарить с овощами",
+          "запекать как гарнир"
+        ]
+      }
+    }
   }
 ]
