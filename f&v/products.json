@@ -1,56 +1,617 @@
 [
-    {
-        "id": 1,
-        "name": {
-            "en": "Pumpkin (armenian) kg",
-            "hy": "Դդում (հայկական) կգ",
-            "ru": "Тыква (армянская) кг"
-        },
-        "image": "images/1776507927108_pumpkin_armenian.png",
-        "needScale": true,
-        "codes": {
-            "mainCode": "011949",
-            "discountCode": "097155",
-            "scaleCode": "10694",
-            "scaleDiscountCode": "14010"
-        },
-        "description": {
-            "what": {
-                "en": "Armenian pumpkin is a large, sweet vegetable with soft orange flesh and thick skin. It is widely used in traditional Armenian cuisine, both in savory and sweet dishes.",
-                "hy": "Հայկական դդումը մեծ, քաղցրահամ բանջարեղեն է՝ փափուկ նարնջագույն միջուկով և հաստ կեղևով։ Այն լայնորեն օգտագործվում է հայկական ավանդական խոհանոցում՝ ինչպես աղի, այնպես էլ քաղցր ուտեստներում։",
-                "ru": "Армянская тыква — это крупный сладкий овощ с мягкой оранжевой мякотью и толстой кожурой. Она широко используется в традиционной армянской кухне как в солёных, так и в сладких блюдах."
-            },
-            "healthy": {
-                "en": "Pumpkin is low in calories and rich in fiber, vitamin A, vitamin C, and antioxidants. It supports eye health, strengthens the immune system, and helps improve digestion.",
-                "hy": "Դդումը քիչ կալորիական է և հարուստ է բջջանյութով, վիտամին A-ով, վիտամին C-ով և հակաօքսիդանտներով։ Այն նպաստում է աչքերի առողջությանը, ամրացնում է իմունիտետը և օգնում է բարելավել մարսողությունը։",
-                "ru": "Тыква низкокалорийна и богата клетчаткой, витамином A, витамином C и антиоксидантами. Она поддерживает здоровье глаз, укрепляет иммунитет и улучшает пищеварение."
-            },
-            "eat": {
-                "en": [
-                "boiled or added to soups",
-                "roasted as a side dish",
-                "baked into traditional dishes like ghapama",
-                "used in pies and desserts",
-                "added to salads",
-                "pumpkin seeds can be roasted and eaten as a healthy snack"
-                ],
-                "hy": [
-                "եփել կամ ավելացնել ապուրների մեջ",
-                "թխել որպես խավարտ",
-                "օգտագործել ղափամայի նման ավանդական ուտեստներում",
-                "ավելացնել կարկանդակների և աղանդերի մեջ",
-                "ավելացնել աղցանների մեջ",
-                "դդմի սերմերը կարելի է տապակել և օգտագործել որպես առողջ խորտիկ"
-                ],
-                "ru": [
-                "варить или добавлять в супы",
-                "запекать как гарнир",
-                "использовать в традиционных блюдах, например гапаме",
-                "добавлять в пироги и десерты",
-                "добавлять в салаты",
-                "тыквенные семечки можно обжарить и есть как полезный перекус"
-                ]
-            }
-        }
+  {
+    "id": 1,
+    "name": {
+      "en": "Pumpkin (armenian) kg",
+      "hy": "Դդում (հայկական) կգ",
+      "ru": "Тыква (армянская) кг"
+    },
+    "image": "images/1776507927108_pumpkin_armenian.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "011949",
+      "discountCode": "097155",
+      "scaleCode": "10694",
+      "scaleDiscountCode": "14010"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian pumpkin is a large, sweet vegetable with soft orange flesh and thick skin. It is widely used in traditional Armenian cuisine, both in savory and sweet dishes.",
+        "hy": "Հայկական դդումը մեծ, քաղցրահամ բանջարեղեն է՝ փափուկ նարնջագույն միջուկով և հաստ կեղևով։ Այն լայնորեն օգտագործվում է հայկական ավանդական խոհանոցում՝ ինչպես աղի, այնպես էլ քաղցր ուտեստներում։",
+        "ru": "Армянская тыква — это крупный сладкий овощ с мягкой оранжевой мякотью и толстой кожурой. Она широко используется в традиционной армянской кухне как в солёных, так и в сладких блюдах."
+      },
+      "healthy": {
+        "en": "Pumpkin is low in calories and rich in fiber, vitamin A, vitamin C, and antioxidants. It supports eye health, strengthens the immune system, and helps improve digestion.",
+        "hy": "Դդումը քիչ կալորիական է և հարուստ է բջջանյութով, վիտամին A-ով, վիտամին C-ով և հակաօքսիդանտներով։ Այն նպաստում է աչքերի առողջությանը, ամրացնում է իմունիտետը և օգնում է բարելավել մարսողությունը։",
+        "ru": "Тыква низкокалорийна и богата клетчаткой, витамином A, витамином C и антиоксидантами. Она поддерживает здоровье глаз, укрепляет иммунитет и улучшает пищеварение."
+      },
+      "eat": {
+        "en": [
+          "boiled or added to soups",
+          "roasted as a side dish",
+          "baked into traditional dishes like ghapama",
+          "used in pies and desserts",
+          "added to salads",
+          "pumpkin seeds can be roasted and eaten as a healthy snack"
+        ],
+        "hy": [
+          "եփել կամ ավելացնել ապուրների մեջ",
+          "թխել որպես խավարտ",
+          "օգտագործել ղափամայի նման ավանդական ուտեստներում",
+          "ավելացնել կարկանդակների և աղանդերի մեջ",
+          "ավելացնել աղցանների մեջ",
+          "դդմի սերմերը կարելի է տապակել և օգտագործել որպես առողջ խորտիկ"
+        ],
+        "ru": [
+          "варить или добавлять в супы",
+          "запекать как гарнир",
+          "использовать в традиционных блюдах, например гапаме",
+          "добавлять в пироги и десерты",
+          "добавлять в салаты",
+          "тыквенные семечки можно обжарить и есть как полезный перекус"
+        ]
+      }
     }
+  },
+  {
+    "id": 2,
+    "name": {
+      "en": "Quince (Armenian) kg",
+      "hy": "Սերկևիլ (հայկական) կգ",
+      "ru": "Айва армянская кг"
+    },
+    "image": "images/1776528140028_quince_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "011638",
+      "discountCode": "094634",
+      "scaleCode": "10655",
+      "scaleDiscountCode": "13887"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian quince is a fragrant, firm fruit with a golden-yellow skin and dense flesh. It is rarely eaten raw due to its astringent taste, but becomes soft, sweet, and aromatic when cooked. It is widely used in traditional Armenian cuisine.",
+        "hy": "Հայկական սերկևիլը բուրավետ, կոշտ պտուղ է՝ ոսկեգույն դեղին կեղևով և խիտ միջուկով։ Սովորաբար այն հում չեն օգտագործում՝ տտիպ համի պատճառով, բայց եփելիս դառնում է փափուկ, քաղցր և բուրավետ։ Այն լայնորեն կիրառվում է հայկական ավանդական խոհանոցում։",
+        "ru": "Армянская айва — это ароматный плотный фрукт с золотисто-жёлтой кожурой и плотной мякотью. В сыром виде употребляется редко из-за терпкого вкуса, но при приготовлении становится мягкой, сладкой и ароматной. Широко используется в армянской кухне."
+      },
+      "healthy": {
+        "en": "Quince is rich in fiber, vitamin C, and antioxidants. It supports digestion, strengthens the immune system, and helps maintain heart health. It is also low in calories and beneficial for overall wellness.",
+        "hy": "Սերկևիլը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, ամրացնում է իմունիտետը և նպաստում է սրտի առողջությանը։ Այն նաև քիչ կալորիական է և օգտակար է ընդհանուր առողջության համար։",
+        "ru": "Айва богата клетчаткой, витамином C и антиоксидантами. Она улучшает пищеварение, укрепляет иммунитет и поддерживает здоровье сердца. Также она низкокалорийна и полезна для общего состояния организма."
+      },
+      "eat": {
+        "en": [
+          "boiled or stewed with sugar",
+          "used in jams and preserves",
+          "baked in desserts",
+          "added to meat dishes for aroma",
+          "used in compotes and drinks"
+        ],
+        "hy": [
+          "եփել կամ շոգեխաշել շաքարով",
+          "օգտագործել մուրաբաների և պահածոների մեջ",
+          "թխել աղանդերի մեջ",
+          "ավելացնել մսային ուտեստների մեջ՝ բույրի համար",
+          "օգտագործել կոմպոտների և խմիչքների մեջ"
+        ],
+        "ru": [
+          "варить или тушить с сахаром",
+          "использовать в вареньях и заготовках",
+          "запекать в десертах",
+          "добавлять в мясные блюда для аромата",
+          "использовать в компотах и напитках"
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": {
+      "en": "Quince kg",
+      "hy": "Սերկևիլ կգ",
+      "ru": "Айва кг"
+    },
+    "image": "images/1776528575201_quince_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "031990",
+      "discountCode": "093850",
+      "scaleCode": "11498",
+      "scaleDiscountCode": "13789"
+    },
+    "description": {
+      "what": {
+        "en": "Quince is a firm, aromatic fruit with a yellow skin and dense flesh. It has a strong fragrance and a tart taste when raw, so it is usually cooked before eating. When prepared, it becomes soft, sweet, and flavorful.",
+        "hy": "Սերկևիլը կոշտ և բուրավետ պտուղ է՝ դեղին կեղևով և խիտ միջուկով։ Այն ունի ուժեղ բույր և տտիպ համ հում վիճակում, այդ պատճառով սովորաբար օգտագործվում է եփած վիճակում։ Եփելիս դառնում է փափուկ, քաղցր և համեղ։",
+        "ru": "Айва — это плотный ароматный фрукт с жёлтой кожурой и плотной мякотью. В сыром виде имеет терпкий вкус, поэтому чаще всего употребляется после приготовления. При готовке становится мягкой, сладкой и насыщенной по вкусу."
+      },
+      "healthy": {
+        "en": "Quince is rich in fiber, vitamin C, and antioxidants. It helps improve digestion, supports the immune system, and contributes to overall health. It is also low in calories and beneficial for a balanced diet.",
+        "hy": "Սերկևիլը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, աջակցում է իմունիտետին և նպաստում է ընդհանուր առողջությանը։ Այն նաև քիչ կալորիական է և օգտակար է հավասարակշռված սննդակարգի համար։",
+        "ru": "Айва богата клетчаткой, витамином C и антиоксидантами. Она улучшает пищеварение, поддерживает иммунитет и способствует общему здоровью. Также она низкокалорийна и полезна для сбалансированного питания."
+      },
+      "eat": {
+        "en": [
+          "boiled or stewed",
+          "used in jams and preserves",
+          "baked in desserts",
+          "added to meat dishes",
+          "used in compotes and drinks"
+        ],
+        "hy": [
+          "եփել կամ շոգեխաշել",
+          "օգտագործել մուրաբաների և պահածոների մեջ",
+          "թխել աղանդերի մեջ",
+          "ավելացնել մսային ուտեստների մեջ",
+          "օգտագործել կոմպոտների և խմիչքների մեջ"
+        ],
+        "ru": [
+          "варить или тушить",
+          "использовать в вареньях и заготовках",
+          "запекать в десертах",
+          "добавлять в мясные блюда",
+          "использовать в компотах и напитках"
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": {
+      "en": "Cherry plum (Armenian) kg",
+      "hy": "Շլոր (հայկական) կգ",
+      "ru": "Алыча армянская кг"
+    },
+    "image": "images/1776528997300_cherry_plum_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "016728",
+      "discountCode": "016766",
+      "scaleCode": "14702",
+      "scaleDiscountCode": "14742"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian cherry plum is a small, round fruit with smooth skin that can be yellow, red, or purple. It has a juicy flesh and a sweet-tart flavor. It is widely grown and used in Armenian cuisine, both fresh and in traditional dishes.",
+        "hy": "Հայկական ալուչան փոքր, կլոր պտուղ է՝ հարթ կեղևով, որը կարող է լինել դեղին, կարմիր կամ մանուշակագույն։ Այն ունի հյութալի միջուկ և քաղցրաթթու համ։ Այն լայնորեն աճեցվում և օգտագործվում է հայկական խոհանոցում՝ ինչպես թարմ, այնպես էլ ավանդական ուտեստներում։",
+        "ru": "Армянская алыча — это небольшой круглый плод с гладкой кожурой, который может быть жёлтого, красного или фиолетового цвета. Она имеет сочную мякоть и кисло-сладкий вкус. Широко выращивается и используется в армянской кухне как в свежем виде, так и в традиционных блюдах."
+      },
+      "healthy": {
+        "en": "Cherry plum is rich in vitamin C, antioxidants, and fiber. It supports digestion, boosts the immune system, and helps maintain overall health. It is refreshing and low in calories.",
+        "hy": "Ալուչան հարուստ է վիտամին C-ով, հակաօքսիդանտներով և բջջանյութով։ Այն բարելավում է մարսողությունը, ամրացնում է իմունիտետը և նպաստում է ընդհանուր առողջությանը։ Այն թարմացնող է և քիչ կալորիական։",
+        "ru": "Алыча богата витамином C, антиоксидантами и клетчаткой. Она улучшает пищеварение, укрепляет иммунитет и поддерживает общее здоровье. Она освежающая и низкокалорийная."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "used in traditional Armenian sauces like tkemali",
+          "made into jams and preserves",
+          "added to salads",
+          "used in juices and compotes"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "օգտագործել հայկական ավանդական սոուսներում, օրինակ՝ տկեմալի",
+          "պատրաստել մուրաբաներ և պահածոներ",
+          "ավելացնել աղցանների մեջ",
+          "օգտագործել հյութերի և կոմպոտների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "использовать в традиционных соусах, например ткемали",
+          "готовить варенья и заготовки",
+          "добавлять в салаты",
+          "использовать в соках и компотах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": {
+      "en": "Cherry plum (import) kg",
+      "hy": "Շլոր (արտասահմանյան) կգ",
+      "ru": "Алыча имп. кг"
+    },
+    "image": "images/1776529303702_cherry_plum_import_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "018663",
+      "discountCode": "X",
+      "scaleCode": "16767",
+      "scaleDiscountCode": "X"
+    },
+    "description": {
+      "what": {
+        "en": "Imported cherry plum is a small, round fruit with smooth skin that can be yellow, red, or purple. It has juicy flesh and a refreshing sweet-tart flavor. It is imported from other countries and is available year-round depending on supply.",
+        "hy": "Ներմուծված ալուչան փոքր, կլոր պտուղ է՝ հարթ կեղևով, որը կարող է լինել դեղին, կարմիր կամ մանուշակագույն։ Այն ունի հյութալի միջուկ և թարմացնող քաղցրաթթու համ։ Այն ներմուծվում է այլ երկրներից և հասանելի է տարվա տարբեր ժամանակահատվածներում։",
+        "ru": "Импортная алыча — это небольшой круглый плод с гладкой кожурой, который может быть жёлтого, красного или фиолетового цвета. Она имеет сочную мякоть и освежающий кисло-сладкий вкус. Поставляется из других стран и доступна в разное время года."
+      },
+      "healthy": {
+        "en": "Cherry plum is rich in vitamin C, antioxidants, and fiber. It helps improve digestion, supports the immune system, and contributes to overall health. It is low in calories and refreshing.",
+        "hy": "Ալուչան հարուստ է վիտամին C-ով, հակաօքսիդանտներով և բջջանյութով։ Այն բարելավում է մարսողությունը, աջակցում է իմունիտետին և նպաստում է ընդհանուր առողջությանը։ Այն թարմացնող է և քիչ կալորիական։",
+        "ru": "Алыча богата витамином C, антиоксидантами и клетчаткой. Она улучшает пищеварение, поддерживает иммунитет и способствует общему здоровью. Низкокалорийна и освежает."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "used in sauces like tkemali",
+          "made into jams and preserves",
+          "added to salads",
+          "used in juices and compotes"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "օգտագործել սոուսներում, օրինակ՝ տկեմալի",
+          "պատրաստել մուրաբաներ և պահածոներ",
+          "ավելացնել աղցանների մեջ",
+          "օգտագործել հյութերի և կոմպոտների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "использовать в соусах, например ткемали",
+          "готовить варенья и заготовки",
+          "добавлять в салаты",
+          "использовать в соках и компотах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": {
+      "en": "Pineapple kg",
+      "hy": "Արքայախնձոր կգ",
+      "ru": "Ананас кг"
+    },
+    "image": "images/1776529685389_pineapple_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "017974",
+      "discountCode": "017976",
+      "scaleCode": "16010",
+      "scaleDiscountCode": "16012"
+    },
+    "description": {
+      "what": {
+        "en": "Pineapple is a tropical fruit with a rough, spiky skin and juicy yellow flesh. It has a refreshing sweet and slightly tangy taste and a strong, pleasant aroma. It is widely enjoyed fresh and used in many dishes and drinks.",
+        "hy": "Անանասը արևադարձային պտուղ է՝ կոշտ, փշոտ կեղևով և հյութալի դեղին միջուկով։ Այն ունի թարմացնող քաղցր և թեթևակի թթու համ, ինչպես նաև հաճելի բույր։ Այն լայնորեն օգտագործվում է թարմ և տարբեր ուտեստներում ու խմիչքներում։",
+        "ru": "Ананас — это тропический фрукт с жёсткой колючей кожурой и сочной жёлтой мякотью. Он обладает освежающим сладким и слегка кисловатым вкусом, а также приятным ароматом. Широко употребляется в свежем виде и используется в различных блюдах и напитках."
+      },
+      "healthy": {
+        "en": "Pineapple is rich in vitamin C, manganese, and antioxidants. It supports the immune system, helps digestion due to the enzyme bromelain, and contributes to overall health. It is also refreshing and relatively low in calories.",
+        "hy": "Անանասը հարուստ է վիտամին C-ով, մանգանով և հակաօքսիդանտներով։ Այն ամրացնում է իմունիտետը, նպաստում է մարսողությանը բրոմելայն ֆերմենտի շնորհիվ և օգտակար է ընդհանուր առողջության համար։ Այն նաև թարմացնող է և համեմատաբար քիչ կալորիական։",
+        "ru": "Ананас богат витамином C, марганцем и антиоксидантами. Он укрепляет иммунитет, улучшает пищеварение благодаря ферменту бромелайну и полезен для общего здоровья. Также он освежающий и относительно низкокалорийный."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "added to fruit salads",
+          "used in desserts and cakes",
+          "added to smoothies and juices",
+          "used in savory dishes like pizza or meat recipes"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "ավելացնել սմուզիների և հյութերի մեջ",
+          "օգտագործել աղի ուտեստներում, օրինակ՝ պիցցայի կամ մսային ուտեստների մեջ"
+        ],
+        "ru": [
+          "употреблять свежим кусочками\",",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и тортах",
+          "добавлять в смузи и соки",
+          "использовать в солёных блюдах, например в пицце или мясных рецептах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": {
+      "en": "Orange A kg",
+      "hy": "Նարինջ Ա կգ",
+      "ru": "Апельсин А кг"
+    },
+    "image": "images/1776530465360_orange_a_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "053310",
+      "discountCode": "016557",
+      "scaleCode": "13607",
+      "scaleDiscountCode": "14530"
+    },
+    "description": {
+      "what": {
+        "en": "Orange A is a high-quality citrus fruit with a bright orange peel and juicy, sweet flesh. It has a refreshing flavor with a balanced sweetness and mild acidity. It is commonly consumed fresh and used in various dishes and drinks.",
+        "hy": "Նարինջ A-ը բարձրորակ ցիտրուսային պտուղ է՝ վառ նարնջագույն կեղևով և հյութալի, քաղցր միջուկով։ Այն ունի թարմացնող համ՝ հավասարակշռված քաղցրությամբ և թեթև թթվությամբ։ Լայնորեն օգտագործվում է թարմ և տարբեր ուտեստներում ու խմիչքներում։",
+        "ru": "Апельсин A — это высококачественный цитрусовый фрукт с ярко-оранжевой кожурой и сочной сладкой мякотью. Он обладает освежающим вкусом с хорошим балансом сладости и лёгкой кислинки. Широко употребляется в свежем виде и используется в различных блюдах и напитках."
+      },
+      "healthy": {
+        "en": "Oranges are rich in vitamin C, antioxidants, and fiber. They strengthen the immune system, improve skin health, and support digestion. They are refreshing and beneficial for overall health.",
+        "hy": "Նարինջը հարուստ է վիտամին C-ով, հակաօքսիդանտներով և բջջանյութով։ Այն ամրացնում է իմունիտետը, բարելավում է մաշկի վիճակը և նպաստում է մարսողությանը։ Այն թարմացնող է և օգտակար է ընդհանուր առողջության համար։",
+        "ru": "Апельсины богаты витамином C, антиоксидантами и клетчаткой. Они укрепляют иммунитет, улучшают состояние кожи и способствуют пищеварению. Они освежают и полезны для общего здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "used for fresh juice",
+          "added to fruit salads",
+          "used in desserts and cakes",
+          "used as a garnish or flavor in dishes"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "պատրաստել թարմ հյութ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "օգտագործել որպես զարդարանք կամ համ ավելացնելու համար"
+        ],
+        "ru": [
+          "употреблять свежими дольками",
+          "использовать для свежего сока",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и тортах",
+          "использовать как украшение или для вкуса в блюдах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": {
+      "en": "Orange kg",
+      "hy": "Նարինջ կգ",
+      "ru": "Апельсин кг"
+    },
+    "image": "images/1776530884046_orange_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "011258",
+      "discountCode": "017198",
+      "scaleCode": "10452",
+      "scaleDiscountCode": "15174"
+    },
+    "description": {
+      "what": {
+        "en": "Orange is a citrus fruit with a bright orange peel and juicy, sweet-tart flesh. It has a refreshing flavor and pleasant aroma, making it one of the most popular fruits worldwide. It is commonly eaten fresh and used in many dishes and drinks.",
+        "hy": "Նարինջը ցիտրուսային պտուղ է՝ վառ նարնջագույն կեղևով և հյութալի, քաղցրաթթու միջուկով։ Այն ունի թարմացնող համ և հաճելի բույր՝ լինելով աշխարհի ամենահայտնի մրգերից մեկը։ Այն լայնորեն օգտագործվում է թարմ և տարբեր ուտեստներում ու խմիչքներում։",
+        "ru": "Апельсин — это цитрусовый фрукт с ярко-оранжевой кожурой и сочной кисло-сладкой мякотью. Он обладает освежающим вкусом и приятным ароматом, являясь одним из самых популярных фруктов в мире. Широко употребляется в свежем виде и используется в различных блюдах и напитках."
+      },
+      "healthy": {
+        "en": "Oranges are rich in vitamin C, antioxidants, and fiber. They help strengthen the immune system, support skin health, and improve digestion. They are refreshing and beneficial for overall health.",
+        "hy": "Նարինջը հարուստ է վիտամին C-ով, հակաօքսիդանտներով և բջջանյութով։ Այն ամրացնում է իմունիտետը, նպաստում է մաշկի առողջությանը և բարելավում է մարսողությունը։ Այն թարմացնող է և օգտակար է ընդհանուր առողջության համար։",
+        "ru": "Апельсины богаты витамином C, антиоксидантами и клетчаткой. Они укрепляют иммунитет, поддерживают здоровье кожи и улучшают пищеварение. Освежают и полезны для общего состояния организма."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "used for fresh juice",
+          "added to fruit salads",
+          "used in desserts and cakes",
+          "used as a garnish or flavor in dishes"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "պատրաստել թարմ հյութ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "օգտագործել որպես զարդարանք կամ համ ավելացնելու համար"
+        ],
+        "ru": [
+          "употреблять свежими дольками",
+          "использовать для свежего сока",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и тортах",
+          "использовать как украшение или для вкуса в блюдах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": {
+      "en": "Red orange kg",
+      "hy": "Կարմիր նարինջ կգ",
+      "ru": "Апельсин красный кг"
+    },
+    "image": "images/1776531188299_red_orange_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1055830",
+      "discountCode": "016666",
+      "scaleCode": "75056",
+      "scaleDiscountCode": "14641"
+    },
+    "description": {
+      "what": {
+        "en": "Red orange (blood orange) is a citrus fruit with a reddish flesh and a deep orange to red peel. It has a sweet taste with slight berry-like notes and mild acidity. Its unique color comes from natural pigments called anthocyanins.\"",
+        "hy": "Կարմիր նարինջը (արյունային նարինջ) ցիտրուսային պտուղ է՝ կարմրավուն միջուկով և մուգ նարնջագույնից մինչև կարմիր կեղևով։ Այն ունի քաղցր համ՝ թեթև հատապտղային նոտաներով և մեղմ թթվությամբ։ Նրա յուրահատուկ գույնը պայմանավորված է բնական պիգմենտներով՝ անթոցիանիններով։",
+        "ru": "Красный апельсин (кровавый апельсин) — это цитрусовый фрукт с красноватой мякотью и кожурой от тёмно-оранжевого до красного цвета. Он обладает сладким вкусом с лёгкими ягодными нотками и мягкой кислинкой. Его уникальный цвет обусловлен природными пигментами — антоцианами."
+      },
+      "healthy": {
+        "en": "Red oranges are rich in vitamin C, antioxidants, and anthocyanins. They help strengthen the immune system, support heart health, and protect the body from oxidative stress. They are refreshing and nutritious.",
+        "hy": "Կարմիր նարինջը հարուստ է վիտամին C-ով, հակաօքսիդանտներով և անթոցիանիններով։ Այն ամրացնում է իմունիտետը, նպաստում է սրտի առողջությանը և պաշտպանում է օրգանիզմը օքսիդատիվ սթրեսից։ Այն թարմացնող և սննդարար է։",
+        "ru": "Красные апельсины богаты витамином C, антиоксидантами и антоцианами. Они укрепляют иммунитет, поддерживают здоровье сердца и защищают организм от окислительного стресса. Освежающие и питательные."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "used for fresh juice",
+          "added to fruit salads",
+          "used in desserts and cakes",
+          "used as a garnish or flavor in dishes"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "պատրաստել թարմ հյութ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "օգտագործել որպես զարդարանք կամ համ ավելացնելու համար"
+        ],
+        "ru": [
+          "употреблять свежими дольками",
+          "использовать для свежего сока",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и тортах",
+          "использовать как украшение или для вкуса в блюдах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": {
+      "en": "Watermelon (armenian) kg",
+      "hy": "Ձմերուկ (հայկական) կգ",
+      "ru": "Арбуз армянский кг"
+    },
+    "image": "images/1776531596806_watermelon_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "025424",
+      "discountCode": "016176",
+      "scaleCode": "11139",
+      "scaleDiscountCode": "14148"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian watermelon is a large, refreshing fruit with a green rind and juicy red flesh. It has a sweet, crisp taste and is especially popular during the summer season. It is widely grown in Armenia and enjoyed fresh.",
+        "hy": "Հայկական ձմերուկը մեծ, թարմացնող պտուղ է՝ կանաչ կեղևով և հյութալի կարմիր միջուկով։ Այն ունի քաղցր և խրթխրթան համ և հատկապես տարածված է ամռան սեզոնին։ Այն լայնորեն աճեցվում է Հայաստանում և օգտագործվում է թարմ վիճակում։",
+        "ru": "Армянский арбуз — это крупный освежающий плод с зелёной кожурой и сочной красной мякотью. Он обладает сладким и хрустящим вкусом и особенно популярен летом. Широко выращивается в Армении и употребляется в свежем виде."
+      },
+      "healthy": {
+        "en": "Watermelon is rich in water, vitamins A and C, and antioxidants. It helps keep the body hydrated, supports heart health, and aids digestion. It is low in calories and very refreshing.",
+        "hy": "Ձմերուկը հարուստ է ջրով, վիտամին A-ով, վիտամին C-ով և հակաօքսիդանտներով։ Այն օգնում է պահպանել ջրային հավասարակշռությունը, նպաստում է սրտի առողջությանը և բարելավում է մարսողությունը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Арбуз богат водой, витаминами A и C, а также антиоксидантами. Он помогает поддерживать водный баланс, способствует здоровью сердца и улучшает пищеварение. Низкокалорийный и очень освежающий."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "added to fruit salads",
+          "used in juices and smoothies",
+          "served as a refreshing dessert",
+          "combined with cheese or herbs for salads"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել հյութերի և սմուզիների մեջ",
+          "մատուցել որպես թարմացնող աղանդեր",
+          "համադրել պանրի կամ կանաչիների հետ աղցաններում"
+        ],
+        "ru": [
+          "употреблять свежими дольками",
+          "добавлять во фруктовые салаты",
+          "использовать в соках и смузи",
+          "подавать как освежающий десерт",
+          "сочетать с сыром или зеленью в салатах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "name": {
+      "en": "Watermelon kg",
+      "hy": "Ձմերուկ կգ",
+      "ru": "Арбуз кг"
+    },
+    "image": "images/1776531863249_watermelon_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "017311",
+      "discountCode": "017393",
+      "scaleCode": "15286",
+      "scaleDiscountCode": "15369"
+    },
+    "description": {
+      "what": {
+        "en": "Watermelon is a large, refreshing fruit with a green rind and juicy red flesh. It has a sweet and crisp taste, making it one of the most popular fruits during the summer. It is widely consumed fresh around the world.",
+        "hy": "Ձմերուկը մեծ, թարմացնող պտուղ է՝ կանաչ կեղևով և հյութալի կարմիր միջուկով։ Այն ունի քաղցր և խրթխրթան համ՝ լինելով ամռան ամենահայտնի մրգերից մեկը։ Այն լայնորեն օգտագործվում է թարմ վիճակում ամբողջ աշխարհում։",
+        "ru": "Арбуз — это крупный освежающий плод с зелёной кожурой и сочной красной мякотью. Он обладает сладким и хрустящим вкусом и является одним из самых популярных фруктов летом. Широко употребляется в свежем виде по всему миру."
+      },
+      "healthy": {
+        "en": "Watermelon is rich in water, vitamins A and C, and antioxidants. It helps keep the body hydrated, supports heart health, and aids digestion. It is low in calories and very refreshing.",
+        "hy": "Ձմերուկը հարուստ է ջրով, վիտամին A-ով, վիտամին C-ով և հակաօքսիդանտներով։ Այն օգնում է պահպանել ջրային հավասարակշռությունը, նպաստում է սրտի առողջությանը և բարելավում է մարսողությունը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Арбуз богат водой, витаминами A и C, а также антиоксидантами. Он помогает поддерживать водный баланс, способствует здоровью сердца и улучшает пищеварение. Низкокалорийный и очень освежающий."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "added to fruit salads",
+          "used in juices and smoothies",
+          "served as a refreshing dessert",
+          "combined with cheese or herbs for salads"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել հյութերի և սմուզիների մեջ",
+          "մատուցել որպես թարմացնող աղանդեր",
+          "համադրել պանրի կամ կանաչիների հետ աղցաններում"
+        ],
+        "ru": [
+          "употреблять свежими дольками",
+          "добавлять во фруктовые салаты",
+          "использовать в соках и смузи",
+          "подавать как освежающий десерт",
+          "сочетать с сыром или зеленью в салатах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "name": {
+      "en": "Watermelon import kg",
+      "hy": "Ձմերուկ (արտասահմանյան) կգ",
+      "ru": "Арбуз импортный кг"
+    },
+    "image": "images/1776532083866_watermelon_import_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "069645",
+      "discountCode": "096824",
+      "scaleCode": "12811",
+      "scaleDiscountCode": "13990"
+    },
+    "description": {
+      "what": {
+        "en": "Imported watermelon is a large, refreshing fruit with a green rind and juicy red flesh. It has a sweet and crisp taste and is brought from other countries, allowing it to be available outside the local growing season.",
+        "hy": "Ներմուծված ձմերուկը մեծ, թարմացնող պտուղ է՝ կանաչ կեղևով և հյութալի կարմիր միջուկով։ Այն ունի քաղցր և խրթխրթան համ և ներմուծվում է այլ երկրներից՝ հասանելի լինելով նաև տեղական սեզոնից դուրս։",
+        "ru": "Импортный арбуз — это крупный освежающий плод с зелёной кожурой и сочной красной мякотью. Он обладает сладким и хрустящим вкусом и поставляется из других стран, что позволяет ему быть доступным вне местного сезона."
+      },
+      "healthy": {
+        "en": "Watermelon is rich in water, vitamins A and C, and antioxidants. It helps keep the body hydrated, supports heart health, and aids digestion. It is low in calories and very refreshing.",
+        "hy": "Ձմերուկը հարուստ է ջրով, վիտամին A-ով, վիտամին C-ով և հակաօքսիդանտներով։ Այն օգնում է պահպանել ջրային հավասարակշռությունը, նպաստում է սրտի առողջությանը և բարելավում է մարսողությունը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Арбуз богат водой, витаминами A и C, а также антиоксидантами. Он помогает поддерживать водный баланс, способствует здоровью сердца и улучшает пищеварение. Низкокалорийный и очень освежающий."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "added to fruit salads",
+          "used in juices and smoothies",
+          "served as a refreshing dessert",
+          "combined with cheese or herbs for salads"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել հյութերի և սմուզիների մեջ",
+          "մատուցել որպես թարմացնող աղանդեր",
+          "համադրել պանրի կամ կանաչիների հետ աղցաններում"
+        ],
+        "ru": [
+          "употреблять свежими дольками",
+          "добавлять во фруктовые салаты",
+          "использовать в соках и смузи",
+          "подавать как освежающий десерт",
+          "сочетать с сыром или зеленью в салатах"
+        ]
+      }
+    }
+  }
 ]
