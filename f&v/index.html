@@ -1,56 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Fruits & Vegetables</title>
-    <meta name="description" content="Fruits & vegetables site for stuff from Arakel" />
-    <link rel="icon" href="assets/images/logo/favicon.png" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="brand">
-                <a href="index.html">
-                    <div class="logo" aria-hidden="true">
-                        <img src="assets/images/logo/logo.png" alt="f&v" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fruits & Vegetables</title>
+        <meta name="description" content="Fruits & vegetables site for staff from Arakel" />
+        <link rel="icon" href="favicon.png" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="page">
+            <header class="site-header">
+                <div class="brand">
+                    <img src="logo.png" class="brand-logo" alt="Fruits & Vegetables Logo">
+                    <div class="brand-text">
+                        <h2 id="siteTitle">Fruits & Vegetables</h2>
+                        <p id="siteSubtitle">Employee help book</p>
                     </div>
-                    <div>
-                        <div class="logo-title">Fruits & Vegetables</div>
-                        <div class="logo-subtitle">Employee help book</div>
-                    </div>
-                </a>
-            </div>
-        </header>
+                </div>
 
-        <!-- Language selection -->
-        <section class="lang-section">
-            <h1>Select Language</h1>
-            <div class="lang-buttons">
-                <a href="en/products.html" class="lang-btn" data-lang="en">
-                    <img src="assets/images/lang/en.png" alt="English" />
-                    <span>English</span>
-                </a>
-                <a href="ru/products.html" class="lang-btn" data-lang="ru">
-                    <img src="assets/images/lang/ru.png" alt="Русский" />
-                    <span>Русский</span>
-                </a>
-                <a href="am/products.html" class="lang-btn" data-lang="am">
-                    <img src="assets/images/lang/am.png" alt="Հայերեն" />
-                    <span>Հայերեն</span>
-                </a>
-            </div>
-        </section>
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="hy">Հայերեն</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </header>
 
-        <footer>
-            © <span id="year"></span> Fruits & Vegetables — Created by <a href="https://arakel-programs.github.io/" class="footer-link" target="_blank">Arakel</a>
+            <h1 id="pageTitle">Products</h1>
+
+            <section class="search-section">
+                <input
+                    type="text"
+                    class="search-input"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+            </section>
+
+            <div class="grid" id="productGrid"></div>
+        </div>
+
+        <footer class="site-footer">
+            © <span id="year"></span> Fruits & Vegetables — Created by
+            <a href="https://arakel-programs.github.io/" class="footer-link" target="_blank">Arakel</a>
         </footer>
-    </div>
 
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/search.js"></script>
-    <script>
-    </script>
-</body>
+        <script>
+            const BASE_PATH =
+                location.hostname === "127.0.0.1" || location.hostname === "localhost"
+                    ? ""
+                    : "/f&v";
+
+            let allProducts = [];
+            let currentLanguage = localStorage.getItem("lang") || "en";
+
+            const uiText = {
+                en: {
+                    siteTitle: "Fruits & Vegetables",
+                    siteSubtitle: "Employee help book",
+                    products: "Products",
+                    search: "Search products...",
+                    noProducts: "No products found.",
+                    errorLoading: "Error loading products."
+                },
+                hy: {
+                    siteTitle: "Մրգեր և Բանջարեղեն",
+                    siteSubtitle: "Աշխատակիցների օգնության գիրք",
+                    products: "Ապրանքներ",
+                    search: "Որոնել ապրանքներ...",
+                    noProducts: "Ապրանքներ չեն գտնվել։",
+                    errorLoading: "Սխալ՝ ապրանքները բեռնելիս։"
+                },
+                ru: {
+                    siteTitle: "Фрукты и Овощи",
+                    siteSubtitle: "Справочник для сотрудников",
+                    products: "Продукты",
+                    search: "Поиск продуктов...",
+                    noProducts: "Продукты не найдены.",
+                    errorLoading: "Ошибка загрузки продуктов."
+                }
+            };
+
+            function getText(key) {
+                return uiText[currentLanguage]?.[key] || uiText.en[key] || "";
+            }
+
+            function getTranslatedValue(value) {
+                if (!value) return "";
+
+                if (typeof value === "string") {
+                    return value;
+                }
+
+                return value[currentLanguage] || value.en || value.hy || value.ru || "";
+            }
+
+            function setLanguage(lang) {
+                currentLanguage = lang;
+                localStorage.setItem("lang", lang);
+            }
+
+            function applyStaticTexts() {
+                document.getElementById("siteTitle").textContent = getText("siteTitle");
+                document.getElementById("siteSubtitle").textContent = getText("siteSubtitle");
+                document.getElementById("pageTitle").textContent = getText("products");
+                document.getElementById("searchInput").placeholder = getText("search");
+                document.documentElement.lang = currentLanguage;
+            }
+
+            async function loadProducts() {
+                try {
+                    const res = await fetch(`${BASE_PATH}/products.json`);
+                    if (!res.ok) throw new Error("Failed to load products");
+
+                    allProducts = await res.json();
+                    renderProducts(allProducts);
+                } catch (error) {
+                    console.error(error);
+                    document.getElementById("productGrid").innerHTML =
+                        `<p class="no-results">${getText("errorLoading")}</p>`;
+                }
+            }
+
+            function renderProducts(products) {
+                const grid = document.getElementById("productGrid");
+                grid.innerHTML = "";
+
+                if (!products.length) {
+                    grid.innerHTML = `<p class="no-results">${getText("noProducts")}</p>`;
+                    return;
+                }
+
+                products.forEach(product => {
+                    const productName = getTranslatedValue(product.name);
+
+                    const card = document.createElement("div");
+                    card.className = "card";
+                    card.innerHTML = `
+                        <img src="${BASE_PATH}/${product.image}" alt="${productName}">
+                        <h3>${productName}</h3>
+                        <p>${product.codes?.mainCode || ""}</p>
+                    `;
+
+                    card.addEventListener("click", () => {
+                        window.location.href = `${BASE_PATH}/product.html?id=${product.id}`;
+                    });
+
+                    grid.appendChild(card);
+                });
+            }
+
+            function filterProducts() {
+                const query = document.getElementById("searchInput").value.trim().toLowerCase();
+
+                const filtered = allProducts.filter(product => {
+                    const nameEn = (product.name?.en || "").toLowerCase();
+                    const nameHy = (product.name?.hy || "").toLowerCase();
+                    const nameRu = (product.name?.ru || "").toLowerCase();
+
+                    const mainCode = (product.codes?.mainCode || "").toLowerCase();
+                    const discountCode = (product.codes?.discountCode || "").toLowerCase();
+                    const scaleCode = (product.codes?.scaleCode || "").toLowerCase();
+                    const scaleDiscountCode = (product.codes?.scaleDiscountCode || "").toLowerCase();
+
+                    return (
+                        nameEn.includes(query) ||
+                        nameHy.includes(query) ||
+                        nameRu.includes(query) ||
+                        mainCode.includes(query) ||
+                        discountCode.includes(query) ||
+                        scaleCode.includes(query) ||
+                        scaleDiscountCode.includes(query)
+                    );
+                });
+
+                renderProducts(filtered);
+            }
+
+            document.getElementById("searchInput").addEventListener("input", filterProducts);
+
+            const languageSelect = document.getElementById("languageSelect");
+            languageSelect.value = currentLanguage;
+
+            languageSelect.addEventListener("change", (e) => {
+                setLanguage(e.target.value);
+                applyStaticTexts();
+                filterProducts();
+            });
+
+            const year = document.getElementById("year");
+            if (year) {
+                year.textContent = new Date().getFullYear();
+            }
+
+            applyStaticTexts();
+            loadProducts();
+        </script>
+    </body>
 </html>

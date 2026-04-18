@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": {
+            "en": "Pumpkin (armenian) kg",
+            "hy": "Դդում (հայկական) կգ",
+            "ru": "Тыква (армянская) кг"
+        },
+        "image": "images/1776507927108_pumpkin_armenian.png",
+        "needScale": true,
+        "codes": {
+            "mainCode": "011949",
+            "discountCode": "097155",
+            "scaleCode": "10694",
+            "scaleDiscountCode": "14010"
+        },
+        "description": {
+            "what": {
+                "en": "Armenian pumpkin is a large, sweet vegetable with soft orange flesh and thick skin. It is widely used in traditional Armenian cuisine, both in savory and sweet dishes.",
+                "hy": "Հայկական դդումը մեծ, քաղցրահամ բանջարեղեն է՝ փափուկ նարնջագույն միջուկով և հաստ կեղևով։ Այն լայնորեն օգտագործվում է հայկական ավանդական խոհանոցում՝ ինչպես աղի, այնպես էլ քաղցր ուտեստներում։",
+                "ru": "Армянская тыква — это крупный сладкий овощ с мягкой оранжевой мякотью и толстой кожурой. Она широко используется в традиционной армянской кухне как в солёных, так и в сладких блюдах."
+            },
+            "healthy": {
+                "en": "Pumpkin is low in calories and rich in fiber, vitamin A, vitamin C, and antioxidants. It supports eye health, strengthens the immune system, and helps improve digestion.",
+                "hy": "Դդումը քիչ կալորիական է և հարուստ է բջջանյութով, վիտամին A-ով, վիտամին C-ով և հակաօքսիդանտներով։ Այն նպաստում է աչքերի առողջությանը, ամրացնում է իմունիտետը և օգնում է բարելավել մարսողությունը։",
+                "ru": "Тыква низкокалорийна и богата клетчаткой, витамином A, витамином C и антиоксидантами. Она поддерживает здоровье глаз, укрепляет иммунитет и улучшает пищеварение."
+            },
+            "eat": {
+                "en": [
+                "boiled or added to soups",
+                "roasted as a side dish",
+                "baked into traditional dishes like ghapama",
+                "used in pies and desserts",
+                "added to salads",
+                "pumpkin seeds can be roasted and eaten as a healthy snack"
+                ],
+                "hy": [
+                "եփել կամ ավելացնել ապուրների մեջ",
+                "թխել որպես խավարտ",
+                "օգտագործել ղափամայի նման ավանդական ուտեստներում",
+                "ավելացնել կարկանդակների և աղանդերի մեջ",
+                "ավելացնել աղցանների մեջ",
+                "դդմի սերմերը կարելի է տապակել և օգտագործել որպես առողջ խորտիկ"
+                ],
+                "ru": [
+                "варить или добавлять в супы",
+                "запекать как гарнир",
+                "использовать в традиционных блюдах, например гапаме",
+                "добавлять в пироги и десерты",
+                "добавлять в салаты",
+                "тыквенные семечки можно обжарить и есть как полезный перекус"
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fruits & Vegetables</title>
+        <meta name="description" content="Fruits & vegetables site for staff from Arakel" />
+        <link rel="icon" href="favicon.png" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="page">
+            <header class="site-header">
+                <div class="brand">
+                    <img src="logo.png" class="brand-logo" alt="Fruits & Vegetables Logo">
+                    <div class="brand-text">
+                        <h2 id="siteTitle">Fruits & Vegetables</h2>
+                        <p id="siteSubtitle">Employee help book</p>
+                    </div>
+                </div>
+
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="hy">Հայերեն</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </header>
+
+            <button class="back-btn" id="backBtn" onclick="goBack()">← All Products</button>
+
+            <div class="box" id="productDetails"></div>
+        </div>
+
+        <footer class="site-footer">
+            © <span id="year"></span> Fruits & Vegetables — Created by
+            <a href="https://arakel-programs.github.io/" class="footer-link" target="_blank">Arakel</a>
+        </footer>
+
+        <script>
+            const BASE_PATH =
+                location.hostname === "127.0.0.1" || location.hostname === "localhost"
+                    ? ""
+                    : "/f&v";
+
+            let currentLanguage = localStorage.getItem("lang") || "en";
+
+            const uiText = {
+                en: {
+                    siteTitle: "Fruits & Vegetables",
+                    siteSubtitle: "Employee help book",
+                    back: "← All Products",
+                    notFound: "Product not found",
+                    errorLoading: "Error loading product",
+                    description: "Description",
+                    what: "What it is",
+                    healthy: "Why it is healthy",
+                    eat: "How to eat it",
+                    mainCode: "1C code",
+                    discountCode: "Discount code",
+                    scaleCode: "Scale code",
+                    scaleDiscountCode: "Scale discount code"
+                },
+                hy: {
+                    siteTitle: "Մրգեր և Բանջարեղեն",
+                    siteSubtitle: "Աշխատակիցների օգնության գիրք",
+                    back: "← Բոլոր ապրանքները",
+                    notFound: "Ապրանքը չի գտնվել",
+                    errorLoading: "Սխալ՝ ապրանքը բեռնելիս",
+                    description: "Նկարագրություն",
+                    what: "Ի՞նչ է սա",
+                    healthy: "Ինչո՞վ է օգտակար",
+                    eat: "Ինչպե՞ս օգտագործել",
+                    mainCode: "1C կոդ",
+                    discountCode: "Զեղչի կոդ",
+                    scaleCode: "Կշեռքի կոդ",
+                    scaleDiscountCode: "Կշեռքի զեղչի կոդ"
+                },
+                ru: {
+                    siteTitle: "Фрукты и Овощи",
+                    siteSubtitle: "Справочник для сотрудников",
+                    back: "← Все продукты",
+                    notFound: "Продукт не найден",
+                    errorLoading: "Ошибка загрузки продукта",
+                    description: "Описание",
+                    what: "Что это",
+                    healthy: "Чем полезно",
+                    eat: "Как употреблять",
+                    mainCode: "1C код",
+                    discountCode: "Код скидки",
+                    scaleCode: "Код весов",
+                    scaleDiscountCode: "Код скидки весов"
+                }
+            };
+
+            function getText(key) {
+                return uiText[currentLanguage]?.[key] || uiText.en[key] || "";
+            }
+
+            function getTranslatedValue(value) {
+                if (!value) return "";
+
+                if (typeof value === "string") {
+                    return value;
+                }
+
+                return value[currentLanguage] || value.en || value.hy || value.ru || "";
+            }
+
+            function getTranslatedArray(value) {
+                if (!value) return [];
+
+                if (Array.isArray(value)) {
+                    return value;
+                }
+
+                return value[currentLanguage] || value.en || value.hy || value.ru || [];
+            }
+
+            function setLanguage(lang) {
+                currentLanguage = lang;
+                localStorage.setItem("lang", lang);
+            }
+
+            function applyStaticTexts() {
+                document.getElementById("siteTitle").textContent = getText("siteTitle");
+                document.getElementById("siteSubtitle").textContent = getText("siteSubtitle");
+                document.getElementById("backBtn").textContent = getText("back");
+                document.documentElement.lang = currentLanguage;
+            }
+
+            function goBack() {
+                if (document.referrer) {
+                    window.history.back();
+                } else {
+                    window.location.href = `${BASE_PATH}/index.html`;
+                }
+            }
+
+            async function loadProduct() {
+                const params = new URLSearchParams(window.location.search);
+                const id = Number(params.get("id"));
+                const container = document.getElementById("productDetails");
+
+                try {
+                    const res = await fetch(`${BASE_PATH}/products.json`);
+                    if (!res.ok) {
+                        throw new Error("Failed to load products");
+                    }
+
+                    const products = await res.json();
+                    const product = products.find(p => p.id === id);
+
+                    if (!product) {
+                        container.innerHTML = `<h2>${getText("notFound")}</h2>`;
+                        return;
+                    }
+
+                    const productName = getTranslatedValue(product.name);
+                    const whatText = getTranslatedValue(product.description?.what);
+                    const healthyText = getTranslatedValue(product.description?.healthy);
+                    const eatItems = getTranslatedArray(product.description?.eat);
+
+                    container.innerHTML = `
+                        <div class="top">
+                            <div class="detail-image">
+                                <img src="${BASE_PATH}/${product.image}" alt="${productName}">
+                            </div>
+
+                            <div class="detail-content">
+                                <h1>${productName}</h1>
+
+                                <div class="detail-codes">
+                                    <div class="code-box">${getText("mainCode")}: ${product.codes?.mainCode || ""}</div>
+                                    ${product.codes?.discountCode ? `<div class="code-box red">${getText("discountCode")}: ${product.codes.discountCode}</div><br>` : ""}
+                                    ${product.needScale && product.codes?.scaleCode ? `<div class="code-box">${getText("scaleCode")}: ${product.codes.scaleCode}</div>` : ""}
+                                    ${product.needScale && product.codes?.scaleDiscountCode ? `<div class="code-box red">${getText("scaleDiscountCode")}: ${product.codes.scaleDiscountCode}</div>` : ""}
+                                </div>
+
+                                <h3>${getText("description")}</h3>
+                                <p><strong>${getText("what")}:</strong> ${whatText}</p>
+                                <p><strong>${getText("healthy")}:</strong> ${healthyText}</p>
+
+                                <p><strong>${getText("eat")}:</strong></p>
+                                <ul>
+                                    ${eatItems.map(item => `<li>${item}</li>`).join("")}
+                                </ul>
+                            </div>
+                        </div>
+                    `;
+                } catch (error) {
+                    console.error(error);
+                    container.innerHTML = `<h2>${getText("errorLoading")}</h2>`;
+                }
+            }
+
+            const languageSelect = document.getElementById("languageSelect");
+            languageSelect.value = currentLanguage;
+
+            languageSelect.addEventListener("change", (e) => {
+                setLanguage(e.target.value);
+                applyStaticTexts();
+                loadProduct();
+            });
+
+            const year = document.getElementById("year");
+            if (year) {
+                year.textContent = new Date().getFullYear();
+            }
+
+            applyStaticTexts();
+            loadProduct();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin | Fruits & Vegetables</title>
+        <meta name="description" content="Fruits & vegetables site for staff from Arakel" />
+        <link rel="icon" href="favicon.png" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="page">
+            <header class="site-header">
+                <div class="brand">
+                    <img src="logo.png" class="brand-logo" alt="Fruits & Vegetables Logo">
+                    <div class="brand-text">
+                        <h2 id="siteTitle">Fruits & Vegetables</h2>
+                        <p id="siteSubtitle">Employee help book</p>
+                    </div>
+                </div>
+
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="hy">Հայերեն</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </header>
+
+            <div class="container">
+                <h1 id="pageTitle">Add Product</h1>
+
+                <form id="productForm">
+                    <h3>Names</h3>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="nameEn">Product name (EN)</label>
+                            <input type="text" id="nameEn" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nameHy">Product name (HY)</label>
+                            <input type="text" id="nameHy" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nameRu">Product name (RU)</label>
+                        <input type="text" id="nameRu" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="image">Product image</label>
+                        <input type="file" id="image" accept="image/*" required />
+                        <img id="preview" alt="Preview" />
+                    </div>
+
+                    <div class="form-group checkbox-row">
+                        <input type="checkbox" id="needScale" />
+                        <label for="needScale" id="needScaleLabel">Needs scale</label>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="mainCode">Main code</label>
+                            <input type="text" id="mainCode" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="discountCode">Discount code</label>
+                            <input type="text" id="discountCode" />
+                        </div>
+                    </div>
+
+                    <div id="scaleFields" class="hidden">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="scaleCode">Scale code</label>
+                                <input type="text" id="scaleCode" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="scaleDiscountCode">Scale discount code</label>
+                                <input type="text" id="scaleDiscountCode" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Description (EN)</h3>
+
+                    <div class="form-group">
+                        <label for="whatEn">What is it?</label>
+                        <textarea id="whatEn" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="healthyEn">Why is it healthy?</label>
+                        <textarea id="healthyEn" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eatEn">How to eat it? (one item per line)</label>
+                        <textarea id="eatEn" required></textarea>
+                    </div>
+
+                    <h3>Description (HY)</h3>
+
+                    <div class="form-group">
+                        <label for="whatHy">What is it?</label>
+                        <textarea id="whatHy"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="healthyHy">Why is it healthy?</label>
+                        <textarea id="healthyHy"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eatHy">How to eat it? (one item per line)</label>
+                        <textarea id="eatHy"></textarea>
+                    </div>
+
+                    <h3>Description (RU)</h3>
+
+                    <div class="form-group">
+                        <label for="whatRu">What is it?</label>
+                        <textarea id="whatRu"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="healthyRu">Why is it healthy?</label>
+                        <textarea id="healthyRu"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eatRu">How to eat it? (one item per line)</label>
+                        <textarea id="eatRu"></textarea>
+                    </div>
+
+                    <button type="submit" id="saveBtn">Save Product</button>
+                </form>
+
+                <div id="messageBox"></div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            © <span id="year"></span> Fruits & Vegetables — Created by
+            <a href="https://arakel-programs.github.io/" class="footer-link" target="_blank">Arakel</a>
+        </footer>
+
+        <script>
+            let currentLanguage = localStorage.getItem("lang") || "en";
+
+            const uiText = {
+                en: {
+                    siteTitle: "Fruits & Vegetables",
+                    siteSubtitle: "Employee help book",
+                    pageTitle: "Add Product",
+                    needScale: "Needs scale",
+                    save: "Save Product",
+                    chooseImage: "Please choose an image.",
+                    saved: "Product saved successfully!"
+                },
+                hy: {
+                    siteTitle: "Մրգեր և Բանջարեղեն",
+                    siteSubtitle: "Աշխատակիցների օգնության գիրք",
+                    pageTitle: "Ավելացնել ապրանք",
+                    needScale: "Պետք է կշեռք",
+                    save: "Պահպանել ապրանքը",
+                    chooseImage: "Խնդրում ենք ընտրել նկար։",
+                    saved: "Ապրանքը հաջողությամբ պահպանվեց։"
+                },
+                ru: {
+                    siteTitle: "Фрукты и Овощи",
+                    siteSubtitle: "Справочник для сотрудников",
+                    pageTitle: "Добавить продукт",
+                    needScale: "Нужны весы",
+                    save: "Сохранить продукт",
+                    chooseImage: "Пожалуйста, выберите изображение.",
+                    saved: "Продукт успешно сохранён."
+                }
+            };
+
+            function getText(key) {
+                return uiText[currentLanguage]?.[key] || uiText.en[key] || "";
+            }
+
+            function setLanguage(lang) {
+                currentLanguage = lang;
+                localStorage.setItem("lang", lang);
+            }
+
+            function applyStaticTexts() {
+                document.getElementById("siteTitle").textContent = getText("siteTitle");
+                document.getElementById("siteSubtitle").textContent = getText("siteSubtitle");
+                document.getElementById("pageTitle").textContent = getText("pageTitle");
+                document.getElementById("needScaleLabel").textContent = getText("needScale");
+                document.getElementById("saveBtn").textContent = getText("save");
+                document.documentElement.lang = currentLanguage;
+            }
+
+            const form = document.getElementById("productForm");
+            const imageInput = document.getElementById("image");
+            const preview = document.getElementById("preview");
+            const needScale = document.getElementById("needScale");
+            const scaleFields = document.getElementById("scaleFields");
+            const messageBox = document.getElementById("messageBox");
+            const languageSelect = document.getElementById("languageSelect");
+
+            needScale.addEventListener("change", () => {
+                scaleFields.classList.toggle("hidden", !needScale.checked);
+            });
+
+            imageInput.addEventListener("change", function () {
+                const file = this.files[0];
+
+                if (!file) {
+                    preview.style.display = "none";
+                    preview.src = "";
+                    return;
+                }
+
+                const objectUrl = URL.createObjectURL(file);
+                preview.src = objectUrl;
+                preview.style.display = "block";
+            });
+
+            form.addEventListener("submit", async function (e) {
+                e.preventDefault();
+
+                messageBox.className = "";
+                messageBox.textContent = "";
+
+                const file = imageInput.files[0];
+
+                if (!file) {
+                    messageBox.className = "error";
+                    messageBox.textContent = getText("chooseImage");
+                    return;
+                }
+
+                const formData = new FormData();
+
+                formData.append("nameEn", document.getElementById("nameEn").value.trim());
+                formData.append("nameHy", document.getElementById("nameHy").value.trim());
+                formData.append("nameRu", document.getElementById("nameRu").value.trim());
+
+                formData.append("image", file);
+                formData.append("needScale", document.getElementById("needScale").checked);
+
+                formData.append("mainCode", document.getElementById("mainCode").value.trim());
+                formData.append("discountCode", document.getElementById("discountCode").value.trim());
+                formData.append("scaleCode", document.getElementById("scaleCode").value.trim());
+                formData.append("scaleDiscountCode", document.getElementById("scaleDiscountCode").value.trim());
+
+                formData.append("whatEn", document.getElementById("whatEn").value.trim());
+                formData.append("whatHy", document.getElementById("whatHy").value.trim());
+                formData.append("whatRu", document.getElementById("whatRu").value.trim());
+
+                formData.append("healthyEn", document.getElementById("healthyEn").value.trim());
+                formData.append("healthyHy", document.getElementById("healthyHy").value.trim());
+                formData.append("healthyRu", document.getElementById("healthyRu").value.trim());
+
+                formData.append("eatEn", document.getElementById("eatEn").value.trim());
+                formData.append("eatHy", document.getElementById("eatHy").value.trim());
+                formData.append("eatRu", document.getElementById("eatRu").value.trim());
+
+                try {
+                    const res = await fetch("/api/products", {
+                        method: "POST",
+                        body: formData
+                    });
+
+                    const data = await res.json();
+
+                    if (!res.ok) {
+                        throw new Error(data.error || "Error saving product.");
+                    }
+
+                    messageBox.className = "success";
+                    messageBox.textContent = data.message || getText("saved");
+
+                    form.reset();
+                    preview.style.display = "none";
+                    preview.src = "";
+                    scaleFields.classList.add("hidden");
+                } catch (error) {
+                    console.error(error);
+                    messageBox.className = "error";
+                    messageBox.textContent = error.message || "Error saving product.";
+                }
+            });
+
+            languageSelect.value = currentLanguage;
+            languageSelect.addEventListener("change", (e) => {
+                setLanguage(e.target.value);
+                applyStaticTexts();
+            });
+
+            const year = document.getElementById("year");
+            if (year) {
+                year.textContent = new Date().getFullYear();
+            }
+
+            applyStaticTexts();
+        </script>
+    </body>
+</html>
