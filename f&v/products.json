@@ -2241,5 +2241,668 @@
         ]
       }
     }
+  },
+  {
+    "id": 45,
+    "name": {
+      "en": "Pear belgian kg",
+      "hy": "Տանձ Բելգիական կգ",
+      "ru": "Груша Бельгийская кг"
+    },
+    "image": "images/1776588305186_pear_belgian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1132362",
+      "discountCode": "1132363",
+      "scaleCode": "79654",
+      "scaleDiscountCode": "79655"
+    },
+    "description": {
+      "what": {
+        "en": "Belgian pear is a high-quality imported fruit known for its smooth skin, firm texture, and juicy flesh. It has a sweet, well-balanced flavor with a delicate aroma, making it popular for fresh consumption and premium use.",
+        "hy": "Բելգիական տանձը բարձրորակ ներմուծված միրգ է, որը հայտնի է իր հարթ կեղևով, ամուր կառուցվածքով և հյութալի միջուկով։ Այն ունի քաղցր, հավասարակշռված համ և նուրբ բույր՝ լինելով շատ հարմար թարմ օգտագործման և բարձրակարգ կիրառության համար։",
+        "ru": "Бельгийская груша — это высококачественный импортный фрукт с гладкой кожурой, плотной текстурой и сочной мякотью. Она обладает сладким сбалансированным вкусом и нежным ароматом, широко используется для свежего употребления и в премиальном сегменте."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts and baking",
+          "used in juices and compotes",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "օգտագործել հյութերի և կոմպոտների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и выпечке",
+          "использовать в соках и компотах",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 46,
+    "name": {
+      "en": "Pear Conference kg",
+      "hy": "Տանձ Կոնֆերանս կգ",
+      "ru": "Груша Конференция кг"
+    },
+    "image": "images/1776588573909_pear_conference_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1119321",
+      "discountCode": "1121623",
+      "scaleCode": "79051",
+      "scaleDiscountCode": "79158"
+    },
+    "description": {
+      "what": {
+        "en": "Conference pear is a popular European variety known for its elongated shape, greenish-brown skin, and juicy, slightly firm flesh. It has a sweet, delicate flavor with a light aroma and is highly valued for both fresh consumption and cooking.",
+        "hy": "Conference տանձը եվրոպական հայտնի տեսակ է՝ երկարավուն ձևով, կանաչավուն-շագանակագույն կեղևով և հյութալի, թեթևակի ամուր միջուկով։ Այն ունի քաղցր, նուրբ համ և թեթև բույր՝ լինելով հարմար թե՛ թարմ օգտագործման, թե՛ պատրաստման համար։",
+        "ru": "Груша Conference — это популярный европейский сорт с удлинённой формой, зелёно-коричневой кожурой и сочной слегка плотной мякотью. Она обладает сладким нежным вкусом и лёгким ароматом, подходит как для свежего употребления, так и для приготовления."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "used in baking and desserts",
+          "added to fruit salads",
+          "used in compotes and preserves",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "օգտագործել թխվածքների և աղանդերի մեջ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել կոմպոտների և պահածոների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "использовать в выпечке и десертах",
+          "добавлять во фруктовые салаты",
+          "использовать в компотах и заготовках",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 47,
+    "name": {
+      "en": "Pear Conference red kg",
+      "hy": "Տանձ Կոնֆերանս կարմիր կգ",
+      "ru": "Груша Конференция красная кг"
+    },
+    "image": "images/1776588984989_pear_conference_red_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1134235",
+      "discountCode": "1135334",
+      "scaleCode": "79700",
+      "scaleDiscountCode": "79741"
+    },
+    "description": {
+      "what": {
+        "en": "Conference Red pear is a variation of the classic Conference variety, known for its elongated shape and reddish skin. It has juicy, slightly firm flesh with a sweet, delicate flavor and a light aroma, making it ideal for fresh consumption and desserts.",
+        "hy": "Conference Red տանձը Conference դասական տեսակի տարբերակն է՝ երկարավուն ձևով և կարմրավուն կեղևով։ Այն ունի հյութալի, թեթևակի ամուր միջուկ՝ քաղցր, նուրբ համով և թեթև բույրով՝ հարմար թե՛ թարմ օգտագործման, թե՛ աղանդերի համար։",
+        "ru": "Груша Conference Red — это разновидность классического сорта Conference с удлинённой формой и красноватой кожурой. Она обладает сочной слегка плотной мякотью, сладким нежным вкусом и лёгким ароматом, подходит для свежего употребления и десертов."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "used in desserts and baking",
+          "added to fruit salads",
+          "used in compotes and preserves",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել կոմպոտների և պահածոների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "использовать в десертах и выпечке",
+          "добавлять во фруктовые салаты",
+          "использовать в компотах и заготовках",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 48,
+    "name": {
+      "en": "Pear Forest Beauty (armenian) kg",
+      "hy": "Տանձ Անտառային գեղեցկուհի (հայկական) կգ",
+      "ru": "Груша Лесная красавица армянская кг"
+    },
+    "image": "images/1776589237532_pear_forest_beauty_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "011260",
+      "discountCode": "093874",
+      "scaleCode": "10502",
+      "scaleDiscountCode": "13805"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian Forest Beauty pear is a traditional variety known for its attractive yellow-green skin with a reddish blush and juicy, aromatic flesh. It has a sweet, slightly tangy flavor and a soft texture, making it popular for fresh consumption.",
+        "hy": "Հայկական «Անտառային գեղեցկուհի» տանձը ավանդական տեսակ է՝ դեղնականաչ կեղևով՝ կարմրավուն երանգով և հյութալի, բուրավետ միջուկով։ Այն ունի քաղցր՝ թեթև թթվությամբ համ և փափուկ կառուցվածք՝ լինելով շատ տարածված թարմ օգտագործման համար։",
+        "ru": "Армянская груша «Лесная красавица» — это традиционный сорт с жёлто-зелёной кожурой с красноватым румянцем и сочной ароматной мякотью. Она обладает сладким вкусом с лёгкой кислинкой и мягкой текстурой, популярна для употребления в свежем виде."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts and baking",
+          "used in juices and compotes",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "օգտագործել հյութերի և կոմպոտների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и выпечке",
+          "использовать в соках и компотах",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 49,
+    "name": {
+      "en": "Pear Lucas kg",
+      "hy": "Տանձ Լուկաս կգ",
+      "ru": "Груша Лукас кг"
+    },
+    "image": "images/1776591916737_pear_lucas_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1134856",
+      "discountCode": "1135335",
+      "scaleCode": "79733",
+      "scaleDiscountCode": "79742"
+    },
+    "description": {
+      "what": {
+        "en": "Lucas pear is a well-known European variety with a large size, smooth yellow-green skin, and juicy, tender flesh. It has a sweet, mild flavor with a delicate aroma, making it popular for both fresh consumption and cooking.",
+        "hy": "Lucas տանձը հայտնի եվրոպական տեսակ է՝ մեծ չափերով, հարթ դեղնականաչ կեղևով և հյութալի, նուրբ միջուկով։ Այն ունի քաղցր, մեղմ համ և նուրբ բույր՝ լինելով հարմար թե՛ թարմ օգտագործման, թե՛ պատրաստման համար։",
+        "ru": "Груша Lucas — это известный европейский сорт с крупными плодами, гладкой жёлто-зелёной кожурой и сочной нежной мякотью. Она обладает сладким мягким вкусом и деликатным ароматом, подходит как для свежего употребления, так и для приготовления."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "used in desserts and baking",
+          "added to fruit salads",
+          "used in compotes and preserves",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել կոմպոտների և պահածոների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "использовать в десертах и выпечке",
+          "добавлять во фруктовые салаты",
+          "использовать в компотах и заготовках",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 50,
+    "name": {
+      "en": "Pear Мalacha kg",
+      "hy": "Տանձ Մալաչա կգ",
+      "ru": "Груша Малача кг"
+    },
+    "image": "images/1776592198461_pear_malacha_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "029417",
+      "discountCode": "094291",
+      "scaleCode": "11352",
+      "scaleDiscountCode": "13860"
+    },
+    "description": {
+      "what": {
+        "en": "Malacha pear is a table variety known for its smooth skin, juicy flesh, and balanced sweet flavor. It has a pleasant aroma and a tender texture, making it suitable for fresh consumption and various culinary uses.",
+        "hy": "«Մալաչա» տանձը սեղանի տեսակ է, որը հայտնի է իր հարթ կեղևով, հյութալի միջուկով և հավասարակշռված քաղցր համով։ Այն ունի հաճելի բույր և նուրբ կառուցվածք՝ հարմար լինելով թե՛ թարմ օգտագործման, թե՛ տարբեր խոհարարական կիրառությունների համար։",
+        "ru": "Груша «Малача» — это столовый сорт, известный своей гладкой кожурой, сочной мякотью и сбалансированным сладким вкусом. Она обладает приятным ароматом и нежной текстурой, подходит как для свежего употребления, так и для различных кулинарных блюд."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts and baking",
+          "used in juices and compotes",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "օգտագործել հյութերի և կոմպոտների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и выпечке",
+          "использовать в соках и компотах",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 51,
+    "name": {
+      "en": "Pear selected kg",
+      "hy": "Տանձ ընտիր կգ",
+      "ru": "Груша отбор. кг"
+    },
+    "image": "images/1776593527499_pear_selected_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1073706",
+      "discountCode": "096205",
+      "scaleCode": "76234",
+      "scaleDiscountCode": "13924"
+    },
+    "description": {
+      "what": {
+        "en": "Selected pears are carefully chosen premium fruits with uniform size, smooth skin, and juicy, tender flesh. They have a naturally sweet, well-balanced flavor and a pleasant aroma, making them ideal for high-quality fresh consumption.",
+        "hy": "Ընտրված տանձը խնամքով ընտրված պրեմիում միրգ է՝ հավասարաչափ չափերով, հարթ կեղևով և հյութալի, նուրբ միջուկով։ Այն ունի բնական քաղցր, հավասարակշռված համ և հաճելի բույր՝ լինելով իդեալական բարձրորակ թարմ օգտագործման համար։",
+        "ru": "Отборная груша — это тщательно выбранный премиальный фрукт с ровным размером, гладкой кожурой и сочной нежной мякотью. Она обладает естественным сладким сбалансированным вкусом и приятным ароматом, идеально подходит для качественного свежего потребления."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts and baking",
+          "used in juices and compotes",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "օգտագործել հյութերի և կոմպոտների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и выпечке",
+          "использовать в соках и компотах",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 52,
+    "name": {
+      "en": "Pear Farel kg",
+      "hy": "Տանձ Ֆարել կգ",
+      "ru": "Груша Фарель кг"
+    },
+    "image": "images/1776593783931_pear_farel_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "039830",
+      "discountCode": "095121",
+      "scaleCode": "11964",
+      "scaleDiscountCode": "13909"
+    },
+    "description": {
+      "what": {
+        "en": "Farel pear is a high-quality table variety known for its smooth skin, attractive shape, and juicy, tender flesh. It has a sweet, well-balanced flavor with a light aroma, making it suitable for fresh consumption and desserts.",
+        "hy": "Farel տանձը բարձրորակ սեղանի տեսակ է՝ հարթ կեղևով, գեղեցիկ ձևով և հյութալի, նուրբ միջուկով։ Այն ունի քաղցր, հավասարակշռված համ և թեթև բույր՝ հարմար լինելով թե՛ թարմ օգտագործման, թե՛ աղանդերի համար։",
+        "ru": "Груша Farel — это высококачественный столовый сорт с гладкой кожурой, привлекательной формой и сочной нежной мякотью. Она обладает сладким сбалансированным вкусом и лёгким ароматом, подходит для свежего употребления и десертов."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts and baking",
+          "used in juices and compotes",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "օգտագործել հյութերի և կոմպոտների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и выпечке",
+          "использовать в соках и компотах",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 53,
+    "name": {
+      "en": "Daykon (japanese radish) kg",
+      "hy": "Դայկոն (ճապոնական բողկ) կգ",
+      "ru": "Дайкон (японская редька) кг"
+    },
+    "image": "images/1776594043091_daykon_japanese_radish_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1137669",
+      "discountCode": "X",
+      "scaleCode": "79863",
+      "scaleDiscountCode": "X"
+    },
+    "description": {
+      "what": {
+        "en": "Daikon (Japanese radish) is a long white root vegetable with a smooth skin and crisp, juicy flesh. It has a mild, slightly sweet flavor compared to regular radish and is widely used in Asian cuisine in both raw and cooked dishes.",
+        "hy": "Դայկոնը (ճապոնական բողկ) երկար սպիտակ արմատային բանջարեղեն է՝ հարթ կեղևով և խրթխրթան, հյութալի միջուկով։ Այն ունի մեղմ, թեթևակի քաղցր համ՝ համեմատած սովորական բողկի հետ և լայնորեն օգտագործվում է ասիական խոհանոցում՝ ինչպես հում, այնպես էլ պատրաստված ձևով։",
+        "ru": "Дайкон (японская редька) — это длинный белый корнеплод с гладкой кожурой и хрустящей сочной мякотью. Он обладает мягким, слегка сладковатым вкусом по сравнению с обычной редькой и широко используется в азиатской кухне как в сыром, так и в приготовленном виде."
+      },
+      "healthy": {
+        "en": "Daikon is rich in vitamin C, fiber, and antioxidants. It supports digestion, helps detoxify the body, and strengthens the immune system. It is low in calories and very refreshing.",
+        "hy": "Դայկոնը հարուստ է վիտամին C-ով, բջջանյութով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, օգնում է մաքրել օրգանիզմը և ամրացնում է իմունիտետը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Дайкон богат витамином C, клетчаткой и антиоксидантами. Он улучшает пищеварение, способствует очищению организма и укрепляет иммунитет. Низкокалорийный и очень освежающий."
+      },
+      "eat": {
+        "en": [
+          "eaten raw in salads",
+          "used in soups and stews",
+          "pickled in traditional dishes",
+          "stir-fried with vegetables",
+          "grated and used as a garnish"
+        ],
+        "hy": [
+          "օգտագործել հում՝ աղցանների մեջ",
+          "օգտագործել ապուրների և շոգեխաշած ուտեստների մեջ",
+          "թթու դնել ավանդական ուտեստների համար",
+          "տապակել այլ բանջարեղենի հետ",
+          "քերել և օգտագործել որպես զարդարանք"
+        ],
+        "ru": [
+          "употреблять сырым в салатах",
+          "использовать в супах и рагу",
+          "мариновать в традиционных блюдах",
+          "жарить с овощами",
+          "натирать и использовать как гарнир"
+        ]
+      }
+    }
+  },
+  {
+    "id": 54,
+    "name": {
+      "en": "Melon (Kantalupa) kg",
+      "hy": "Սեխ (Կանտալուպա) կգ",
+      "ru": "Дыня (Канталупа) кг"
+    },
+    "image": "images/1776594697608_melon_kantalupa_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "016442",
+      "discountCode": "1125984",
+      "scaleCode": "14416",
+      "scaleDiscountCode": "79336"
+    },
+    "description": {
+      "what": {
+        "en": "Cantaloupe (Kantalupa) is a round melon with a netted rind and sweet, orange flesh. It has a juicy texture and a refreshing, aromatic flavor, making it a popular fruit during warm seasons.",
+        "hy": "Կանտալուպա սեխը կլոր պտուղ է՝ ցանցավոր կեղևով և քաղցր, նարնջագույն միջուկով։ Այն ունի հյութալի կառուցվածք և թարմացնող, բուրավետ համ՝ լինելով շատ սիրված հատկապես տաք եղանակին։",
+        "ru": "Дыня Канталупа — это круглый плод с сетчатой кожурой и сладкой оранжевой мякотью. Она обладает сочной текстурой и освежающим ароматным вкусом, особенно популярна в тёплое время года."
+      },
+      "healthy": {
+        "en": "Cantaloupe is rich in vitamins A and C, as well as antioxidants and water. It helps hydrate the body, supports skin and eye health, and boosts the immune system. It is low in calories and very refreshing.",
+        "hy": "Կանտալուպա սեխը հարուստ է վիտամին A-ով և C-ով, ինչպես նաև հակաօքսիդանտներով և ջրով։ Այն օգնում է պահպանել ջրային հավասարակշռությունը, նպաստում է մաշկի և տեսողության առողջությանը և ամրացնում է իմունիտետը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Дыня Канталупа богата витаминами A и C, а также антиоксидантами и водой. Она помогает поддерживать водный баланс, улучшает состояние кожи и зрения и укрепляет иммунитет. Низкокалорийная и очень освежающая."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "added to fruit salads",
+          "used in smoothies and juices",
+          "served as a refreshing dessert",
+          "paired with ham or cheese"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել սմուզիների և հյութերի մեջ",
+          "մատուցել որպես թարմացնող աղանդեր",
+          "համադրել խոզապուխտի կամ պանրի հետ"
+        ],
+        "ru": [
+          "употреблять свежими ломтиками",
+          "добавлять во фруктовые салаты",
+          "использовать в смузи и соках",
+          "подавать как освежающий десерт",
+          "сочетать с ветчиной или сыром"
+        ]
+      }
+    }
+  },
+  {
+    "id": 55,
+    "name": {
+      "en": "Melon (armenian) kg",
+      "hy": "Սեխ (հայկական) կգ",
+      "ru": "Дыня армянская кг"
+    },
+    "image": "images/1776595051574_melon_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "031192",
+      "discountCode": "016802",
+      "scaleCode": "11417",
+      "scaleDiscountCode": "14778"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian melon is a sweet and aromatic fruit with a soft, juicy flesh and a pleasant fragrance. Grown in Armenia’s warm climate, it is known for its rich taste and high quality, making it especially popular during the summer season.",
+        "hy": "Հայկական սեխը քաղցր և բուրավետ միրգ է՝ փափուկ, հյութալի միջուկով և հաճելի բույրով։ Այն աճեցվում է Հայաստանի տաք կլիմայական պայմաններում և հայտնի է իր հարուստ համով ու բարձր որակով՝ հատկապես սիրված ամռանը։",
+        "ru": "Армянская дыня — это сладкий и ароматный фрукт с мягкой сочной мякотью и приятным запахом. Выращивается в тёплом климате Армении и известна своим насыщенным вкусом и высоким качеством, особенно популярна летом."
+      },
+      "healthy": {
+        "en": "Melons are rich in vitamins A and C, antioxidants, and water. They help hydrate the body, support skin health, and strengthen the immune system. They are low in calories and very refreshing.",
+        "hy": "Սեխը հարուստ է վիտամին A-ով և C-ով, հակաօքսիդանտներով և ջրով։ Այն օգնում է պահպանել ջրային հավասարակշռությունը, նպաստում է մաշկի առողջությանը և ամրացնում է իմունիտետը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Дыня богата витаминами A и C, антиоксидантами и водой. Она помогает поддерживать водный баланс, улучшает состояние кожи и укрепляет иммунитет. Низкокалорийная и очень освежающая."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "added to fruit salads",
+          "used in smoothies and juices",
+          "served as a refreshing dessert",
+          "paired with cheese or dried fruits"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել սմուզիների և հյութերի մեջ",
+          "մատուցել որպես թարմացնող աղանդեր",
+          "համադրել պանրի կամ չրերի հետ"
+        ],
+        "ru": [
+          "употреблять свежими ломтиками",
+          "добавлять во фруктовые салаты",
+          "использовать в смузи и соках",
+          "подавать как освежающий десерт",
+          "сочетать с сыром или сухофруктами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 56,
+    "name": {
+      "en": "Melon kg",
+      "hy": "Սեխ կգ",
+      "ru": "Дыня кг"
+    },
+    "image": "images/1776595336235_melon_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "083414",
+      "discountCode": "016111",
+      "scaleCode": "13312",
+      "scaleDiscountCode": "14087"
+    },
+    "description": {
+      "what": {
+        "en": "Melon is a sweet and refreshing fruit with a soft, juicy flesh and a pleasant aroma. It comes in different varieties and colors, but all are known for their hydrating and delicious taste, especially popular during warm seasons.",
+        "hy": "Սեխը քաղցր և թարմացնող միրգ է՝ փափուկ, հյութալի միջուկով և հաճելի բույրով։ Այն ունի տարբեր տեսակներ և գույներ, սակայն բոլորը հայտնի են իրենց թարմացնող և համեղ հատկություններով՝ հատկապես սիրված տաք եղանակին։",
+        "ru": "Дыня — это сладкий и освежающий фрукт с мягкой сочной мякотью и приятным ароматом. Существует множество разновидностей и цветов, но все они известны своим освежающим и вкусным характером, особенно популярны в тёплое время года."
+      },
+      "healthy": {
+        "en": "Melons are rich in vitamins A and C, antioxidants, and water. They help hydrate the body, support skin health, and strengthen the immune system. They are low in calories and very refreshing.",
+        "hy": "Սեխը հարուստ է վիտամին A-ով և C-ով, հակաօքսիդանտներով և ջրով։ Այն օգնում է պահպանել ջրային հավասարակշռությունը, նպաստում է մաշկի առողջությանը և ամրացնում է իմունիտետը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Дыня богата витаминами A и C, антиоксидантами и водой. Она помогает поддерживать водный баланс, улучшает состояние кожи и укрепляет иммунитет. Низкокалорийная и очень освежающая."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "added to fruit salads",
+          "used in smoothies and juices",
+          "served as a refreshing dessert",
+          "paired with cheese or dried fruits"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել սմուզիների և հյութերի մեջ",
+          "մատուցել որպես թարմացնող աղանդեր",
+          "համադրել պանրի կամ չրերի հետ"
+        ],
+        "ru": [
+          "употреблять свежими ломтиками",
+          "добавлять во фруктовые салаты",
+          "использовать в смузи и соках",
+          "подавать как освежающий десерт",
+          "сочетать с сыром или сухофруктами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 57,
+    "name": {
+      "en": "Melon (import) kg",
+      "hy": "Սեխ (արտասահմանյան) կգ",
+      "ru": "Дыня импортная кг"
+    },
+    "image": "images/1776595558409_melon_import_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "023881",
+      "discountCode": "095011",
+      "scaleCode": "11079",
+      "scaleDiscountCode": "13897"
+    },
+    "description": {
+      "what": {
+        "en": "Imported melon is a sweet and aromatic fruit with soft, juicy flesh. It is brought from other countries, allowing availability outside the local season. It has a refreshing taste and pleasant aroma, making it popular year-round.",
+        "hy": "Ներմուծված սեխը քաղցր և բուրավետ միրգ է՝ փափուկ, հյութալի միջուկով։ Այն ներմուծվում է այլ երկրներից՝ հասանելի լինելով նաև տեղական սեզոնից դուրս։ Այն ունի թարմացնող համ և հաճելի բույր՝ լինելով սիրված ամբողջ տարվա ընթացքում։",
+        "ru": "Импортная дыня — это сладкий и ароматный фрукт с мягкой сочной мякотью. Она поставляется из других стран, что делает её доступной вне местного сезона. Обладает освежающим вкусом и приятным ароматом, популярна круглый год."
+      },
+      "healthy": {
+        "en": "Melons are rich in vitamins A and C, antioxidants, and water. They help hydrate the body, support skin health, and strengthen the immune system. They are low in calories and very refreshing.",
+        "hy": "Սեխը հարուստ է վիտամին A-ով և C-ով, հակաօքսիդանտներով և ջրով։ Այն օգնում է պահպանել ջրային հավասարակշռությունը, նպաստում է մաշկի առողջությանը և ամրացնում է իմունիտետը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Дыня богата витаминами A и C, антиоксидантами и водой. Она помогает поддерживать водный баланс, улучшает состояние кожи и укрепляет иммунитет. Низкокалорийная и очень освежающая."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "added to fruit salads",
+          "used in smoothies and juices",
+          "served as a refreshing dessert",
+          "paired with cheese or dried fruits"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել սմուզիների և հյութերի մեջ",
+          "մատուցել որպես թարմացնող աղանդեր",
+          "համադրել պանրի կամ չրերի հետ"
+        ],
+        "ru": [
+          "употреблять свежими ломтиками",
+          "добавлять во фруктовые салаты",
+          "использовать в смузи и соках",
+          "подавать как освежающий десерт",
+          "сочетать с сыром или сухофруктами"
+        ]
+      }
+    }
   }
 ]
