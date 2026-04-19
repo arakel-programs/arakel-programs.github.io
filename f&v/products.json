@@ -2904,5 +2904,566 @@
         ]
       }
     }
+  },
+  {
+    "id": 58,
+    "name": {
+      "en": "Blackberries kg",
+      "hy": "Մոշ կգ",
+      "ru": "Ежевика кг"
+    },
+    "image": "images/1776596829559_blackberries_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "033051",
+      "discountCode": "016205",
+      "scaleCode": "11536",
+      "scaleDiscountCode": "14178"
+    },
+    "description": {
+      "what": {
+        "en": "Blackberries are small, dark purple to black berries with a juicy, tender texture. They have a sweet-tart flavor and a rich aroma, making them popular for fresh consumption and use in desserts.",
+        "hy": "Մոշը փոքր, մուգ մանուշակագույնից մինչև սև հատապտուղ է՝ հյութալի, նուրբ կառուցվածքով։ Այն ունի քաղցրաթթու համ և հարուստ բույր՝ լինելով սիրված թե՛ թարմ օգտագործման, թե՛ աղանդերի մեջ։",
+        "ru": "Ежевика — это небольшая ягода тёмно-фиолетового или чёрного цвета с сочной нежной текстурой. Она обладает кисло-сладким вкусом и насыщенным ароматом, популярна как в свежем виде, так и в десертах."
+      },
+      "healthy": {
+        "en": "Blackberries are rich in antioxidants, vitamin C, vitamin K, and fiber. They support immune health, improve digestion, and help protect the body from oxidative stress. They are low in calories and highly nutritious.",
+        "hy": "Մոշը հարուստ է հակաօքսիդանտներով, վիտամին C-ով, վիտամին K-ով և բջջանյութով։ Այն ամրացնում է իմունիտետը, բարելավում է մարսողությունը և պաշտպանում է օրգանիզմը օքսիդատիվ սթրեսից։ Այն քիչ կալորիական է և շատ սննդարար։",
+        "ru": "Ежевика богата антиоксидантами, витаминами C и K, а также клетчаткой. Она укрепляет иммунитет, улучшает пищеварение и защищает организм от окислительного стресса. Низкокалорийная и очень питательная."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to smoothies",
+          "used in desserts and cakes",
+          "added to cereals and yogurt",
+          "used in jams and sauces"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել սմուզիների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "ավելացնել հացահատիկների և յոգուրտի մեջ",
+          "օգտագործել մուրաբաների և սոուսների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять в смузи",
+          "использовать в десертах и тортах",
+          "добавлять в каши и йогурт",
+          "использовать в вареньях и соусах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 59,
+    "name": {
+      "en": "Jujube kg",
+      "hy": "Ունաբ կգ",
+      "ru": "Зизифус кг"
+    },
+    "image": "images/1776597163570_jujube_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "035396",
+      "discountCode": "X",
+      "scaleCode": "11623",
+      "scaleDiscountCode": "X"
+    },
+    "description": {
+      "what": {
+        "en": "Jujube is a small fruit, also known as Chinese date, with smooth skin that turns from green to reddish-brown as it ripens. It has a crisp texture when fresh and a sweet, apple-like flavor. When dried, it becomes chewy and even sweeter.",
+        "hy": "Յուժուբեն (չինական արմավը) փոքր պտուղ է՝ հարթ կեղևով, որը հասունանալիս կանաչից դառնում է կարմրավուն-շագանակագույն։ Թարմ վիճակում այն խրթխրթան է և ունի խնձորի նման քաղցր համ, իսկ չորանալուց հետո դառնում է փափուկ և ավելի քաղցր։",
+        "ru": "Ююба (китайский финик) — это небольшой плод с гладкой кожурой, которая при созревании меняет цвет с зелёного на красновато-коричневый. В свежем виде он хрустящий и сладкий, похож на яблоко, а в сушёном становится мягким и ещё более сладким."
+      },
+      "healthy": {
+        "en": "Jujube is rich in vitamin C, antioxidants, and natural sugars. It supports immune health, improves digestion, and is known for its calming and energy-boosting properties. It is nutritious and beneficial for overall health.",
+        "hy": "Յուժուբեն հարուստ է վիտամին C-ով, հակաօքսիդանտներով և բնական շաքարներով։ Այն ամրացնում է իմունիտետը, բարելավում է մարսողությունը և հայտնի է իր հանգստացնող և էներգիա հաղորդող հատկություններով։ Այն սննդարար է և օգտակար ընդհանուր առողջության համար։",
+        "ru": "Ююба богата витамином C, антиоксидантами и натуральными сахарами. Она укрепляет иммунитет, улучшает пищеварение и известна своими успокаивающими и тонизирующими свойствами. Питательная и полезная для общего здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "dried and eaten like dates",
+          "used in teas and herbal drinks",
+          "added to desserts and sweets",
+          "used in traditional remedies"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "չորացնել և օգտագործել ինչպես արմավ",
+          "օգտագործել թեյերի և բուսական խմիչքների մեջ",
+          "ավելացնել աղանդերի և քաղցրավենիքի մեջ",
+          "օգտագործել ավանդական բուժիչ միջոցներում"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "сушить и есть как финики",
+          "использовать в чаях и травяных напитках",
+          "добавлять в десерты и сладости",
+          "использовать в традиционных лечебных средствах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 60,
+    "name": {
+      "en": "Zker kg",
+      "hy": "Զկեռ կգ",
+      "ru": "Зкер кг"
+    },
+    "image": "images/1776597476952_zker_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "011739",
+      "discountCode": "016343",
+      "scaleCode": "10664",
+      "scaleDiscountCode": "14316"
+    },
+    "description": {
+      "what": {
+        "en": "Cornelian cherry (dogwood fruit) is a small, oval red fruit with a smooth skin and juicy flesh. It has a distinctive tart taste with slight sweetness and is widely used fresh, dried, or in traditional dishes.",
+        "hy": "Զկեռը փոքր, օվալաձև կարմիր պտուղ է՝ հարթ կեղևով և հյութալի միջուկով։ Այն ունի թթվաշ համ՝ թեթև քաղցրությամբ և լայնորեն օգտագործվում է թե՛ թարմ, թե՛ չորացրած կամ ավանդական ուտեստներում։",
+        "ru": "Кизил — это небольшой овальный плод красного цвета с гладкой кожурой и сочной мякотью. Он обладает кисловатым вкусом с лёгкой сладостью и широко используется как в свежем виде, так и в сушёном или в традиционных блюдах."
+      },
+      "healthy": {
+        "en": "Cornelian cherry is rich in vitamin C, antioxidants, and organic acids. It supports immune health, improves digestion, and helps strengthen the body. It is refreshing and beneficial for overall health.",
+        "hy": "Զկեռը հարուստ է վիտամին C-ով, հակաօքսիդանտներով և օրգանական թթուներով։ Այն ամրացնում է իմունիտետը, բարելավում է մարսողությունը և նպաստում է օրգանիզմի ընդհանուր ամրապնդմանը։ Այն թարմացնող և օգտակար է առողջության համար։",
+        "ru": "Кизил богат витамином C, антиоксидантами и органическими кислотами. Он укрепляет иммунитет, улучшает пищеварение и способствует общему укреплению организма. Освежающий и полезный для здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "used in jams and preserves",
+          "made into juices and compotes",
+          "dried for later use",
+          "used in traditional sauces and dishes"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "օգտագործել մուրաբաների և պահածոների մեջ",
+          "պատրաստել հյութեր և կոմպոտներ",
+          "չորացնել հետագա օգտագործման համար",
+          "օգտագործել ավանդական սոուսներում և ուտեստներում"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "использовать в вареньях и заготовках",
+          "готовить соки и компоты",
+          "сушить для дальнейшего использования",
+          "использовать в традиционных соусах и блюдах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 61,
+    "name": {
+      "en": "Ginger kg",
+      "hy": "Կոճապղպեղ կգ",
+      "ru": "Имбирь кг"
+    },
+    "image": "images/1776597709599_ginger_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "056916",
+      "discountCode": "096773",
+      "scaleCode": "12585",
+      "scaleDiscountCode": "13968"
+    },
+    "description": {
+      "what": {
+        "en": "Ginger is a root spice with a light brown skin and a pale yellow, fibrous interior. It has a strong, aromatic flavor with a spicy and slightly sweet taste. It is widely used in cooking, beverages, and traditional remedies.",
+        "hy": "Կոճապղպեղը արմատային համեմունք է՝ բաց շագանակագույն կեղևով և դեղնավուն, թելքավոր միջուկով։ Այն ունի ուժեղ, բուրավետ համ՝ կծու և թեթևակի քաղցր երանգներով։ Լայնորեն օգտագործվում է խոհարարության մեջ, խմիչքներում և ավանդական բուժիչ միջոցներում։",
+        "ru": "Имбирь — это корнеплод с светло-коричневой кожурой и светло-жёлтой волокнистой мякотью. Он обладает ярким ароматом, острым и слегка сладковатым вкусом. Широко используется в кулинарии, напитках и традиционной медицине."
+      },
+      "healthy": {
+        "en": "Ginger is rich in antioxidants and bioactive compounds. It helps improve digestion, reduce inflammation, and support the immune system. It is also known for its warming and soothing properties.",
+        "hy": "Կոճապղպեղը հարուստ է հակաօքսիդանտներով և կենսաակտիվ նյութերով։ Այն բարելավում է մարսողությունը, նվազեցնում է բորբոքումները և ամրացնում է իմունիտետը։ Այն նաև հայտնի է իր տաքացնող և հանգստացնող հատկություններով։",
+        "ru": "Имбирь богат антиоксидантами и биологически активными веществами. Он улучшает пищеварение, уменьшает воспаления и укрепляет иммунитет. Также известен своими согревающими и успокаивающими свойствами."
+      },
+      "eat": {
+        "en": [
+          "used fresh in cooking",
+          "added to teas and beverages",
+          "used in soups and sauces",
+          "used in baking and desserts",
+          "used in traditional remedies"
+        ],
+        "hy": [
+          "օգտագործել թարմ խոհարարության մեջ",
+          "ավելացնել թեյերի և խմիչքների մեջ",
+          "օգտագործել ապուրների և սոուսների մեջ",
+          "օգտագործել թխվածքների և աղանդերի մեջ",
+          "օգտագործել ավանդական բուժիչ միջոցներում"
+        ],
+        "ru": [
+          "использовать в свежем виде в кулинарии",
+          "добавлять в чаи и напитки",
+          "использовать в супах и соусах",
+          "использовать в выпечке и десертах",
+          "использовать в традиционных лечебных средствах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 62,
+    "name": {
+      "en": "Figs import kg",
+      "hy": "Թուզ (արտասահմանյան) կգ",
+      "ru": "Инжир импортный кг"
+    },
+    "image": "images/1776598074631_figs_import_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1126225",
+      "discountCode": "X",
+      "scaleCode": "79347",
+      "scaleDiscountCode": "X"
+    },
+    "description": {
+      "what": {
+        "en": "Imported figs are soft, sweet fruits with a thin skin and a delicate, juicy interior filled with tiny seeds. They have a rich, honey-like flavor and are brought from other countries, making them available outside the local season.",
+        "hy": "Ներմուծված թուզը փափուկ, քաղցր միրգ է՝ բարակ կեղևով և նուրբ, հյութալի միջուկով՝ լցված մանր սերմերով։ Այն ունի հարուստ, մեղրային համ և ներմուծվում է այլ երկրներից՝ հասանելի լինելով նաև տեղական սեզոնից դուրս։",
+        "ru": "Импортный инжир — это мягкий сладкий фрукт с тонкой кожурой и нежной сочной мякотью, наполненной мелкими семенами. Он обладает насыщенным медовым вкусом и поставляется из других стран, что делает его доступным вне местного сезона."
+      },
+      "healthy": {
+        "en": "Figs are rich in fiber, antioxidants, and essential minerals like potassium and calcium. They support digestion, help maintain heart health, and provide natural energy. They are nutritious and beneficial for overall health.",
+        "hy": "Թուզը հարուստ է բջջանյութով, հակաօքսիդանտներով և կարևոր հանքանյութերով՝ կալիում և կալցիում։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և ապահովում է բնական էներգիա։ Այն սննդարար է և օգտակար ընդհանուր առողջության համար։",
+        "ru": "Инжир богат клетчаткой, антиоксидантами и важными минералами, такими как калий и кальций. Он улучшает пищеварение, поддерживает здоровье сердца и даёт естественную энергию. Питательный и полезный для общего здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "dried and eaten as dried fruit",
+          "added to desserts and pastries",
+          "paired with cheese or nuts",
+          "used in jams and preserves"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "չորացնել և օգտագործել որպես չիր",
+          "ավելացնել աղանդերի և թխվածքների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ",
+          "օգտագործել մուրաբաների և պահածոների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "сушить и есть как сухофрукты",
+          "добавлять в десерты и выпечку",
+          "сочетать с сыром или орехами",
+          "использовать в вареньях и заготовках"
+        ]
+      }
+    }
+  },
+  {
+    "id": 63,
+    "name": {
+      "en": "Fig kg",
+      "hy": "Թուզ կգ",
+      "ru": "Инжир кг"
+    },
+    "image": "images/1776598351754_fig_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "032748",
+      "discountCode": "016165",
+      "scaleCode": "11524",
+      "scaleDiscountCode": "14138"
+    },
+    "description": {
+      "what": {
+        "en": "Figs are soft, sweet fruits with a thin skin and a delicate, juicy interior filled with tiny seeds. They have a rich, honey-like flavor and a pleasant aroma, making them popular for fresh consumption and desserts.",
+        "hy": "Թուզը փափուկ, քաղցր միրգ է՝ բարակ կեղևով և նուրբ, հյութալի միջուկով՝ լցված մանր սերմերով։ Այն ունի հարուստ, մեղրային համ և հաճելի բույր՝ լինելով սիրված թե՛ թարմ օգտագործման, թե՛ աղանդերի մեջ։",
+        "ru": "Инжир — это мягкий сладкий фрукт с тонкой кожурой и нежной сочной мякотью, наполненной мелкими семенами. Он обладает насыщенным медовым вкусом и приятным ароматом, широко используется в свежем виде и в десертах."
+      },
+      "healthy": {
+        "en": "Figs are rich in fiber, antioxidants, and essential minerals like potassium and calcium. They support digestion, help maintain heart health, and provide natural energy. They are nutritious and beneficial for overall health.",
+        "hy": "Թուզը հարուստ է բջջանյութով, հակաօքսիդանտներով և կարևոր հանքանյութերով՝ կալիում և կալցիում։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և ապահովում է բնական էներգիա։ Այն սննդարար է և օգտակար ընդհանուր առողջության համար։",
+        "ru": "Инжир богат клетчаткой, антиоксидантами и важными минералами, такими как калий и кальций. Он улучшает пищеварение, поддерживает здоровье сердца и даёт естественную энергию. Питательный и полезный для общего здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "dried and eaten as dried fruit",
+          "added to desserts and pastries",
+          "paired with cheese or nuts",
+          "used in jams and preserves"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "չորացնել և օգտագործել որպես չիր",
+          "ավելացնել աղանդերի և թխվածքների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ",
+          "օգտագործել մուրաբաների և պահածոների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "сушить и есть как сухофрукты",
+          "добавлять в десерты и выпечку",
+          "сочетать с сыром или орехами",
+          "использовать в вареньях и заготовках"
+        ]
+      }
+    }
+  },
+  {
+    "id": 64,
+    "name": {
+      "en": "Fig Meghri kg",
+      "hy": "Թուզ (Մեղրի) կգ",
+      "ru": "Инжир Мегри кг"
+    },
+    "image": "images/1776599717746_fig_meghri_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "083776",
+      "discountCode": "016234",
+      "scaleCode": "14244",
+      "scaleDiscountCode": "14207"
+    },
+    "description": {
+      "what": {
+        "en": "Meghri figs are a premium Armenian variety grown in the warm climate of the Meghri region. They are known for their soft texture, juicy flesh, and rich, honey-like sweetness with a delicate aroma, making them highly valued for fresh consumption.",
+        "hy": "Մեղրիի թուզը հայկական բարձրակարգ տեսակ է, որը աճեցվում է Մեղրիի տաք կլիմայական պայմաններում։ Այն հայտնի է իր փափուկ կառուցվածքով, հյութալի միջուկով և հարուստ, մեղրային քաղցրությամբ՝ նուրբ բույրով, և բարձր է գնահատվում թարմ օգտագործման համար։",
+        "ru": "Инжир Мегри — это премиальный армянский сорт, выращиваемый в тёплом климате региона Мегри. Он известен своей мягкой текстурой, сочной мякотью и насыщенной медовой сладостью с нежным ароматом, высоко ценится для употребления в свежем виде."
+      },
+      "healthy": {
+        "en": "Figs are rich in fiber, antioxidants, and essential minerals like potassium and calcium. They support digestion, help maintain heart health, and provide natural energy. They are nutritious and beneficial for overall health.",
+        "hy": "Թուզը հարուստ է բջջանյութով, հակաօքսիդանտներով և կարևոր հանքանյութերով՝ կալիում և կալցիում։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և ապահովում է բնական էներգիա։ Այն սննդարար է և օգտակար ընդհանուր առողջության համար։",
+        "ru": "Инжир богат клетчаткой, антиоксидантами и важными минералами, такими как калий и кальций. Он улучшает пищеварение, поддерживает здоровье сердца и даёт естественную энергию. Питательный и полезный для общего здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "dried and eaten as dried fruit",
+          "added to desserts and pastries",
+          "paired with cheese or nuts",
+          "used in jams and preserves"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "չորացնել և օգտագործել որպես չիր",
+          "ավելացնել աղանդերի և թխվածքների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ",
+          "օգտագործել մուրաբաների և պահածոների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "сушить и есть как сухофрукты",
+          "добавлять в десерты и выпечку",
+          "сочетать с сыром или орехами",
+          "использовать в вареньях и заготовках"
+        ]
+      }
+    }
+  },
+  {
+    "id": 65,
+    "name": {
+      "en": "Fig black kg",
+      "hy": "Թուզ սև կգ",
+      "ru": "Инжир черный кг"
+    },
+    "image": "images/1776600178256_fig_black_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1134360",
+      "discountCode": "X",
+      "scaleCode": "79705",
+      "scaleDiscountCode": "X"
+    },
+    "description": {
+      "what": {
+        "en": "Black figs are a variety of figs with dark purple to almost black skin and soft, juicy flesh. They have a rich, honey-like sweetness with a slightly deeper, more intense flavor compared to lighter varieties.",
+        "hy": "Սև թուզը թզի տեսակ է՝ մուգ մանուշակագույնից մինչև գրեթե սև կեղևով և փափուկ, հյութալի միջուկով։ Այն ունի հարուստ, մեղրային քաղցրություն՝ ավելի խորը և հագեցած համով՝ համեմատած բաց գույնի տեսակների հետ։",
+        "ru": "Чёрный инжир — это разновидность инжира с тёмно-фиолетовой или почти чёрной кожурой и мягкой сочной мякотью. Он обладает насыщенной медовой сладостью и более глубоким вкусом по сравнению со светлыми сортами."
+      },
+      "healthy": {
+        "en": "Figs are rich in fiber, antioxidants, and essential minerals like potassium and calcium. They support digestion, help maintain heart health, and provide natural energy. They are nutritious and beneficial for overall health.",
+        "hy": "Թուզը հարուստ է բջջանյութով, հակաօքսիդանտներով և կարևոր հանքանյութերով՝ կալիում և կալցիում։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և ապահովում է բնական էներգիա։ Այն սննդարար է և օգտակար ընդհանուր առողջության համար։",
+        "ru": "Инжир богат клетчаткой, антиоксидантами и важными минералами, такими как калий и кальций. Он улучшает пищеварение, поддерживает здоровье сердца и даёт естественную энергию. Питательный и полезный для общего здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "dried and eaten as dried fruit",
+          "added to desserts and pastries",
+          "paired with cheese or nuts",
+          "used in jams and preserves"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "չորացնել և օգտագործել որպես չիր",
+          "ավելացնել աղանդերի և թխվածքների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ",
+          "օգտագործել մուրաբաների և պահածոների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "сушить и есть как сухофрукты",
+          "добавлять в десерты и выпечку",
+          "сочетать с сыром или орехами",
+          "использовать в вареньях и заготовках"
+        ]
+      }
+    }
+  },
+  {
+    "id": 66,
+    "name": {
+      "en": "Fig black Meghri kg",
+      "hy": "Թուզ սև (Մեղրի) կգ",
+      "ru": "Инжир черный Мегри кг"
+    },
+    "image": "images/1776602226875_fig_black_meghri_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1132202",
+      "discountCode": "1132204",
+      "scaleCode": "79650",
+      "scaleDiscountCode": "79651"
+    },
+    "description": {
+      "what": {
+        "en": "Black Meghri figs are a premium Armenian variety grown in the warm Meghri region. They have a dark purple to black skin and soft, juicy flesh with a rich, honey-like sweetness and deep flavor. Known for their high quality and natural sweetness, they are especially valued for fresh consumption.",
+        "hy": "Մեղրիի սև թուզը հայկական բարձրակարգ տեսակ է, որը աճեցվում է Մեղրիի տաք կլիմայական պայմաններում։ Այն ունի մուգ մանուշակագույնից մինչև սև կեղև և փափուկ, հյութալի միջուկ՝ հարուստ, մեղրային քաղցրությամբ և խոր համով։ Այն հայտնի է իր բարձր որակով և բնական քաղցրությամբ՝ հատկապես գնահատվելով թարմ օգտագործման համար։",
+        "ru": "Чёрный инжир Мегри — это премиальный армянский сорт, выращиваемый в тёплом регионе Мегри. Он имеет тёмно-фиолетовую или почти чёрную кожуру и мягкую сочную мякоть с насыщенной медовой сладостью и глубоким вкусом. Известен своим высоким качеством и натуральной сладостью, особенно ценится для употребления в свежем виде."
+      },
+      "healthy": {
+        "en": "Figs are rich in fiber, antioxidants, and essential minerals like potassium and calcium. They support digestion, help maintain heart health, and provide natural energy. They are nutritious and beneficial for overall health.",
+        "hy": "Թուզը հարուստ է բջջանյութով, հակաօքսիդանտներով և կարևոր հանքանյութերով՝ կալիում և կալցիում։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և ապահովում է բնական էներգիա։ Այն սննդարար է և օգտակար ընդհանուր առողջության համար։",
+        "ru": "Инжир богат клетчаткой, антиоксидантами и важными минералами, такими как калий и кальций. Он улучшает пищеварение, поддерживает здоровье сердца и даёт естественную энергию. Питательный и полезный для общего здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "dried and eaten as dried fruit",
+          "added to desserts and pastries",
+          "paired with cheese or nuts",
+          "used in jams and preserves"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "չորացնել և օգտագործել որպես չիր",
+          "ավելացնել աղանդերի և թխվածքների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ",
+          "օգտագործել մուրաբաների և պահածոների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "сушить и есть как сухофрукты",
+          "добавлять в десерты и выпечку",
+          "сочетать с сыром или орехами",
+          "использовать в вареньях и заготовках"
+        ]
+      }
+    }
+  },
+  {
+    "id": 67,
+    "name": {
+      "en": "Flat peach kg",
+      "hy": "Թզադեղձ կգ",
+      "ru": "Инжирный персик кг"
+    },
+    "image": "images/1776616736989_flat_peach_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1055745",
+      "discountCode": "1113383",
+      "scaleCode": "75031",
+      "scaleDiscountCode": "77827"
+    },
+    "description": {
+      "what": {
+        "en": "Flat peach, also known as donut peach, is a unique variety with a flattened shape and thin, velvety skin. It has soft, juicy flesh and a very sweet, aromatic flavor, making it especially popular for fresh consumption.",
+        "hy": "Հարթ դեղձը (նաև հայտնի որպես դոնաթ դեղձ) յուրահատուկ տեսակ է՝ տափակ ձևով և բարակ, թավշյա կեղևով։ Այն ունի փափուկ, հյութալի միջուկ և շատ քաղցր, բուրավետ համ՝ լինելով հատկապես սիրված թարմ օգտագործման համար։",
+        "ru": "Плоский персик (также известный как донат-персик) — это уникальный сорт с приплюснутой формой и тонкой бархатистой кожурой. Он обладает мягкой сочной мякотью и очень сладким ароматным вкусом, особенно популярен для употребления в свежем виде."
+      },
+      "healthy": {
+        "en": "Peaches are rich in vitamins A and C, antioxidants, and fiber. They support skin health, improve digestion, and help strengthen the immune system. They are low in calories and very refreshing.",
+        "hy": "Դեղձը հարուստ է վիտամին A-ով և C-ով, հակաօքսիդանտներով և բջջանյութով։ Այն նպաստում է մաշկի առողջությանը, բարելավում է մարսողությունը և ամրացնում է իմունիտետը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Персики богаты витаминами A и C, антиоксидантами и клетчаткой. Они улучшают состояние кожи, поддерживают пищеварение и укрепляют иммунитет. Низкокалорийные и очень освежающие."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts and baking",
+          "used in smoothies and juices",
+          "paired with yogurt or cereals"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "օգտագործել սմուզիների և հյութերի մեջ",
+          "համադրել յոգուրտի կամ հացահատիկների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и выпечке",
+          "использовать в смузи и соках",
+          "сочетать с йогуртом или злаками"
+        ]
+      }
+    }
+  },
+  {
+    "id": 68,
+    "name": {
+      "en": "Big flat peach kg",
+      "hy": "Թզադեղձ խոշոր կգ",
+      "ru": "Инжирный персик крупный кг"
+    },
+    "image": "images/1776616931438_big_flat_peach_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "X",
+      "discountCode": "X",
+      "scaleCode": "80882",
+      "scaleDiscountCode": "X"
+    },
+    "description": {
+      "what": {
+        "en": "Big flat peach is a larger variety of flat (donut) peach with a wide, flattened shape and thin, velvety skin. It has soft, juicy flesh and an extra sweet, rich flavor with a pleasant aroma, making it highly valued for fresh consumption.",
+        "hy": "Մեծ հարթ դեղձը հարթ (դոնաթ) դեղձի խոշոր տեսակ է՝ լայն, տափակ ձևով և բարակ, թավշյա կեղևով։ Այն ունի փափուկ, հյութալի միջուկ և առավել քաղցր, հարուստ համ՝ հաճելի բույրով, և բարձր է գնահատվում թարմ օգտագործման համար։",
+        "ru": "Большой плоский персик — это крупная разновидность плоского (донат) персика с широкой приплюснутой формой и тонкой бархатистой кожурой. Он обладает мягкой сочной мякотью и более сладким, насыщенным вкусом с приятным ароматом, высоко ценится для употребления в свежем виде."
+      },
+      "healthy": {
+        "en": "Peaches are rich in vitamins A and C, antioxidants, and fiber. They support skin health, improve digestion, and help strengthen the immune system. They are low in calories and very refreshing.",
+        "hy": "Դեղձը հարուստ է վիտամին A-ով և C-ով, հակաօքսիդանտներով և բջջանյութով։ Այն նպաստում է մաշկի առողջությանը, բարելավում է մարսողությունը և ամրացնում է իմունիտետը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Персики богаты витаминами A и C, антиоксидантами и клетчаткой. Они улучшают состояние кожи, поддерживают пищеварение и укрепляют иммунитет. Низкокалорийные и очень освежающие."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts and baking",
+          "used in smoothies and juices",
+          "paired with yogurt or cereals"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "օգտագործել սմուզիների և հյութերի մեջ",
+          "համադրել յոգուրտի կամ հացահատիկների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и выпечке",
+          "использовать в смузи и соках",
+          "сочетать с йогуртом или злаками"
+        ]
+      }
+    }
   }
 ]
