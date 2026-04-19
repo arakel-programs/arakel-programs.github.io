@@ -719,7 +719,7 @@
   {
     "id": 15,
     "name": {
-      "en": "Banan kg",
+      "en": "Banana kg",
       "hy": "Բանան կգ",
       "ru": "Банан кг"
     },
@@ -770,7 +770,7 @@
   {
     "id": 16,
     "name": {
-      "en": "Banan Sabrostar kg",
+      "en": "Banana Sabrostar kg",
       "hy": "Բանան Սաբրոստար կգ",
       "ru": "Банан Sabrostar кг"
     },
@@ -821,7 +821,7 @@
   {
     "id": 17,
     "name": {
-      "en": "Banan A kg",
+      "en": "Banana A kg",
       "hy": "Բանան Ա կգ",
       "ru": "Банан А кг"
     },
@@ -872,7 +872,7 @@
   {
     "id": 18,
     "name": {
-      "en": "Banan mini kg",
+      "en": "Banana mini kg",
       "hy": "Բանան մինի կգ",
       "ru": "Банан мини кг"
     },
@@ -967,6 +967,1277 @@
           "добавлять в салаты",
           "жарить с овощами",
           "запекать как гарнир"
+        ]
+      }
+    }
+  },
+  {
+    "id": 20,
+    "name": {
+      "en": "Grape Red Globe kg",
+      "hy": "Խաղող Ռեդ Գլոբուս կգ",
+      "ru": "Виноград Red Globe кг"
+    },
+    "image": "images/1776577912590_grape_red_globe_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "016601",
+      "discountCode": "016620",
+      "scaleCode": "14577",
+      "scaleDiscountCode": "14596"
+    },
+    "description": {
+      "what": {
+        "en": "Red Globe grapes are large, round table grapes with a deep red skin and firm, juicy flesh. They have a mildly sweet flavor with a slight tartness and are known for their crisp texture and attractive appearance.",
+        "hy": "Red Globe խաղողը խոշոր, կլոր սեղանի խաղող է՝ մուգ կարմիր կեղևով և ամուր, հյութալի միջուկով։ Այն ունի մեղմ քաղցր համ՝ թեթև թթվությամբ և հայտնի է իր խրթխրթան կառուցվածքով ու գեղեցիկ տեսքով։",
+        "ru": "Виноград Red Globe — это крупный круглый столовый виноград с насыщенно-красной кожурой и плотной сочной мякотью. Он обладает умеренно сладким вкусом с лёгкой кислинкой и известен своей хрустящей текстурой и привлекательным внешним видом."
+      },
+      "healthy": {
+        "en": "Grapes are rich in antioxidants, vitamins C and K, and natural sugars. They support heart health, help improve blood circulation, and provide quick energy. They are refreshing and nutritious.",
+        "hy": "Խաղողը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և K-ով, ինչպես նաև բնական շաքարներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և ապահովում է արագ էներգիա։ Այն թարմացնող և սննդարար է։",
+        "ru": "Виноград богат антиоксидантами, витаминами C и K, а также натуральными сахарами. Он поддерживает здоровье сердца, улучшает кровообращение и даёт быструю энергию. Освежающий и питательный."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts",
+          "served with cheese",
+          "used for juices and drinks"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "մատուցել պանրի հետ",
+          "օգտագործել հյութերի և խմիչքների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах",
+          "подавать с сыром",
+          "использовать для соков и напитков"
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "name": {
+      "en": "Grape Peru kg",
+      "hy": "Խաղող Պերու կգ",
+      "ru": "Виноград Перу кг"
+    },
+    "image": "images/1776578315998_grape_peru_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "016602",
+      "discountCode": "1121815",
+      "scaleCode": "14578",
+      "scaleDiscountCode": "79178"
+    },
+    "description": {
+      "what": {
+        "en": "Peruvian grapes are high-quality table grapes grown in favorable climates, known for their freshness, uniform size, and attractive appearance. They can be red, green, or black and have a sweet, juicy flavor with a crisp texture.",
+        "hy": "Պերուական խաղողը բարձրորակ սեղանի խաղող է, որը աճեցվում է բարենպաստ կլիմայական պայմաններում և հայտնի է իր թարմությամբ, հավասարաչափ չափերով և գեղեցիկ տեսքով։ Այն կարող է լինել կարմիր, կանաչ կամ սև և ունի քաղցր, հյութալի համ՝ խրթխրթան կառուցվածքով։",
+        "ru": "Перуанский виноград — это высококачественный столовый виноград, выращенный в благоприятных климатических условиях. Он отличается свежестью, ровным размером и привлекательным внешним видом. Может быть красным, зелёным или чёрным, с сочным сладким вкусом и хрустящей текстурой."
+      },
+      "healthy": {
+        "en": "Grapes are rich in antioxidants, vitamins C and K, and natural sugars. They support heart health, improve blood circulation, and provide quick energy. They are refreshing and nutritious.",
+        "hy": "Խաղողը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և K-ով, ինչպես նաև բնական շաքարներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և ապահովում է արագ էներգիա։ Այն թարմացնող և սննդարար է։",
+        "ru": "Виноград богат антиоксидантами, витаминами C и K, а также натуральными сахарами. Он поддерживает здоровье сердца, улучшает кровообращение и даёт быструю энергию. Освежающий и питательный."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts",
+          "served with cheese",
+          "used for juices and drinks"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "մատուցել պանրի հետ",
+          "օգտագործել հյութերի և խմիչքների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах",
+          "подавать с сыром",
+          "использовать для соков и напитков"
+        ]
+      }
+    }
+  },
+  {
+    "id": 22,
+    "name": {
+      "en": "Black grape (high quality) kg",
+      "hy": "Խաղող սև բարձր կարգ կգ",
+      "ru": "Виноград черн. в/с кг"
+    },
+    "image": "images/1776578712926_black_grape_high_quality_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "017238",
+      "discountCode": "017256",
+      "scaleCode": "15214",
+      "scaleDiscountCode": "15231"
+    },
+    "description": {
+      "what": {
+        "en": "Black grapes (high quality) are premium table grapes with a deep dark color, smooth skin, and juicy, firm flesh. They have a rich, sweet flavor with slight tart notes and are known for their freshness and attractive appearance.",
+        "hy": "Սև խաղողը (բարձր որակ) բարձրակարգ սեղանի խաղող է՝ խորը մուգ գույնով, հարթ կեղևով և հյութալի, ամուր միջուկով։ Այն ունի հարուստ, քաղցր համ՝ թեթև թթվությամբ և հայտնի է իր թարմությամբ ու գեղեցիկ տեսքով։",
+        "ru": "Чёрный виноград (высокого качества) — это премиальный столовый виноград с насыщенным тёмным цветом, гладкой кожурой и сочной плотной мякотью. Он обладает богатым сладким вкусом с лёгкой кислинкой и отличается свежестью и привлекательным внешним видом."
+      },
+      "healthy": {
+        "en": "Black grapes are rich in antioxidants, especially resveratrol, as well as vitamins C and K. They support heart health, help reduce oxidative stress, and improve blood circulation. They are nutritious and energizing.",
+        "hy": "Սև խաղողը հարուստ է հակաօքսիդանտներով, հատկապես ռեսվերատրոլով, ինչպես նաև վիտամին C-ով և K-ով։ Այն նպաստում է սրտի առողջությանը, նվազեցնում է օքսիդատիվ սթրեսը և բարելավում է արյան շրջանառությունը։ Այն սննդարար և էներգիա հաղորդող է։",
+        "ru": "Чёрный виноград богат антиоксидантами, особенно ресвератролом, а также витаминами C и K. Он поддерживает здоровье сердца, снижает окислительный стресс и улучшает кровообращение. Питательный и даёт энергию."
+      },
+      "eat": {
+        "en": [
+          "Black grapes are rich in antioxidants, especially resveratrol, as well as vitamins C and K. They support heart health, help reduce oxidative stress, and improve blood circulation. They are nutritious and energizing."
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "մատուցել պանրի հետ",
+          "օգտագործել հյութերի և խմիչքների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах",
+          "подавать с сыром",
+          "использовать для соков и напитков"
+        ]
+      }
+    }
+  },
+  {
+    "id": 23,
+    "name": {
+      "en": "Grape Kardinal kg",
+      "hy": "Խաղող Կարդինալ կգ",
+      "ru": "Виноград Кардинал кг"
+    },
+    "image": "images/1776579591226_grape_kardinal_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "092547",
+      "discountCode": "094067",
+      "scaleCode": "13690",
+      "scaleDiscountCode": "13830"
+    },
+    "description": {
+      "what": {
+        "en": "Cardinal grapes are large table grapes with a bright red to purple skin and juicy, tender flesh. They have a sweet taste with a light refreshing acidity and are known for their early ripening and attractive appearance.",
+        "hy": "Կարդինալ խաղողը խոշոր սեղանի խաղող է՝ վառ կարմիրից մինչև մանուշակագույն կեղևով և հյութալի, նուրբ միջուկով։ Այն ունի քաղցր համ՝ թեթև թարմացնող թթվությամբ և հայտնի է իր վաղ հասունացմամբ ու գեղեցիկ տեսքով։",
+        "ru": "Виноград Кардинал — это крупный столовый виноград с ярко-красной или фиолетовой кожурой и сочной нежной мякотью. Он обладает сладким вкусом с лёгкой освежающей кислинкой и известен своим ранним созреванием и привлекательным внешним видом."
+      },
+      "healthy": {
+        "en": "Grapes are rich in antioxidants, vitamins C and K, and natural sugars. They support heart health, improve blood circulation, and provide quick energy. They are refreshing and nutritious.",
+        "hy": "Խաղողը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և K-ով, ինչպես նաև բնական շաքարներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և ապահովում է արագ էներգիա։ Այն թարմացնող և սննդարար է։",
+        "ru": "Виноград богат антиоксидантами, витаминами C и K, а также натуральными сахарами. Он поддерживает здоровье сердца, улучшает кровообращение и даёт быструю энергию. Освежающий и питательный."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts",
+          "served with cheese",
+          "used for juices and drinks"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "մատուցել պանրի հետ",
+          "օգտագործել հյութերի և խմիչքների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах",
+          "подавать с сыром",
+          "использовать для соков и напитков"
+        ]
+      }
+    }
+  },
+  {
+    "id": 24,
+    "name": {
+      "en": "Grape (armenian) kg",
+      "hy": "Խաղող (հայկական) կգ",
+      "ru": "Виноград армянский  кг"
+    },
+    "image": "images/1776579997293_grape_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "086053",
+      "discountCode": "016227",
+      "scaleCode": "13493",
+      "scaleDiscountCode": "14200"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian grapes are fresh, juicy fruits grown in Armenia’s favorable climate. They come in different varieties such as red, green, and black, and are known for their rich sweetness, aroma, and high quality.",
+        "hy": "Հայկական խաղողը թարմ, հյութալի մրգեր են, որոնք աճեցվում են Հայաստանի բարենպաստ կլիմայական պայմաններում։ Այն կարող է լինել կարմիր, կանաչ կամ սև և հայտնի է իր քաղցրությամբ, բույրով և բարձր որակով։",
+        "ru": "Армянский виноград — это свежие сочные плоды, выращенные в благоприятных климатических условиях Армении. Он бывает красным, зелёным и чёрным и известен своей сладостью, ароматом и высоким качеством."
+      },
+      "healthy": {
+        "en": "Grapes are rich in antioxidants, vitamins C and K, and natural sugars. They support heart health, improve blood circulation, and provide quick energy. They are refreshing and nutritious.",
+        "hy": "Խաղողը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և K-ով, ինչպես նաև բնական շաքարներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և ապահովում է արագ էներգիա։ Այն թարմացնող և սննդարար է։",
+        "ru": "Виноград богат антиоксидантами, витаминами C и K, а также натуральными сахарами. Он поддерживает здоровье сердца, улучшает кровообращение и даёт быструю энергию. Освежающий и питательный."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts",
+          "served with cheese",
+          "used for juices and drinks"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "մատուցել պանրի հետ",
+          "օգտագործել հյութերի և խմիչքների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах",
+          "подавать с сыром",
+          "использовать для соков и напитков"
+        ]
+      }
+    }
+  },
+  {
+    "id": 25,
+    "name": {
+      "en": "Grape Kishmish white kg",
+      "hy": "Խաղող Քիշմիշ սպիտակ կգ",
+      "ru": "Виноград Кишмиш белый кг"
+    },
+    "image": "images/1776580347064_grape_kishmish_white_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "085240",
+      "discountCode": "016212",
+      "scaleCode": "13438",
+      "scaleDiscountCode": "14185"
+    },
+    "description": {
+      "what": {
+        "en": "White Kishmish grapes are small, seedless table grapes with a light green to golden color and thin skin. They have a very sweet, delicate flavor and a soft, juicy texture, making them especially popular for fresh consumption and drying into raisins.",
+        "hy": "Սպիտակ քիշմիշ խաղողը փոքր, առանց կորիզի սեղանի խաղող է՝ բաց կանաչից մինչև ոսկեգույն գույնով և բարակ կեղևով։ Այն ունի շատ քաղցր, նուրբ համ և փափուկ, հյութալի կառուցվածք՝ լինելով շատ հարմար թե՛ թարմ օգտագործման, թե՛ չամիչ պատրաստելու համար։",
+        "ru": "Белый кишмиш — это мелкий бессемянный столовый виноград светло-зелёного или золотистого цвета с тонкой кожурой. Он обладает очень сладким нежным вкусом и мягкой сочной текстурой, идеально подходит как для употребления в свежем виде, так и для приготовления изюма."
+      },
+      "healthy": {
+        "en": "Kishmish grapes are rich in natural sugars, antioxidants, and vitamins C and K. They provide quick energy, support heart health, and help improve digestion. They are nutritious and easy to eat due to the absence of seeds.",
+        "hy": "Քիշմիշ խաղողը հարուստ է բնական շաքարներով, հակաօքսիդանտներով և վիտամին C-ով ու K-ով։ Այն ապահովում է արագ էներգիա, նպաստում է սրտի առողջությանը և բարելավում է մարսողությունը։ Այն սննդարար է և հեշտ օգտագործելի՝ առանց կորիզների։",
+        "ru": "Кишмиш богат натуральными сахарами, антиоксидантами и витаминами C и K. Он быстро даёт энергию, поддерживает здоровье сердца и улучшает пищеварение. Питательный и удобный в употреблении благодаря отсутствию косточек."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "used for making raisins",
+          "added to fruit salads",
+          "used in desserts and baking",
+          "added to cereals and yogurt"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "օգտագործել չամիչ պատրաստելու համար",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "ավելացնել հացահատիկների և յոգուրտի մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "использовать для приготовления изюма",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и выпечке",
+          "добавлять в каши и йогурт"
+        ]
+      }
+    }
+  },
+  {
+    "id": 26,
+    "name": {
+      "en": "Grape Kishmish red (armenian) kg",
+      "hy": "Խաղող Քիշմիշ կարմիր (հայկական) կգ",
+      "ru": "Виноград Кишмиш крас. армянский кг"
+    },
+    "image": "images/1776580633254_grape_kishmish_red_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "086446",
+      "discountCode": "1114411",
+      "scaleCode": "13508",
+      "scaleDiscountCode": "78099"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian red Kishmish grapes are small, seedless table grapes with a deep red color and thin skin. They have a naturally sweet taste with a slight tart note and a soft, juicy texture. Grown in Armenia’s favorable climate, they are known for their freshness and rich flavor.",
+        "hy": "Հայկական կարմիր քիշմիշ խաղողը փոքր, առանց կորիզի սեղանի խաղող է՝ խորը կարմիր գույնով և բարակ կեղևով։ Այն ունի բնական քաղցր համ՝ թեթև թթվությամբ և փափուկ, հյութալի կառուցվածքով։ Աճեցվում է Հայաստանի բարենպաստ կլիմայական պայմաններում և հայտնի է իր թարմությամբ ու հարուստ համով։",
+        "ru": "Армянский красный кишмиш — это мелкий бессемянный столовый виноград насыщенного красного цвета с тонкой кожурой. Он обладает естественным сладким вкусом с лёгкой кислинкой и мягкой сочной текстурой. Выращивается в благоприятных климатических условиях Армении и известен своей свежестью и насыщенным вкусом."
+      },
+      "healthy": {
+        "en": "Red Kishmish grapes are rich in antioxidants, natural sugars, and vitamins C and K. They provide quick energy, support heart health, and help improve digestion. They are nutritious and easy to eat due to the absence of seeds.",
+        "hy": "Կարմիր քիշմիշ խաղողը հարուստ է հակաօքսիդանտներով, բնական շաքարներով և վիտամին C-ով ու K-ով։ Այն ապահովում է արագ էներգիա, նպաստում է սրտի առողջությանը և բարելավում է մարսողությունը։ Այն սննդարար է և հեշտ օգտագործելի՝ առանց կորիզների։",
+        "ru": "Красный кишмиш богат антиоксидантами, натуральными сахарами и витаминами C и K. Он быстро даёт энергию, поддерживает здоровье сердца и улучшает пищеварение. Питательный и удобный в употреблении благодаря отсутствию косточек."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "used for making raisins",
+          "added to fruit salads",
+          "used in desserts and baking",
+          "added to cereals and yogurt"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "օգտագործել չամիչ պատրաստելու համար",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "ավելացնել հացահատիկների և յոգուրտի մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "использовать для приготовления изюма",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и выпечке",
+          "добавлять в каши и йогурт"
+        ]
+      }
+    }
+  },
+  {
+    "id": 27,
+    "name": {
+      "en": "Grapes \"Mkhitar\" (armenian) kg",
+      "hy": "Խաղող «Մխիթար» հայկական կգ",
+      "ru": "Виноград Мхитар армянский кг"
+    },
+    "image": "images/1776580902864_grapes_mkhitar_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "092578",
+      "discountCode": "016256",
+      "scaleCode": "13697",
+      "scaleDiscountCode": "14229"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian “Mkhitar” grapes are a local table grape variety known for their fresh, juicy berries and balanced sweet flavor. They have an attractive appearance and are grown in Armenia’s favorable climate, which enhances their aroma and taste.",
+        "hy": "«Մխիթար» հայկական խաղողը տեղական սեղանի խաղողի տեսակ է, որը հայտնի է իր թարմ, հյութալի հատիկներով և հավասարակշռված քաղցր համով։ Այն ունի գեղեցիկ տեսք և աճեցվում է Հայաստանի բարենպաստ կլիմայական պայմաններում, ինչը բարձրացնում է նրա բույրն ու համը։",
+        "ru": "Армянский виноград «Мхитар» — это местный сорт столового винограда, известный своими свежими сочными ягодами и сбалансированным сладким вкусом. Он имеет привлекательный внешний вид и выращивается в благоприятных климатических условиях Армении, что усиливает его аромат и вкус."
+      },
+      "healthy": {
+        "en": "Grapes are rich in antioxidants, vitamins C and K, and natural sugars. They support heart health, improve blood circulation, and provide quick energy. They are refreshing and nutritious.",
+        "hy": "Խաղողը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և K-ով, ինչպես նաև բնական շաքարներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և ապահովում է արագ էներգիա։ Այն թարմացնող և սննդարար է։",
+        "ru": "Виноград богат антиоксидантами, витаминами C и K, а также натуральными сахарами. Он поддерживает здоровье сердца, улучшает кровообращение и даёт быструю энергию. Освежающий и питательный."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts",
+          "served with cheese",
+          "used for juices and drinks"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "մատուցել պանրի հետ",
+          "օգտագործել հյութերի և խմիչքների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах",
+          "подавать с сыром",
+          "использовать для соков и напитков"
+        ]
+      }
+    }
+  },
+  {
+    "id": 28,
+    "name": {
+      "en": "Grapes typhoon (armenian) kg",
+      "hy": "Խաղող Թայֆուն (հայկական) կգ",
+      "ru": "Виноград тайфун арм. кг"
+    },
+    "image": "images/1776581294549_grapes_typhoon_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "056639",
+      "discountCode": "096774",
+      "scaleCode": "12580",
+      "scaleDiscountCode": "13969"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian “Typhoon” grapes are a large table grape variety known for their elongated berries, attractive appearance, and sweet, juicy taste. They have a firm texture and are grown in Armenia’s favorable climate, which enhances their flavor and quality.",
+        "hy": "«Թայֆուն» հայկական խաղողը խոշոր սեղանի խաղողի տեսակ է, որը հայտնի է իր երկարավուն հատիկներով, գեղեցիկ տեսքով և քաղցր, հյութալի համով։ Այն ունի ամուր կառուցվածք և աճեցվում է Հայաստանի բարենպաստ կլիմայական պայմաններում, ինչը բարձրացնում է նրա համն ու որակը։",
+        "ru": "Армянский виноград «Тайфун» — это крупный столовый сорт, известный своими удлинёнными ягодами, привлекательным внешним видом и сладким сочным вкусом. Он имеет плотную текстуру и выращивается в благоприятных климатических условиях Армении, что улучшает его вкус и качество."
+      },
+      "healthy": {
+        "en": "Grapes are rich in antioxidants, vitamins C and K, and natural sugars. They support heart health, improve blood circulation, and provide quick energy. They are refreshing and nutritious.",
+        "hy": "Խաղողը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և K-ով, ինչպես նաև բնական շաքարներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և ապահովում է արագ էներգիա։ Այն թարմացնող և սննդարար է։",
+        "ru": "Виноград богат антиоксидантами, витаминами C и K, а также натуральными сахарами. Он поддерживает здоровье сердца, улучшает кровообращение и даёт быструю энергию. Освежающий и питательный."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts",
+          "served with cheese",
+          "used for juices and drinks"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "մատուցել պանրի հետ",
+          "օգտագործել հյութերի և խմիչքների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах",
+          "подавать с сыром",
+          "использовать для соков и напитков"
+        ]
+      }
+    }
+  },
+  {
+    "id": 29,
+    "name": {
+      "en": "Grape selected kg",
+      "hy": "Խաղող ընտիր կգ",
+      "ru": "Виноград отбор. кг"
+    },
+    "image": "images/1776582044210_grape_selected_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "017180",
+      "discountCode": "X",
+      "scaleCode": "15156",
+      "scaleDiscountCode": "X"
+    },
+    "description": {
+      "what": {
+        "en": "Selected grapes are carefully chosen high-quality table grapes with uniform size, fresh appearance, and excellent taste. They can be red, green, or black and are known for their sweetness, juiciness, and premium quality.",
+        "hy": "Ընտրված խաղողը բարձրորակ սեղանի խաղող է, որը ընտրվում է խնամքով՝ ունենալով հավասարաչափ չափեր, թարմ տեսք և բարձր համային հատկություններ։ Այն կարող է լինել կարմիր, կանաչ կամ սև և հայտնի է իր քաղցրությամբ, հյութալիությամբ և պրեմիում որակով։",
+        "ru": "Отборный виноград — это тщательно отобранный высококачественный столовый виноград с ровным размером, свежим внешним видом и отличным вкусом. Он может быть красным, зелёным или чёрным и известен своей сладостью, сочностью и премиальным качеством."
+      },
+      "healthy": {
+        "en": "Grapes are rich in antioxidants, vitamins C and K, and natural sugars. They support heart health, improve blood circulation, and provide quick energy. They are refreshing and nutritious.",
+        "hy": "Խաղողը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և K-ով, ինչպես նաև բնական շաքարներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և ապահովում է արագ էներգիա։ Այն թարմացնող և սննդարար է։",
+        "ru": "Виноград богат антиоксидантами, витаминами C и K, а также натуральными сахарами. Он поддерживает здоровье сердца, улучшает кровообращение и даёт быструю энергию. Освежающий и питательный."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts",
+          "served with cheese",
+          "used for juices and drinks"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "մատուցել պանրի հետ",
+          "օգտագործել հյութերի և խմիչքների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах",
+          "подавать с сыром",
+          "использовать для соков и напитков"
+        ]
+      }
+    }
+  },
+  {
+    "id": 30,
+    "name": {
+      "en": "Red banana kg",
+      "hy": "Կարմիր բանան կգ",
+      "ru": "Банан красный кг"
+    },
+    "image": "images/1776582291788_red_banana_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1064224",
+      "discountCode": "1139946",
+      "scaleCode": "75810",
+      "scaleDiscountCode": "79965"
+    },
+    "description": {
+      "what": {
+        "en": "Red banana is a tropical fruit with a reddish-purple peel and soft, creamy flesh. It has a sweeter and slightly richer flavor than regular bananas, often with light berry-like notes. It is popular for its unique taste and appearance.",
+        "hy": "Կարմիր բանանը արևադարձային պտուղ է՝ կարմրավուն-մանուշակագույն կեղևով և փափուկ, կրեմային միջուկով։ Այն ունի ավելի քաղցր և հարուստ համ, քան սովորական բանանը՝ երբեմն թեթև հատապտղային նոտաներով։ Այն հայտնի է իր յուրահատուկ համով և տեսքով։",
+        "ru": "Красный банан — это тропический фрукт с красновато-фиолетовой кожурой и мягкой кремовой мякотью. Он обладает более сладким и насыщенным вкусом по сравнению с обычными бананами, иногда с лёгкими ягодными нотками. Известен своим необычным вкусом и внешним видом."
+      },
+      "healthy": {
+        "en": "Red bananas are rich in potassium, vitamin C, vitamin B6, and antioxidants. They support heart health, help improve digestion, and provide natural energy. They are nutritious and beneficial for overall health.",
+        "hy": "Կարմիր բանանը հարուստ է կալիումով, վիտամին C-ով, վիտամին B6-ով և հակաօքսիդանտներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է մարսողությունը և ապահովում է բնական էներգիա։ Այն սննդարար է և օգտակար ընդհանուր առողջության համար։",
+        "ru": "Красные бананы богаты калием, витамином C, витамином B6 и антиоксидантами. Они поддерживают здоровье сердца, улучшают пищеварение и дают естественную энергию. Питательные и полезные для общего здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to smoothies",
+          "used in desserts and cakes",
+          "added to fruit salads",
+          "used as a topping for yogurt or oatmeal"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել սմուզիների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել յոգուրտի կամ շիլաների վրա որպես հավելում"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять в смузи",
+          "использовать в десертах и тортах",
+          "добавлять во фруктовые салаты",
+          "использовать как добавку к йогурту или овсянке"
+        ]
+      }
+    }
+  },
+  {
+    "id": 31,
+    "name": {
+      "en": "Grapes \"Shaumyan\" kg",
+      "hy": "Խաղող «Շահումյան» կգ",
+      "ru": "Виноград Шаумян кг"
+    },
+    "image": "images/1776582541278_grapes_shaumyan_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "011266",
+      "discountCode": "094064",
+      "scaleCode": "10478",
+      "scaleDiscountCode": "13829"
+    },
+    "description": {
+      "what": {
+        "en": "“Shaumyan” grapes are a table grape variety known for their fresh, juicy berries and balanced sweet taste. They have an attractive appearance and a pleasant aroma, making them popular for fresh consumption.",
+        "hy": "«Շահումյան» խաղողը սեղանի խաղողի տեսակ է, որը հայտնի է իր թարմ, հյութալի հատիկներով և հավասարակշռված քաղցր համով։ Այն ունի գեղեցիկ տեսք և հաճելի բույր, ինչի շնորհիվ լայնորեն օգտագործվում է թարմ վիճակում։",
+        "ru": "Виноград «Шаумян» — это столовый сорт винограда, известный своими свежими сочными ягодами и сбалансированным сладким вкусом. Он обладает привлекательным внешним видом и приятным ароматом, что делает его популярным для употребления в свежем виде."
+      },
+      "healthy": {
+        "en": "Grapes are rich in antioxidants, vitamins C and K, and natural sugars. They support heart health, improve blood circulation, and provide quick energy. They are refreshing and nutritious.",
+        "hy": "Խաղողը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և K-ով, ինչպես նաև բնական շաքարներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և ապահովում է արագ էներգիա։ Այն թարմացնող և սննդարար է։",
+        "ru": "Виноград богат антиоксидантами, витаминами C и K, а также натуральными сахарами. Он поддерживает здоровье сердца, улучшает кровообращение и даёт быструю энергию. Освежающий и питательный."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts",
+          "served with cheese",
+          "used for juices and drinks"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "մատուցել պանրի հետ",
+          "օգտագործել հյութերի և խմիչքների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах",
+          "подавать с сыром",
+          "использовать для соков и напитков"
+        ]
+      }
+    }
+  },
+  {
+    "id": 32,
+    "name": {
+      "en": "Blueberry kg",
+      "hy": "Հապալաս կգ",
+      "ru": "Голубика кг"
+    },
+    "image": "images/1776582845806_blueberry_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1091469",
+      "discountCode": "X",
+      "scaleCode": "78053",
+      "scaleDiscountCode": "X"
+    },
+    "description": {
+      "what": {
+        "en": "Blueberries are small, round berries with a deep blue color and a smooth skin. They have a sweet taste with a slight tartness and a juicy texture. They are widely enjoyed fresh and used in a variety of dishes and desserts.",
+        "hy": "Հապալասը փոքր, կլոր հատապտուղ է՝ մուգ կապույտ գույնով և հարթ կեղևով։ Այն ունի քաղցր համ՝ թեթև թթվությամբ և հյութալի կառուցվածք։ Այն լայնորեն օգտագործվում է թարմ և տարբեր ուտեստներում ու աղանդերում։",
+        "ru": "Черника — это небольшая круглая ягода тёмно-синего цвета с гладкой кожурой. Она обладает сладким вкусом с лёгкой кислинкой и сочной текстурой. Широко употребляется в свежем виде и используется в различных блюдах и десертах."
+      },
+      "healthy": {
+        "en": "Blueberries are rich in antioxidants, vitamins C and K, and fiber. They support brain function, improve heart health, and help protect the body from oxidative stress. They are low in calories and very nutritious.",
+        "hy": "Հապալասը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և K-ով, ինչպես նաև բջջանյութով։ Այն նպաստում է ուղեղի աշխատանքին, բարելավում է սրտի առողջությունը և պաշտպանում է օրգանիզմը օքսիդատիվ սթրեսից։ Այն քիչ կալորիական է և շատ սննդարար։",
+        "ru": "Черника богата антиоксидантами, витаминами C и K, а также клетчаткой. Она поддерживает работу мозга, улучшает здоровье сердца и защищает организм от окислительного стресса. Низкокалорийная и очень питательная."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to smoothies",
+          "used in desserts and cakes",
+          "added to cereals and yogurt",
+          "used in jams and sauces"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել սմուզիների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "ավելացնել հացահատիկների և յոգուրտի մեջ",
+          "օգտագործել մուրաբաների և սոուսների մեջ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять в смузи",
+          "использовать в десертах и тортах",
+          "добавлять в каши и йогурт",
+          "использовать в вареньях и соусах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 33,
+    "name": {
+      "en": "Pomegranat white (Armenia) kg",
+      "hy": "Նուռ սպիտակ (հայկական) կգ",
+      "ru": "Гранат белый Арм. кг"
+    },
+    "image": "images/1776583162025_pomegranat_white_armenia_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "046807",
+      "discountCode": "093940",
+      "scaleCode": "12387",
+      "scaleDiscountCode": "13818"
+    },
+    "description": {
+      "what": {
+        "en": "White pomegranate from Armenia is a unique variety with a light-colored peel and pale, translucent seeds. It has a mild, sweet taste with low acidity and a delicate aroma. It is grown in Armenia’s favorable climate and is valued for its softness and subtle flavor.",
+        "hy": "Հայկական սպիտակ նուռը յուրահատուկ տեսակ է՝ բաց գույնի կեղևով և բաց, թափանցիկ հատիկներով։ Այն ունի մեղմ, քաղցր համ՝ քիչ թթվությամբ և նուրբ բույրով։ Աճեցվում է Հայաստանի բարենպաստ կլիմայական պայմաններում և գնահատվում է իր փափկությամբ ու նուրբ համով։",
+        "ru": "Белый гранат из Армении — это уникальный сорт с светлой кожурой и бледными прозрачными зёрнами. Он обладает мягким сладким вкусом с низкой кислотностью и нежным ароматом. Выращивается в благоприятных климатических условиях Армении и ценится за свою мягкость и деликатный вкус."
+      },
+      "healthy": {
+        "en": "Pomegranates are rich in antioxidants, vitamin C, and polyphenols. They support heart health, improve blood circulation, and help protect the body from oxidative stress. They are refreshing and highly nutritious.",
+        "hy": "Նուռը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և պոլիֆենոլներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և պաշտպանում է օրգանիզմը օքսիդատիվ սթրեսից։ Այն թարմացնող և շատ սննդարար է։",
+        "ru": "Гранат богат антиоксидантами, витамином C и полифенолами. Он поддерживает здоровье сердца, улучшает кровообращение и защищает организм от окислительного стресса. Освежающий и очень питательный."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as seeds",
+          "added to salads",
+          "used in desserts",
+          "used for juices and drinks",
+          "used as a garnish in dishes"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ հատիկներով",
+          "ավելացնել աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "օգտագործել հյութերի և խմիչքների մեջ",
+          "օգտագործել որպես զարդարանք ուտեստներում"
+        ],
+        "ru": [
+          "употреблять в свежем виде зёрнами",
+          "добавлять в салаты",
+          "использовать в десертах",
+          "использовать для соков и напитков",
+          "использовать как украшение блюд"
+        ]
+      }
+    }
+  },
+  {
+    "id": 34,
+    "name": {
+      "en": "Pomegranat (high quality) kg",
+      "hy": "Նուռ բարձր կարգ կգ",
+      "ru": "Гранат в/с кг"
+    },
+    "image": "images/1776583500803_pomegranat_high_quality_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "016696",
+      "discountCode": "016726",
+      "scaleCode": "14671",
+      "scaleDiscountCode": "14700"
+    },
+    "description": {
+      "what": {
+        "en": "High-quality pomegranates are premium fruits with a rich red peel and juicy, ruby-colored seeds. They have a balanced sweet-tart taste and a fresh, pleasant aroma. Carefully selected, they are known for their freshness, size, and excellent flavor.",
+        "hy": "Բարձրորակ նուռը պրեմիում պտուղ է՝ հարուստ կարմիր կեղևով և հյութալի, կարմրավուն հատիկներով։ Այն ունի հավասարակշռված քաղցրաթթու համ և թարմ, հաճելի բույր։ Խնամքով ընտրված է և հայտնի է իր թարմությամբ, չափերով և բարձր համային հատկություններով։",
+        "ru": "Гранат высокого качества — это премиальный плод с насыщенно-красной кожурой и сочными рубиновыми зёрнами. Он обладает сбалансированным кисло-сладким вкусом и свежим приятным ароматом. Тщательно отобран и известен своей свежестью, размером и отличным вкусом."
+      },
+      "healthy": {
+        "en": "Pomegranates are rich in antioxidants, vitamin C, and polyphenols. They support heart health, improve blood circulation, and help protect the body from oxidative stress. They are nutritious and beneficial for overall health.",
+        "hy": "Նուռը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և պոլիֆենոլներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և պաշտպանում է օրգանիզմը օքսիդատիվ սթրեսից։ Այն սննդարար է և օգտակար ընդհանուր առողջության համար։",
+        "ru": "Гранат богат антиоксидантами, витамином C и полифенолами. Он поддерживает здоровье сердца, улучшает кровообращение и защищает организм от окислительного стресса. Питательный и полезный для общего здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as seeds",
+          "added to salads",
+          "used in desserts",
+          "used for juices and drinks",
+          "used as a garnish in dishes"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ հատիկներով",
+          "ավելացնել աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "օգտագործել հյութերի և խմիչքների մեջ",
+          "օգտագործել որպես զարդարանք ուտեստներում"
+        ],
+        "ru": [
+          "употреблять в свежем виде зёрнами",
+          "добавлять в салаты",
+          "использовать в десертах",
+          "использовать для соков и напитков",
+          "использовать как украшение блюд"
+        ]
+      }
+    }
+  },
+  {
+    "id": 35,
+    "name": {
+      "en": "Pomegranate kg",
+      "hy": "Նուռ կգ",
+      "ru": "Гранат кг"
+    },
+    "image": "images/1776583930235_pomegranat_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "011256",
+      "discountCode": "098927",
+      "scaleCode": "16429",
+      "scaleDiscountCode": "14053"
+    },
+    "description": {
+      "what": {
+        "en": "Pomegranate is a round fruit with a tough red peel and juicy, ruby-colored seeds inside. It has a refreshing sweet-tart taste and a pleasant aroma, making it popular for fresh consumption and use in various dishes.",
+        "hy": "Նուռը կլոր պտուղ է՝ կոշտ կարմիր կեղևով և ներսում գտնվող հյութալի, կարմրավուն հատիկներով։ Այն ունի թարմացնող քաղցրաթթու համ և հաճելի բույր՝ լինելով լայնորեն օգտագործվող թե՛ թարմ, թե՛ տարբեր ուտեստներում։",
+        "ru": "Гранат — это круглый плод с твёрдой красной кожурой и сочными рубиновыми зёрнами внутри. Он обладает освежающим кисло-сладким вкусом и приятным ароматом, широко используется как в свежем виде, так и в различных блюдах."
+      },
+      "healthy": {
+        "en": "Pomegranates are rich in antioxidants, vitamin C, and polyphenols. They support heart health, improve blood circulation, and help protect the body from oxidative stress. They are nutritious and beneficial for overall health.",
+        "hy": "Նուռը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և պոլիֆենոլներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և պաշտպանում է օրգանիզմը օքսիդատիվ սթրեսից։ Այն սննդարար է և օգտակար ընդհանուր առողջության համար։",
+        "ru": "Гранат богат антиоксидантами, витамином C и полифенолами. Он поддерживает здоровье сердца, улучшает кровообращение и защищает организм от окислительного стресса. Питательный и полезный для общего здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as seeds",
+          "added to salads",
+          "used in desserts",
+          "used for juices and drinks",
+          "used as a garnish in dishes"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ հատիկներով",
+          "ավելացնել աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "օգտագործել հյութերի և խմիչքների մեջ",
+          "օգտագործել որպես զարդարանք ուտեստներում"
+        ],
+        "ru": [
+          "употреблять в свежем виде зёрнами",
+          "добавлять в салаты",
+          "использовать в десертах",
+          "использовать для соков и напитков",
+          "использовать как украшение блюд"
+        ]
+      }
+    }
+  },
+  {
+    "id": 36,
+    "name": {
+      "en": "Pomegranate red Meghri kg",
+      "hy": "Նուռ կարմիր (Մեղրի) կգ",
+      "ru": "Гранат красный Мегри кг"
+    },
+    "image": "images/1776584368167_pomegranate_red_meghri_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "092514",
+      "discountCode": "093876",
+      "scaleCode": "13687",
+      "scaleDiscountCode": "13807"
+    },
+    "description": {
+      "what": {
+        "en": "Red Meghri pomegranate is a premium Armenian variety grown in the Meghri region, known for its deep red peel and large, juicy seeds. It has a rich, sweet taste with mild acidity and a strong, pleasant aroma, making it one of the most valued pomegranates in Armenia.",
+        "hy": "Կարմիր Մեղրիի նուռը հայկական բարձրակարգ տեսակ է, որը աճեցվում է Մեղրիի տարածաշրջանում և հայտնի է իր մուգ կարմիր կեղևով ու խոշոր, հյութալի հատիկներով։ Այն ունի հարուստ, քաղցր համ՝ մեղմ թթվությամբ և ուժեղ, հաճելի բույրով՝ լինելով Հայաստանի ամենաարժեքավոր նուռերից մեկը։",
+        "ru": "Красный гранат Мегри — это премиальный армянский сорт, выращиваемый в регионе Мегри, известный своей насыщенно-красной кожурой и крупными сочными зёрнами. Он обладает богатым сладким вкусом с мягкой кислинкой и ярким ароматом, являясь одним из самых ценных гранатов в Армении."
+      },
+      "healthy": {
+        "en": "Pomegranates are rich in antioxidants, vitamin C, and polyphenols. They support heart health, improve blood circulation, and help protect the body from oxidative stress. They are highly nutritious and beneficial for overall health.",
+        "hy": "Նուռը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և պոլիֆենոլներով։ Այն նպաստում է սրտի առողջությանը, բարելավում է արյան շրջանառությունը և պաշտպանում է օրգանիզմը օքսիդատիվ սթրեսից։ Այն շատ սննդարար է և օգտակար ընդհանուր առողջության համար։",
+        "ru": "Гранат богат антиоксидантами, витамином C и полифенолами. Он поддерживает здоровье сердца, улучшает кровообращение и защищает организм от окислительного стресса. Очень питательный и полезный для общего здоровья."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as seeds",
+          "used for fresh juice",
+          "added to salads",
+          "used in desserts",
+          "used as a garnish in dishes"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ հատիկներով",
+          "պատրաստել թարմ հյութ",
+          "ավելացնել աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "օգտագործել որպես զարդարանք ուտեստներում"
+        ],
+        "ru": [
+          "употреблять в свежем виде зёрнами",
+          "использовать для свежего сока",
+          "добавлять в салаты",
+          "использовать в десертах",
+          "использовать как украшение блюд"
+        ]
+      }
+    }
+  },
+  {
+    "id": 37,
+    "name": {
+      "en": "Pomegranat chili kg",
+      "hy": "Նուռ չիլի կգ",
+      "ru": "Гранат чили кг"
+    },
+    "image": "images/1776585196985_pomegranat_chili_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1126731",
+      "discountCode": "X",
+      "scaleCode": "79375",
+      "scaleDiscountCode": "X"
+    },
+    "description": {
+      "what": {
+        "en": "Pomegranate Chili is a flavorful combination of juicy pomegranate seeds with a hint of chili spice. It offers a unique balance of sweet, tangy, and mildly spicy flavors, making it popular for snacks and creative dishes.",
+        "hy": "Նուռ Չիլի-ն հյութալի նռան հատիկների և չիլիի թեթև կծու համի համադրություն է։ Այն ունի յուրահատուկ քաղցր, թթու և թեթևակի կծու համերի հավասարակշռություն՝ հարմար խորտիկների և հետաքրքիր ուտեստների համար։",
+        "ru": "Гранат Чили — это сочетание сочных зёрен граната с лёгкой остротой чили. Он обладает уникальным балансом сладкого, кислого и слегка острого вкуса, что делает его популярным для закусок и оригинальных блюд."
+      },
+      "healthy": {
+        "en": "Pomegranates are rich in antioxidants, vitamin C, and polyphenols, while chili can help boost metabolism. Together they support heart health, improve circulation, and provide a refreshing and energizing effect.",
+        "hy": "Նուռը հարուստ է հակաօքսիդանտներով, վիտամին C-ով և պոլիֆենոլներով, իսկ չիլին կարող է խթանել նյութափոխանակությունը։ Միասին դրանք նպաստում են սրտի առողջությանը, բարելավում են արյան շրջանառությունը և ապահովում են թարմացնող և էներգիա հաղորդող ազդեցություն։",
+        "ru": "Гранат богат антиоксидантами, витамином C и полифенолами, а перец чили способствует ускорению обмена веществ. Вместе они поддерживают здоровье сердца, улучшают кровообращение и дают освежающий и тонизирующий эффект."
+      },
+      "eat": {
+        "en": [
+          "eaten as a snack with chili seasoning",
+          "added to salads for extra flavor",
+          "used in sauces and dressings",
+          "used in creative desserts",
+          "served as a garnish in dishes"
+        ],
+        "hy": [
+          "օգտագործել որպես խորտիկ՝ չիլիի համեմունքով",
+          "ավելացնել աղցանների մեջ՝ հավելյալ համի համար",
+          "օգտագործել սոուսների և սոուսների մեջ",
+          "օգտագործել ստեղծագործական աղանդերի մեջ",
+          "օգտագործել որպես զարդարանք ուտեստներում"
+        ],
+        "ru": [
+          "употреблять как закуску с приправой чили",
+          "добавлять в салаты для усиления вкуса",
+          "использовать в соусах и заправках",
+          "использовать в оригинальных десертах",
+          "использовать как украшение блюд"
+        ]
+      }
+    }
+  },
+  {
+    "id": 38,
+    "name": {
+      "en": "Grapefruit kg",
+      "hy": "Թուրինջ կգ",
+      "ru": "Грейпфрут кг"
+    },
+    "image": "images/1776585506025_grapefruit_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "011259",
+      "discountCode": "094062",
+      "scaleCode": "10501",
+      "scaleDiscountCode": "13828"
+    },
+    "description": {
+      "what": {
+        "en": "Grapefruit is a large citrus fruit with a thick peel and juicy flesh that can be pink, red, or white. It has a refreshing taste that combines sweetness with a slight bitterness and acidity. It is widely enjoyed fresh and used in various dishes and drinks.",
+        "hy": "Գրեյպֆրուտը մեծ ցիտրուսային պտուղ է՝ հաստ կեղևով և հյութալի միջուկով, որը կարող է լինել վարդագույն, կարմիր կամ սպիտակ։ Այն ունի թարմացնող համ՝ համադրելով քաղցրությունը, թեթև դառնությունն ու թթվությունը։ Այն լայնորեն օգտագործվում է թարմ և տարբեր ուտեստներում ու խմիչքներում։",
+        "ru": "Грейпфрут — это крупный цитрусовый фрукт с толстой кожурой и сочной мякотью, которая может быть розовой, красной или белой. Он обладает освежающим вкусом, сочетающим сладость, лёгкую горчинку и кислотность. Широко употребляется в свежем виде и используется в различных блюдах и напитках."
+      },
+      "healthy": {
+        "en": "Grapefruit is rich in vitamin C, antioxidants, and fiber. It supports the immune system, helps improve digestion, and may aid in weight management. It is low in calories and very refreshing.",
+        "hy": "Գրեյպֆրուտը հարուստ է վիտամին C-ով, հակաօքսիդանտներով և բջջանյութով։ Այն ամրացնում է իմունիտետը, բարելավում է մարսողությունը և կարող է նպաստել քաշի կարգավորմանը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Грейпфрут богат витамином C, антиоксидантами и клетчаткой. Он укрепляет иммунитет, улучшает пищеварение и может способствовать контролю веса. Низкокалорийный и очень освежающий."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as segments",
+          "used for fresh juice",
+          "added to fruit salads",
+          "used in desserts",
+          "used in savory dishes and salads"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "պատրաստել թարմ հյութ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "օգտագործել աղի ուտեստներում և աղցաններում"
+        ],
+        "ru": [
+          "употреблять свежими дольками",
+          "использовать для свежего сока",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах",
+          "использовать в солёных блюдах и салатах"
+        ]
+      }
+    }
+  },
+  {
+    "id": 39,
+    "name": {
+      "en": "Pear Duchess (armenian) kg",
+      "hy": "Տանձ Դյուշես (հայկական) կգ",
+      "ru": "Груша Дюшес армянская кг"
+    },
+    "image": "images/1776586185658_pear_duchess_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "092566",
+      "discountCode": "016350",
+      "scaleCode": "13693",
+      "scaleDiscountCode": "14324"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian Duchess pear is a classic variety known for its soft texture, juicy flesh, and delicate aroma. It has a sweet, slightly buttery taste and a smooth skin, making it highly valued for fresh consumption.",
+        "hy": "Հայկական Դյուշես տանձը դասական տեսակ է, որը հայտնի է իր փափուկ կառուցվածքով, հյութալի միջուկով և նուրբ բույրով։ Այն ունի քաղցր, թեթևակի յուղային համ և հարթ կեղև՝ լինելով շատ գնահատված թարմ օգտագործման համար։",
+        "ru": "Армянская груша Дюшес — это классический сорт, известный своей мягкой текстурой, сочной мякотью и нежным ароматом. Она обладает сладким, слегка маслянистым вкусом и гладкой кожурой, высоко ценится для употребления в свежем виде."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts and cakes",
+          "used in juices and compotes",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "օգտագործել հյութերի և կոմպոտների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и тортах",
+          "использовать в соках и компотах",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 40,
+    "name": {
+      "en": "Yellow pear kg",
+      "hy": "Տանձ դեղին կգ",
+      "ru": "Груша желтая кг"
+    },
+    "image": "images/1776586520213_yellow_pear_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "1109632",
+      "discountCode": "X",
+      "scaleCode": "75993",
+      "scaleDiscountCode": "X"
+    },
+    "description": {
+      "what": {
+        "en": "Yellow pear is a juicy fruit with a smooth yellow skin and soft, tender flesh. It has a sweet, refreshing taste with a delicate aroma, making it popular for fresh consumption and use in various dishes.",
+        "hy": "Դեղին տանձը հյութալի միրգ է՝ հարթ դեղին կեղևով և փափուկ, նուրբ միջուկով։ Այն ունի քաղցր, թարմացնող համ և նուրբ բույր՝ լինելով լայնորեն օգտագործվող թե՛ թարմ, թե՛ տարբեր ուտեստներում։",
+        "ru": "Жёлтая груша — это сочный фрукт с гладкой жёлтой кожурой и мягкой нежной мякотью. Она обладает сладким освежающим вкусом и деликатным ароматом, широко употребляется в свежем виде и используется в различных блюдах."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts and cakes",
+          "used in juices and compotes",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և տորթերի մեջ",
+          "օգտագործել հյութերի և կոմպոտների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и тортах",
+          "использовать в соках и компотах",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 41,
+    "name": {
+      "en": "Pear winter (armenian) kg",
+      "hy": "Տանձ ձմեռային (հայկական) կգ",
+      "ru": "Груша зимняя армянская кг"
+    },
+    "image": "images/1776587015789_pear_winter_armenian_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "011639",
+      "discountCode": "016447",
+      "scaleCode": "10656",
+      "scaleDiscountCode": "14548"
+    },
+    "description": {
+      "what": {
+        "en": "Armenian winter pear is a late-season variety known for its firm texture, long storage life, and balanced sweet taste. It has a dense flesh that becomes softer and more aromatic as it ripens, making it ideal for both fresh consumption and storage.",
+        "hy": "Հայկական ձմեռային տանձը ուշ հասունացող տեսակ է, որը հայտնի է իր ամուր կառուցվածքով, երկար պահպանման ժամկետով և հավասարակշռված քաղցր համով։ Այն ունի խիտ միջուկ, որը հասունանալիս դառնում է ավելի փափուկ և բուրավետ՝ հարմար լինելով թե՛ թարմ օգտագործման, թե՛ պահպանման համար։",
+        "ru": "Армянская зимняя груша — это позднеспелый сорт, известный своей плотной текстурой, длительным сроком хранения и сбалансированным сладким вкусом. Её мякоть плотная, но при созревании становится мягче и ароматнее, что делает её подходящей как для свежего употребления, так и для хранения."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh after ripening",
+          "used in baking and desserts",
+          "added to fruit salads",
+          "used in compotes and preserves",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ հասունանալուց հետո",
+          "օգտագործել թխվածքների և աղանդերի մեջ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել կոմպոտների և պահածոների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде после дозревания",
+          "использовать в выпечке и десертах",
+          "добавлять во фруктовые салаты",
+          "использовать в компотах и заготовках",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 42,
+    "name": {
+      "en": "Pear kg",
+      "hy": "Տանձ  կգ",
+      "ru": "Груша кг"
+    },
+    "image": "images/1776587283674_pear_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "016610",
+      "discountCode": "016617",
+      "scaleCode": "14586",
+      "scaleDiscountCode": "14593"
+    },
+    "description": {
+      "what": {
+        "en": "Pear is a juicy fruit with a smooth skin and soft, tender flesh. It has a naturally sweet and refreshing taste with a delicate aroma. Pears are widely enjoyed fresh and used in many dishes and desserts.",
+        "hy": "Տանձը հյութալի միրգ է՝ հարթ կեղևով և փափուկ, նուրբ միջուկով։ Այն ունի բնական քաղցր և թարմացնող համ՝ նուրբ բույրով։ Տանձը լայնորեն օգտագործվում է թե՛ թարմ, թե՛ տարբեր ուտեստներում և աղանդերում։",
+        "ru": "Груша — это сочный фрукт с гладкой кожурой и мягкой нежной мякотью. Она обладает естественным сладким и освежающим вкусом с деликатным ароматом. Груши широко употребляются в свежем виде и используются в различных блюдах и десертах."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts and baking",
+          "used in juices and compotes",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "օգտագործել հյութերի և կոմպոտների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и выпечке",
+          "использовать в соках и компотах",
+          "сочетать с сыром или орехами"
+        ]
+      }
+    }
+  },
+  {
+    "id": 43,
+    "name": {
+      "en": "Pear chinese kg",
+      "hy": "Տանձ  չինական կգ",
+      "ru": "Груша китай кг"
+    },
+    "image": "images/1776587602945_pear_chinese_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "012357",
+      "discountCode": "1121822",
+      "scaleCode": "10774",
+      "scaleDiscountCode": "79181"
+    },
+    "description": {
+      "what": {
+        "en": "Chinese pear is a round fruit with a thin yellow to light brown skin and crisp, juicy flesh. It has a refreshing sweet taste with a mild aroma and a crunchy texture, similar to an apple. It is popular for its freshness and hydrating qualities.",
+        "hy": "Չինական տանձը կլոր միրգ է՝ բարակ դեղինից մինչև բաց շագանակագույն կեղևով և խրթխրթան, հյութալի միջուկով։ Այն ունի թարմացնող քաղցր համ՝ մեղմ բույրով և խրթխրթան կառուցվածքով՝ նման խնձորի։ Այն հայտնի է իր թարմացնող և ջրային հատկություններով։",
+        "ru": "Китайская груша — это круглый фрукт с тонкой жёлтой или светло-коричневой кожурой и хрустящей сочной мякотью. Она обладает освежающим сладким вкусом с лёгким ароматом и текстурой, похожей на яблоко. Популярна благодаря своей сочности и освежающим свойствам."
+      },
+      "healthy": {
+        "en": "Chinese pears are rich in water, fiber, and vitamin C. They help hydrate the body, support digestion, and soothe the throat. They are low in calories and very refreshing.",
+        "hy": "Չինական տանձը հարուստ է ջրով, բջջանյութով և վիտամին C-ով։ Այն օգնում է պահպանել ջրային հավասարակշռությունը, բարելավում է մարսողությունը և հանգստացնում է կոկորդը։ Այն քիչ կալորիական է և շատ թարմացնող։",
+        "ru": "Китайские груши богаты водой, клетчаткой и витамином C. Они помогают поддерживать водный баланс, улучшают пищеварение и успокаивают горло. Низкокалорийные и очень освежающие."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as slices",
+          "added to fruit salads",
+          "used in desserts",
+          "used in juices and drinks",
+          "used in traditional remedies for throat soothing"
+        ],
+        "hy": [
+          "օգտագործել թարմ՝ կտրտված",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի մեջ",
+          "օգտագործել հյութերի և խմիչքների մեջ",
+          "օգտագործել ավանդական միջոցներում՝ կոկորդը հանգստացնելու համար"
+        ],
+        "ru": [
+          "употреблять свежими дольками",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах",
+          "использовать в соках и напитках",
+          "использовать в традиционных средствах для смягчения горла"
+        ]
+      }
+    }
+  },
+  {
+    "id": 44,
+    "name": {
+      "en": "Pear high quality kg",
+      "hy": "Տանձ (բարձր կարգ) կգ",
+      "ru": "Груша в/с кг"
+    },
+    "image": "images/1776587955704_pear_high_quality_kg.png",
+    "needScale": true,
+    "codes": {
+      "mainCode": "016386",
+      "discountCode": "016418",
+      "scaleCode": "14360",
+      "scaleDiscountCode": "14390"
+    },
+    "description": {
+      "what": {
+        "en": "High-quality pears are carefully selected fruits with a smooth skin, juicy flesh, and excellent taste. They have a sweet, delicate flavor and a pleasant aroma, making them ideal for fresh consumption and premium use.",
+        "hy": "Բարձրորակ տանձը խնամքով ընտրված միրգ է՝ հարթ կեղևով, հյութալի միջուկով և բարձր համային հատկություններով։ Այն ունի քաղցր, նուրբ համ և հաճելի բույր՝ լինելով իդեալական թարմ օգտագործման և բարձրակարգ կիրառության համար։",
+        "ru": "Груша высокого качества — это тщательно отобранный фрукт с гладкой кожурой, сочной мякотью и отличным вкусом. Она обладает сладким нежным вкусом и приятным ароматом, идеально подходит для свежего употребления и премиального использования."
+      },
+      "healthy": {
+        "en": "Pears are rich in fiber, vitamin C, and antioxidants. They support digestion, help maintain heart health, and are gentle on the stomach. They are low in calories and suitable for a healthy diet.",
+        "hy": "Տանձը հարուստ է բջջանյութով, վիտամին C-ով և հակաօքսիդանտներով։ Այն բարելավում է մարսողությունը, նպաստում է սրտի առողջությանը և հեշտ է մարսվում։ Այն քիչ կալորիական է և հարմար է առողջ սննդակարգի համար։",
+        "ru": "Груши богаты клетчаткой, витамином C и антиоксидантами. Они улучшают пищеварение, поддерживают здоровье сердца и легко усваиваются. Низкокалорийные и подходят для здорового питания."
+      },
+      "eat": {
+        "en": [
+          "eaten fresh as a snack",
+          "added to fruit salads",
+          "used in desserts and baking",
+          "used in juices and compotes",
+          "paired with cheese or nuts"
+        ],
+        "hy": [
+          "օգտագործել թարմ որպես խորտիկ",
+          "ավելացնել մրգային աղցանների մեջ",
+          "օգտագործել աղանդերի և թխվածքների մեջ",
+          "օգտագործել հյութերի և կոմպոտների մեջ",
+          "համադրել պանրի կամ ընկույզների հետ"
+        ],
+        "ru": [
+          "употреблять в свежем виде как перекус",
+          "добавлять во фруктовые салаты",
+          "использовать в десертах и выпечке",
+          "использовать в соках и компотах",
+          "сочетать с сыром или орехами"
         ]
       }
     }
